@@ -18,8 +18,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             InitializeComponent();
         }
         Advertisement myAd = new Advertisement();
-
-
+        
+        
         public void adCreation()
         {
             myAd.Active = checkBox1AdState.Checked;
@@ -27,6 +27,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             myAd.CompanyName = textBox1AdName.Text;
             myAd.CreationDate = DateTime.Now;
             myAd.ExpirationDate = dateTimePicker1ExpDate.Value;
+            main_manager_wnd.addToAdsArray(myAd);
         }
         private void Button2AdCreate_Click(object sender, EventArgs e)
         {

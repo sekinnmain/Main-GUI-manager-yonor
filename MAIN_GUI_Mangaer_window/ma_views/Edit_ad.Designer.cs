@@ -63,7 +63,7 @@
             this.button2EditAdCreate.Name = "button2EditAdCreate";
             this.button2EditAdCreate.Size = new System.Drawing.Size(75, 23);
             this.button2EditAdCreate.TabIndex = 21;
-            this.button2EditAdCreate.Text = "Create";
+            this.button2EditAdCreate.Text = "Edit";
             this.button2EditAdCreate.UseVisualStyleBackColor = true;
             this.button2EditAdCreate.Click += new System.EventHandler(this.Button2EditAdCreate_Click);
             // 
@@ -121,6 +121,7 @@
             this.textBox1EditAdName.Name = "textBox1EditAdName";
             this.textBox1EditAdName.Size = new System.Drawing.Size(100, 20);
             this.textBox1EditAdName.TabIndex = 16;
+            this.textBox1EditAdName.TextChanged += new System.EventHandler(this.TextBox1EditAdName_TextChanged);
             // 
             // label7
             // 

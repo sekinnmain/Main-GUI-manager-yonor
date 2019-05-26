@@ -42,6 +42,10 @@ namespace Main.yonor
         {
             return Active.ToString();
         }
+        public override string ToString()
+        {
+            return CompanyName;
+        }
     }
 
 

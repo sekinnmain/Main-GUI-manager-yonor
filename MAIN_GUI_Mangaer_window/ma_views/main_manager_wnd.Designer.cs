@@ -69,7 +69,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
@@ -98,6 +97,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
             this.tabCrontrolUsers.SuspendLayout();
             this.tabMenuMgmt.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
@@ -534,14 +534,6 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Advertisements:";
             // 
-            // comboBox8Edit
-            // 
-            this.comboBox8Edit.FormattingEnabled = true;
-            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
-            this.comboBox8Edit.Name = "comboBox8Edit";
-            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8Edit.TabIndex = 6;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -810,6 +802,15 @@
             this.label13.TabIndex = 17;
             this.label13.Text = "Dish:";
             // 
+            // comboBox8Edit
+            // 
+            this.comboBox8Edit.FormattingEnabled = true;
+            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
+            this.comboBox8Edit.Name = "comboBox8Edit";
+            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8Edit.TabIndex = 6;
+            this.comboBox8Edit.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
+            // 
             // main_manager_wnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -890,7 +891,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox8Edit;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button14;
@@ -919,6 +919,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox8Edit;
     }
 }
 

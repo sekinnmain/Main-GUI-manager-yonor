@@ -16,12 +16,37 @@ namespace MAIN_GUI_Mangaer_window
         public main_manager_wnd()
         {
             loadDefaultsData();
+            //comboBoxLoad();
             InitializeComponent();
            
         }
 
         DataTable dt = new DataTable();
         StockManagement mst = new StockManagement();
+        static List<Advertisement> myAds = new List<Advertisement>();
+
+
+
+        public static void addToAdsArray(Advertisement myAdToAdd)
+        {
+            myAds.Add(myAdToAdd);
+        }
+
+        public static Advertisement RetMyAdFromArr(string adName)
+        {
+            foreach (Advertisement item in myAds)
+            {
+                if(item.CompanyName.Equals(adName))
+                {
+                    return item;
+                }
+            }
+            Advertisement emptyAd = new Advertisement();
+          //  emptyAd.CompanyName = "null";
+            return emptyAd;
+        }
+
+     
 
         public void loadDefaultsData()
         {
@@ -170,12 +195,27 @@ namespace MAIN_GUI_Mangaer_window
         {
             ma_views.create_ad myAdCreation = new ma_views.create_ad();
             myAdCreation.ShowDialog();
+            comboBoxLoad();
+
         }
 
         private void Button9EditAds_Click(object sender, EventArgs e)
         {
             ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
             formEditMyAd.ShowDialog();
+        }
+      
+
+        public void comboBoxLoad()
+        {
+            foreach (Advertisement ad in myAds)
+            {
+                comboBox8Edit.Items.Add(ad.ToString());
+            }
+        }
+        private void ComboBox8Edit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
