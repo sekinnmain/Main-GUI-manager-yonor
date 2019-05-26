@@ -30,18 +30,12 @@
         {
             this.tabCrontrolUsers = new System.Windows.Forms.TabControl();
             this.tabMenuMgmt = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tabControlUsers = new System.Windows.Forms.TabPage();
@@ -75,10 +69,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
             this.button14 = new System.Windows.Forms.Button();
             this.numericUpDown6Cola = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5Water = new System.Windows.Forms.NumericUpDown();
@@ -97,13 +91,20 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
+            this.tabPage1Dishes = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabCrontrolUsers.SuspendLayout();
             this.tabMenuMgmt.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
             this.tabReportsMgmt.SuspendLayout();
             this.tabRestaurantTasks.SuspendLayout();
             this.tabAdvertisementMgmt.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabPage1StockMngt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5Water)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4Soda)).BeginInit();
@@ -111,17 +112,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage1Dishes.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCrontrolUsers
             // 
             this.tabCrontrolUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tabCrontrolUsers.Controls.Add(this.tabMenuMgmt);
+            this.tabCrontrolUsers.Controls.Add(this.tabPage1Dishes);
             this.tabCrontrolUsers.Controls.Add(this.tabControlUsers);
             this.tabCrontrolUsers.Controls.Add(this.tabReportsMgmt);
             this.tabCrontrolUsers.Controls.Add(this.tabRestaurantTasks);
             this.tabCrontrolUsers.Controls.Add(this.tabAdvertisementMgmt);
-            this.tabCrontrolUsers.Controls.Add(this.tabPage1);
+            this.tabCrontrolUsers.Controls.Add(this.tabPage1StockMngt);
             this.tabCrontrolUsers.Location = new System.Drawing.Point(0, 0);
             this.tabCrontrolUsers.Name = "tabCrontrolUsers";
             this.tabCrontrolUsers.SelectedIndex = 0;
@@ -131,70 +134,20 @@
             // 
             // tabMenuMgmt
             // 
-            this.tabMenuMgmt.Controls.Add(this.button8);
-            this.tabMenuMgmt.Controls.Add(this.comboBox6);
-            this.tabMenuMgmt.Controls.Add(this.label9);
-            this.tabMenuMgmt.Controls.Add(this.button6);
-            this.tabMenuMgmt.Controls.Add(this.label11);
             this.tabMenuMgmt.Controls.Add(this.button4);
             this.tabMenuMgmt.Controls.Add(this.button5);
             this.tabMenuMgmt.Controls.Add(this.comboBox4);
             this.tabMenuMgmt.Controls.Add(this.comboBox5);
             this.tabMenuMgmt.Controls.Add(this.label5);
             this.tabMenuMgmt.Controls.Add(this.label6);
-            this.tabMenuMgmt.Controls.Add(this.label13);
             this.tabMenuMgmt.Controls.Add(this.label12);
             this.tabMenuMgmt.Controls.Add(this.label7);
             this.tabMenuMgmt.Location = new System.Drawing.Point(4, 22);
             this.tabMenuMgmt.Name = "tabMenuMgmt";
-            this.tabMenuMgmt.Size = new System.Drawing.Size(791, 426);
+            this.tabMenuMgmt.Size = new System.Drawing.Size(791, 378);
             this.tabMenuMgmt.TabIndex = 4;
             this.tabMenuMgmt.Text = "Menu";
             this.tabMenuMgmt.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(675, 174);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Edit";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(538, 176);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 15;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(471, 179);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Edit Dish:";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(675, 97);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Create";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(471, 102);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 13);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Create new Dish:";
             // 
             // button4
             // 
@@ -248,15 +201,6 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Edit menu:";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(439, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(31, 13);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Dish:";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -287,7 +231,7 @@
             this.tabControlUsers.Location = new System.Drawing.Point(4, 22);
             this.tabControlUsers.Name = "tabControlUsers";
             this.tabControlUsers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabControlUsers.Size = new System.Drawing.Size(791, 426);
+            this.tabControlUsers.Size = new System.Drawing.Size(791, 378);
             this.tabControlUsers.TabIndex = 0;
             this.tabControlUsers.Text = "Users Managment";
             this.tabControlUsers.UseVisualStyleBackColor = true;
@@ -362,7 +306,7 @@
             this.tabReportsMgmt.Location = new System.Drawing.Point(4, 22);
             this.tabReportsMgmt.Name = "tabReportsMgmt";
             this.tabReportsMgmt.Padding = new System.Windows.Forms.Padding(3);
-            this.tabReportsMgmt.Size = new System.Drawing.Size(791, 426);
+            this.tabReportsMgmt.Size = new System.Drawing.Size(791, 378);
             this.tabReportsMgmt.TabIndex = 1;
             this.tabReportsMgmt.Text = "Reports";
             this.tabReportsMgmt.UseVisualStyleBackColor = true;
@@ -467,7 +411,7 @@
             this.tabAdvertisementMgmt.Controls.Add(this.label18);
             this.tabAdvertisementMgmt.Controls.Add(this.label17);
             this.tabAdvertisementMgmt.Controls.Add(this.label16);
-            this.tabAdvertisementMgmt.Controls.Add(this.comboBox8);
+            this.tabAdvertisementMgmt.Controls.Add(this.comboBox8Edit);
             this.tabAdvertisementMgmt.Controls.Add(this.label15);
             this.tabAdvertisementMgmt.Controls.Add(this.label14);
             this.tabAdvertisementMgmt.Location = new System.Drawing.Point(4, 22);
@@ -551,6 +495,7 @@
             this.button9EditAds.TabIndex = 8;
             this.button9EditAds.Text = "Edit";
             this.button9EditAds.UseVisualStyleBackColor = true;
+            this.button9EditAds.Click += new System.EventHandler(this.Button9EditAds_Click);
             // 
             // button10CreateAds
             // 
@@ -589,13 +534,13 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Advertisements:";
             // 
-            // comboBox8
+            // comboBox8Edit
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(243, 106);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8.TabIndex = 6;
+            this.comboBox8Edit.FormattingEnabled = true;
+            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
+            this.comboBox8Edit.Name = "comboBox8Edit";
+            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8Edit.TabIndex = 6;
             // 
             // label15
             // 
@@ -615,31 +560,31 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Create new advertisement: ";
             // 
-            // tabPage1
+            // tabPage1StockMngt
             // 
-            this.tabPage1.Controls.Add(this.numericUpDown6Cola);
-            this.tabPage1.Controls.Add(this.numericUpDown5Water);
-            this.tabPage1.Controls.Add(this.numericUpDown4Soda);
-            this.tabPage1.Controls.Add(this.numericUpDown3Pullet);
-            this.tabPage1.Controls.Add(this.numericUpDown2Steak);
-            this.tabPage1.Controls.Add(this.numericUpDown1Burger);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.btnUpdateStock);
-            this.tabPage1.Controls.Add(this.label27);
-            this.tabPage1.Controls.Add(this.label26);
-            this.tabPage1.Controls.Add(this.label25);
-            this.tabPage1.Controls.Add(this.label24);
-            this.tabPage1.Controls.Add(this.label23);
-            this.tabPage1.Controls.Add(this.label22);
-            this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(791, 378);
-            this.tabPage1.TabIndex = 5;
-            this.tabPage1.Text = "Stock Management";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown6Cola);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown5Water);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown4Soda);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown3Pullet);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown2Steak);
+            this.tabPage1StockMngt.Controls.Add(this.numericUpDown1Burger);
+            this.tabPage1StockMngt.Controls.Add(this.dataGridView1);
+            this.tabPage1StockMngt.Controls.Add(this.btnUpdateStock);
+            this.tabPage1StockMngt.Controls.Add(this.label27);
+            this.tabPage1StockMngt.Controls.Add(this.label26);
+            this.tabPage1StockMngt.Controls.Add(this.label25);
+            this.tabPage1StockMngt.Controls.Add(this.label24);
+            this.tabPage1StockMngt.Controls.Add(this.label23);
+            this.tabPage1StockMngt.Controls.Add(this.label22);
+            this.tabPage1StockMngt.Controls.Add(this.label28);
+            this.tabPage1StockMngt.Controls.Add(this.label21);
+            this.tabPage1StockMngt.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1StockMngt.Name = "tabPage1StockMngt";
+            this.tabPage1StockMngt.Size = new System.Drawing.Size(791, 378);
+            this.tabPage1StockMngt.TabIndex = 5;
+            this.tabPage1StockMngt.Text = "Stock Management";
+            this.tabPage1StockMngt.UseVisualStyleBackColor = true;
+            this.tabPage1StockMngt.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // button14
             // 
@@ -797,6 +742,74 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.Button14_Click);
             // 
+            // tabPage1Dishes
+            // 
+            this.tabPage1Dishes.Controls.Add(this.button8);
+            this.tabPage1Dishes.Controls.Add(this.comboBox6);
+            this.tabPage1Dishes.Controls.Add(this.label9);
+            this.tabPage1Dishes.Controls.Add(this.button6);
+            this.tabPage1Dishes.Controls.Add(this.label11);
+            this.tabPage1Dishes.Controls.Add(this.label13);
+            this.tabPage1Dishes.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1Dishes.Name = "tabPage1Dishes";
+            this.tabPage1Dishes.Size = new System.Drawing.Size(791, 378);
+            this.tabPage1Dishes.TabIndex = 6;
+            this.tabPage1Dishes.Text = "Dishes";
+            this.tabPage1Dishes.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(270, 177);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Edit";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(133, 179);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(121, 21);
+            this.comboBox6.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(66, 182);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Edit Dish:";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(270, 100);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Create";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(66, 105);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(88, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Create new Dish:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(34, 38);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(31, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Dish:";
+            // 
             // main_manager_wnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -819,8 +832,8 @@
             this.tabRestaurantTasks.PerformLayout();
             this.tabAdvertisementMgmt.ResumeLayout(false);
             this.tabAdvertisementMgmt.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabPage1StockMngt.ResumeLayout(false);
+            this.tabPage1StockMngt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5Water)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4Soda)).EndInit();
@@ -828,6 +841,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage1Dishes.ResumeLayout(false);
+            this.tabPage1Dishes.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -861,12 +876,6 @@
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button13SmtpUser;
@@ -881,11 +890,11 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox8Edit;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage1StockMngt;
         private System.Windows.Forms.NumericUpDown numericUpDown6Cola;
         private System.Windows.Forms.NumericUpDown numericUpDown5Water;
         private System.Windows.Forms.NumericUpDown numericUpDown4Soda;
@@ -903,6 +912,13 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TabPage tabPage1Dishes;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
     }
 }
 

@@ -68,6 +68,12 @@
     <Compile Include="ma_views\EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ma_views\Edit_ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ma_views\Edit_ad.Designer.cs">
+      <DependentUpon>Edit_ad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ma_views\main_manager_wnd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ma_views\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ma_views\Edit_ad.resx">
+      <DependentUpon>Edit_ad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ma_views\main_manager_wnd.resx">
       <DependentUpon>main_manager_wnd.cs</DependentUpon>

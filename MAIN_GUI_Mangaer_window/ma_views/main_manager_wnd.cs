@@ -172,5 +172,10 @@ namespace MAIN_GUI_Mangaer_window
             myAdCreation.ShowDialog();
         }
 
+        private void Button9EditAds_Click(object sender, EventArgs e)
+        {
+            ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
+            formEditMyAd.ShowDialog();
+        }
     }
 }
