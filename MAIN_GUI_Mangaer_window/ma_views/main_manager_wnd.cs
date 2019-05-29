@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Controls;
 using Main.yonor;
 
 namespace MAIN_GUI_Mangaer_window
@@ -24,7 +25,7 @@ namespace MAIN_GUI_Mangaer_window
         DataTable dt = new DataTable();
         StockManagement mst = new StockManagement();
         static List<Advertisement> myAds = new List<Advertisement>();
-
+        public static string AdSelectedToEdit;
 
 
         public static void addToAdsArray(Advertisement myAdToAdd)
@@ -198,7 +199,6 @@ namespace MAIN_GUI_Mangaer_window
             comboBoxLoad();
 
         }
-
         private void Button9EditAds_Click(object sender, EventArgs e)
         {
             ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
@@ -210,12 +210,16 @@ namespace MAIN_GUI_Mangaer_window
         {
             foreach (Advertisement ad in myAds)
             {
-                comboBox8Edit.Items.Add(ad.ToString());
+                if(!(comboBox8Edit.Items.Cast<ComboBoxItem>().Any(cbi => cbi.Content.Equals(ad.ToString()))));
+                {
+                    comboBox8Edit.Items.Add(ad);
+
+                }
             }
         }
         private void ComboBox8Edit_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            AdSelectedToEdit = comboBox8Edit.SelectedItem.ToString();
         }
     }
 }

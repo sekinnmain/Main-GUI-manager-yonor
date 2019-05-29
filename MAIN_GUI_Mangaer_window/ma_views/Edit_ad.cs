@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Main.yonor;
 
 namespace MAIN_GUI_Mangaer_window.ma_views
 {
     public partial class Edit_ad : Form
     {
+        Advertisement myAdToEdit;
         public Edit_ad()
         {
+            
             InitializeComponent();
         }
         
@@ -34,6 +37,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
         private void TextBox1EditAdName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void LoadAdToEdit()
+        {
+            textBox1EditAdName.Text = main_manager_wnd.AdSelectedToEdit;
         }
     }
 }

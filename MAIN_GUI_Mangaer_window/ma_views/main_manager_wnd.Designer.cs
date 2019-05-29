@@ -38,6 +38,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabPage1Dishes = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControlUsers = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -69,10 +76,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
-            this.button14 = new System.Windows.Forms.Button();
             this.numericUpDown6Cola = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5Water = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4Soda = new System.Windows.Forms.NumericUpDown();
@@ -89,17 +96,12 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.tabPage1Dishes = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
+            this.debugg = new System.Windows.Forms.Label();
             this.tabCrontrolUsers.SuspendLayout();
             this.tabMenuMgmt.SuspendLayout();
+            this.tabPage1Dishes.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
             this.tabReportsMgmt.SuspendLayout();
             this.tabRestaurantTasks.SuspendLayout();
@@ -112,7 +114,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage1Dishes.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCrontrolUsers
@@ -218,6 +219,74 @@
             this.label7.Size = new System.Drawing.Size(94, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "Create new Menu:";
+            // 
+            // tabPage1Dishes
+            // 
+            this.tabPage1Dishes.Controls.Add(this.button8);
+            this.tabPage1Dishes.Controls.Add(this.comboBox6);
+            this.tabPage1Dishes.Controls.Add(this.label9);
+            this.tabPage1Dishes.Controls.Add(this.button6);
+            this.tabPage1Dishes.Controls.Add(this.label11);
+            this.tabPage1Dishes.Controls.Add(this.label13);
+            this.tabPage1Dishes.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1Dishes.Name = "tabPage1Dishes";
+            this.tabPage1Dishes.Size = new System.Drawing.Size(791, 378);
+            this.tabPage1Dishes.TabIndex = 6;
+            this.tabPage1Dishes.Text = "Dishes";
+            this.tabPage1Dishes.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(270, 177);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Edit";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(133, 179);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(121, 21);
+            this.comboBox6.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(66, 182);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Edit Dish:";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(270, 100);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Create";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(66, 105);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(88, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Create new Dish:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(34, 38);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(31, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Dish:";
             // 
             // tabControlUsers
             // 
@@ -398,6 +467,7 @@
             // 
             // tabAdvertisementMgmt
             // 
+            this.tabAdvertisementMgmt.Controls.Add(this.debugg);
             this.tabAdvertisementMgmt.Controls.Add(this.textBox3);
             this.tabAdvertisementMgmt.Controls.Add(this.button13SmtpUser);
             this.tabAdvertisementMgmt.Controls.Add(this.label20);
@@ -534,6 +604,15 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Advertisements:";
             // 
+            // comboBox8Edit
+            // 
+            this.comboBox8Edit.FormattingEnabled = true;
+            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
+            this.comboBox8Edit.Name = "comboBox8Edit";
+            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8Edit.TabIndex = 6;
+            this.comboBox8Edit.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -577,16 +656,6 @@
             this.tabPage1StockMngt.Text = "Stock Management";
             this.tabPage1StockMngt.UseVisualStyleBackColor = true;
             this.tabPage1StockMngt.Click += new System.EventHandler(this.TabPage1_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(693, 410);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(95, 29);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "Exit";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.Button14_Click);
             // 
             // numericUpDown6Cola
             // 
@@ -724,6 +793,16 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Stock Management";
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(693, 410);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(95, 29);
+            this.button14.TabIndex = 1;
+            this.button14.Text = "Exit";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.Button14_Click);
+            // 
             // button15
             // 
             this.button15.Location = new System.Drawing.Point(12, 410);
@@ -734,82 +813,14 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.Button14_Click);
             // 
-            // tabPage1Dishes
+            // debugg
             // 
-            this.tabPage1Dishes.Controls.Add(this.button8);
-            this.tabPage1Dishes.Controls.Add(this.comboBox6);
-            this.tabPage1Dishes.Controls.Add(this.label9);
-            this.tabPage1Dishes.Controls.Add(this.button6);
-            this.tabPage1Dishes.Controls.Add(this.label11);
-            this.tabPage1Dishes.Controls.Add(this.label13);
-            this.tabPage1Dishes.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1Dishes.Name = "tabPage1Dishes";
-            this.tabPage1Dishes.Size = new System.Drawing.Size(791, 378);
-            this.tabPage1Dishes.TabIndex = 6;
-            this.tabPage1Dishes.Text = "Dishes";
-            this.tabPage1Dishes.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(270, 177);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "Edit";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(133, 179);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(66, 182);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Edit Dish:";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(270, 100);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Create";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(66, 105);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Create new Dish:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(34, 38);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(31, 13);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Dish:";
-            // 
-            // comboBox8Edit
-            // 
-            this.comboBox8Edit.FormattingEnabled = true;
-            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
-            this.comboBox8Edit.Name = "comboBox8Edit";
-            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8Edit.TabIndex = 6;
-            this.comboBox8Edit.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
+            this.debugg.AutoSize = true;
+            this.debugg.Location = new System.Drawing.Point(288, 174);
+            this.debugg.Name = "debugg";
+            this.debugg.Size = new System.Drawing.Size(41, 13);
+            this.debugg.TabIndex = 17;
+            this.debugg.Text = "label29";
             // 
             // main_manager_wnd
             // 
@@ -825,6 +836,8 @@
             this.tabCrontrolUsers.ResumeLayout(false);
             this.tabMenuMgmt.ResumeLayout(false);
             this.tabMenuMgmt.PerformLayout();
+            this.tabPage1Dishes.ResumeLayout(false);
+            this.tabPage1Dishes.PerformLayout();
             this.tabControlUsers.ResumeLayout(false);
             this.tabControlUsers.PerformLayout();
             this.tabReportsMgmt.ResumeLayout(false);
@@ -842,8 +855,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage1Dishes.ResumeLayout(false);
-            this.tabPage1Dishes.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -920,6 +931,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBox8Edit;
+        private System.Windows.Forms.Label debugg;
     }
 }
 
