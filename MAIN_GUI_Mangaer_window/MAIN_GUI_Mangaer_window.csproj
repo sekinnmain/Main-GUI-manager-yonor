@@ -48,6 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ma_controller\Advertisement.cs" />
+    <Compile Include="ma_controller\Dish.cs" />
+    <Compile Include="ma_views\CreateDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ma_views\CreateDish.Designer.cs">
+      <DependentUpon>CreateDish.cs</DependentUpon>
+    </Compile>
     <Compile Include="ma_controller\Mailer.cs" />
     <Compile Include="ma_controller\MailingList.cs" />
     <Compile Include="ma_controller\StockManagement.cs" />
@@ -87,8 +94,17 @@
     <Compile Include="ma_views\newDish.Designer.cs">
       <DependentUpon>newDish.cs</DependentUpon>
     </Compile>
+    <Compile Include="ma_views\stam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ma_views\stam.Designer.cs">
+      <DependentUpon>stam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ma_views\CreateDish.resx">
+      <DependentUpon>CreateDish.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ma_views\CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ma_views\newDish.resx">
       <DependentUpon>newDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ma_views\stam.resx">
+      <DependentUpon>stam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

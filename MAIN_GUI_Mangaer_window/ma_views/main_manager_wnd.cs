@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Controls;
 using Main.yonor;
-
+using Main;
 namespace MAIN_GUI_Mangaer_window
 {
     public partial class main_manager_wnd : Form
@@ -221,5 +221,14 @@ namespace MAIN_GUI_Mangaer_window
         {
             AdSelectedToEdit = comboBox8Edit.SelectedItem.ToString();
         }
+
+        private void Button6DishCreate_Click(object sender, EventArgs e)
+        {
+            ma_views.CreateDish myDishToCreate = new ma_views.CreateDish();
+            myDishToCreate.ShowDialog();
+        }
+
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>DISHES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
     }
 }
