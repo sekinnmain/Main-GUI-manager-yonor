@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="tbl" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="tbl">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Dish_x0020_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Dish_x0020_Price" type="xs:float" minOccurs="0" />
+                <xs:element name="size" type="xs:float" minOccurs="0" />
+                <xs:element name="Image_x0020_Path" type="xs:string" minOccurs="0" />
+                <xs:element name="Dish_x0020_description" type="xs:string" minOccurs="0" />
+                <xs:element name="Dish_x0020_type" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <tbl>
+    <Dish_x0020_Name>ddddd</Dish_x0020_Name>
+    <Dish_x0020_Price>0</Dish_x0020_Price>
+    <size>0</size>
+    <Dish_x0020_description>ddd</Dish_x0020_description>
+    <Dish_x0020_type>Dessert</Dish_x0020_type>
+  </tbl>
+</NewDataSet>

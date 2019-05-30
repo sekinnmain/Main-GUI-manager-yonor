@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Main
 {
-    class Dish
+    public class Dish
     {
         public string DishName;
         public string dishType;

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Main;
+using WriteXMLfile;
 
 namespace MAIN_GUI_Mangaer_window.ma_views
 {
@@ -28,8 +29,11 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             var priceDish = Convert.ToInt32(numericUpDown1CreDishPrice.Value);
             myDish.DishPrice = priceDish;
             myDish.DishSize = Convert.ToInt32(numericUpDown2DishCreateSize.Value);
-            //XmlWrite(myDish);
+            myDish.dishType = comboBox1DishType.SelectedItem.ToString();
+            WriteXmlFile xmlDish = new WriteXmlFile(myDish);
+            xmlDish.XmlDishWrite();
             MessageBox.Show($"Your {myDish.DishName} dish has been created.","Dish created!" );
+            this.Close();
 
 
         }

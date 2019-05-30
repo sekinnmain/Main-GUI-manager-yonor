@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ma_controller\Advertisement.cs" />
+    <Compile Include="ma_controller\User.cs" />
+    <Compile Include="ma_controller\WriteXmlFile.cs" />
     <Compile Include="ma_controller\Dish.cs" />
     <Compile Include="ma_views\CreateDish.cs">
       <SubType>Form</SubType>
@@ -150,6 +152,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="menu_views\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
