@@ -43,4 +43,25 @@
     <Description>ojasdoasd</Description>
     <Image />
   </Dish>
+  <Dish>
+    <Name>DishPara</Name>
+    <Price>3</Price>
+    <Size>3</Size>
+    <Description>TOTOCAL</Description>
+    <Image />
+  </Dish>
+  <Dish>
+    <Name>flores</Name>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>basta</Name>
+    <Price>1</Price>
+    <Size>1</Size>
+    <Description>kko</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
 </Dishes>

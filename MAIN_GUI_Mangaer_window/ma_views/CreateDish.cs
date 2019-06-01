@@ -19,7 +19,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
     {
         List<Dish> myDishesToCreate = new List<Dish>();
         Dish myDish = new Dish();
-
+        string imageDishCreatePath;
         
 
         public CreateDish()
@@ -35,8 +35,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             var priceDish = Convert.ToInt32(numericUpDown1CreDishPrice.Value);
             myDish.DishPrice = priceDish;
             myDish.DishSize = Convert.ToInt32(numericUpDown2DishCreateSize.Value);
-            myDish.DishType = comboBox1DishType.SelectedItem.ToString();
-
+            myDish.DishType = this.comboBox1DishType.SelectedItem.ToString();
+            myDish.DishImage = imageDishCreatePath;
             //WriteXmlFile xmlDish = new WriteXmlFile(myDish);
             //xmlDish.XmlDishWrite();
             //WriteXmlFile.SerializeAppend(myDish, WriteXmlFile.xmlDishPath);
@@ -63,8 +63,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             {
 
                 // image file path  
-                //myDish.image = open.FileName;
-                label7PathToImgDish.Text = "* Image Loaded *";
+                imageDishCreatePath = open.FileName;
+                label7PathToImgDish.Text = $"* Image Loaded at: *{open.FileName}";
 
             }
         }

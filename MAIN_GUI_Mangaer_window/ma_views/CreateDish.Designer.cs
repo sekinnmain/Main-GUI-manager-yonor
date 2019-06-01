@@ -44,7 +44,6 @@
             this.label7PathToImgDish = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1DishType = new System.Windows.Forms.ComboBox();
-            this.button1AddToDishListCreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1CreDishPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2DishCreateSize)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +129,7 @@
             // 
             // button2Create
             // 
-            this.button2Create.Location = new System.Drawing.Point(325, 415);
+            this.button2Create.Location = new System.Drawing.Point(226, 415);
             this.button2Create.Name = "button2Create";
             this.button2Create.Size = new System.Drawing.Size(75, 23);
             this.button2Create.TabIndex = 3;
@@ -188,22 +187,11 @@
             this.comboBox1DishType.Size = new System.Drawing.Size(121, 21);
             this.comboBox1DishType.TabIndex = 6;
             // 
-            // button1AddToDishListCreate
-            // 
-            this.button1AddToDishListCreate.Location = new System.Drawing.Point(187, 415);
-            this.button1AddToDishListCreate.Name = "button1AddToDishListCreate";
-            this.button1AddToDishListCreate.Size = new System.Drawing.Size(75, 23);
-            this.button1AddToDishListCreate.TabIndex = 7;
-            this.button1AddToDishListCreate.Text = "Add";
-            this.button1AddToDishListCreate.UseVisualStyleBackColor = true;
-            this.button1AddToDishListCreate.Click += new System.EventHandler(this.Button1AddToDishListCreate_Click);
-            // 
             // CreateDish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1AddToDishListCreate);
             this.Controls.Add(this.comboBox1DishType);
             this.Controls.Add(this.label7PathToImgDish);
             this.Controls.Add(this.numericUpDown2DishCreateSize);
@@ -248,6 +236,5 @@
         private System.Windows.Forms.Label label7PathToImgDish;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1DishType;
-        private System.Windows.Forms.Button button1AddToDishListCreate;
     }
 }

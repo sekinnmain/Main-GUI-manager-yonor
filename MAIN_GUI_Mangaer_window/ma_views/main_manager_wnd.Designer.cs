@@ -149,6 +149,7 @@
             this.tabMenuMgmt.TabIndex = 4;
             this.tabMenuMgmt.Text = "Menu";
             this.tabMenuMgmt.UseVisualStyleBackColor = true;
+            this.tabMenuMgmt.Click += new System.EventHandler(this.TabMenuMgmt_Click);
             // 
             // button4
             // 
@@ -252,6 +253,7 @@
             this.comboBox6EditListDish.Name = "comboBox6EditListDish";
             this.comboBox6EditListDish.Size = new System.Drawing.Size(121, 21);
             this.comboBox6EditListDish.TabIndex = 21;
+            this.comboBox6EditListDish.SelectedIndexChanged += new System.EventHandler(this.ComboBox6EditListDish_SelectedIndexChanged);
             // 
             // label9
             // 

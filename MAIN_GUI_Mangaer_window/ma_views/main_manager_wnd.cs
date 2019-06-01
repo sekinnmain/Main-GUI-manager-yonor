@@ -229,14 +229,16 @@ namespace MAIN_GUI_Mangaer_window
             AdSelectedToEdit = comboBox8Edit.SelectedItem.ToString();
         }
 
+
+
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>DISHES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
         private void Button6DishCreate_Click(object sender, EventArgs e)
         {
             ma_views.CreateDish myDishToCreate = new ma_views.CreateDish();
             myDishToCreate.ShowDialog();
             loadDishesComboEdit();
         }
-
-        //>>>>>>>>>>>>>>>>>>>>>>>>>>DISHES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         public void loadDishesComboEdit()
         {
@@ -247,6 +249,18 @@ namespace MAIN_GUI_Mangaer_window
         }
 
         private void Button8DishEdit_Click(object sender, EventArgs e)
+        {
+            ma_views.Edit_Dish myDishEdit = new ma_views.Edit_Dish();
+            myDishEdit.ShowDialog();
+
+        }
+
+        private void TabMenuMgmt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox6EditListDish_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

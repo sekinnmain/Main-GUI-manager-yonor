@@ -129,6 +129,9 @@
     <EmbeddedResource Include="ma_views\Edit_ad.resx">
       <DependentUpon>Edit_ad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ma_views\Edit_Dish.resx">
+      <DependentUpon>Edit_Dish.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ma_views\main_manager_wnd.resx">
       <DependentUpon>main_manager_wnd.cs</DependentUpon>
     </EmbeddedResource>
