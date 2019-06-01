@@ -42,5 +42,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
         {
             textBox1EditAdName.Text = main_manager_wnd.AdSelectedToEdit;
         }
+
+        private void Edit_ad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

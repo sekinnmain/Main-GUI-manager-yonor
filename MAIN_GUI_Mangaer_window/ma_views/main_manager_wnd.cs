@@ -10,10 +10,13 @@ using System.Windows.Forms;
 using System.Windows.Controls;
 using Main.yonor;
 using Main;
+using System.IO;
+
 namespace MAIN_GUI_Mangaer_window
 {
     public partial class main_manager_wnd : Form
     {
+       
         public main_manager_wnd()
         {
             loadDefaultsData();
@@ -119,6 +122,7 @@ namespace MAIN_GUI_Mangaer_window
         {
 
         }
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>STOCK>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         private void BtnUpdateStock_Click(object sender, EventArgs e)
         {
@@ -178,6 +182,8 @@ namespace MAIN_GUI_Mangaer_window
         private void Main_manager_wnd_Load(object sender, EventArgs e)
         {
             updateData();
+            loadDishesComboEdit();
+
         }
 
         private void Button14_Click(object sender, EventArgs e)
@@ -196,7 +202,7 @@ namespace MAIN_GUI_Mangaer_window
         {
             ma_views.create_ad myAdCreation = new ma_views.create_ad();
             myAdCreation.ShowDialog();
-            comboBoxLoad();
+            AdscomboBoxLoad();
 
         }
         private void Button9EditAds_Click(object sender, EventArgs e)
@@ -204,9 +210,10 @@ namespace MAIN_GUI_Mangaer_window
             ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
             formEditMyAd.ShowDialog();
         }
-      
 
-        public void comboBoxLoad()
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>ADS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        public void AdscomboBoxLoad()
         {
             foreach (Advertisement ad in myAds)
             {
@@ -226,9 +233,22 @@ namespace MAIN_GUI_Mangaer_window
         {
             ma_views.CreateDish myDishToCreate = new ma_views.CreateDish();
             myDishToCreate.ShowDialog();
+            loadDishesComboEdit();
         }
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>>DISHES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+        public void loadDishesComboEdit()
+        {
+            DataSet DishLoad = new DataSet();
+            DishLoad.ReadXml(ma_controller.XmlParser.xmlDishPath);
+            comboBox6EditListDish.DisplayMember = "Name";
+            comboBox6EditListDish.DataSource = DishLoad.Tables[0];
+        }
+
+        private void Button8DishEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

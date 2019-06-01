@@ -219,6 +219,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Edit_ad";
             this.Text = "MAIN - Edit ad";
+            this.Load += new System.EventHandler(this.Edit_ad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

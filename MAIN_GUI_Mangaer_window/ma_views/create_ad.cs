@@ -69,5 +69,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
             }
         }
+
+        private void Create_ad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

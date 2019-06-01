@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,10 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppData.cs">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AppData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ma_controller\Advertisement.cs" />
     <Compile Include="ma_controller\User.cs" />
-    <Compile Include="ma_controller\WriteXmlFile.cs" />
+    <Compile Include="ma_controller\Serialization.cs" />
     <Compile Include="ma_controller\Dish.cs" />
+    <Compile Include="ma_controller\XmlParser.cs" />
     <Compile Include="ma_views\CreateDish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,17 +94,17 @@
     <Compile Include="ma_views\Edit_ad.Designer.cs">
       <DependentUpon>Edit_ad.cs</DependentUpon>
     </Compile>
+    <Compile Include="ma_views\Edit_Dish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ma_views\Edit_Dish.Designer.cs">
+      <DependentUpon>Edit_Dish.cs</DependentUpon>
+    </Compile>
     <Compile Include="ma_views\main_manager_wnd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ma_views\main_manager_wnd.Designer.cs">
       <DependentUpon>main_manager_wnd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ma_views\newDish.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ma_views\newDish.Designer.cs">
-      <DependentUpon>newDish.cs</DependentUpon>
     </Compile>
     <Compile Include="ma_views\stam.cs">
       <SubType>Form</SubType>
@@ -122,9 +132,6 @@
     <EmbeddedResource Include="ma_views\main_manager_wnd.resx">
       <DependentUpon>main_manager_wnd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ma_views\newDish.resx">
-      <DependentUpon>newDish.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ma_views\stam.resx">
       <DependentUpon>stam.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +144,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AppData.xsc">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
+    <None Include="AppData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AppData.xss">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\MAIN_GUI_Mangaer_window.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\MAIN_GUI_Mangaer_window.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
@@ -153,8 +171,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="menu_views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Dishes.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

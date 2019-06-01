@@ -243,6 +243,7 @@
             this.button8DishEdit.TabIndex = 22;
             this.button8DishEdit.Text = "Edit";
             this.button8DishEdit.UseVisualStyleBackColor = true;
+            this.button8DishEdit.Click += new System.EventHandler(this.Button8DishEdit_Click);
             // 
             // comboBox6EditListDish
             // 

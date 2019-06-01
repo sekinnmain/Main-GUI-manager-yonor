@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MAIN_GUI_Mangaer_window.ma_views
 {
-    public partial class newDish : Form
+    public partial class Edit_Dish : Form
     {
-        public newDish()
+        public Edit_Dish()
         {
             InitializeComponent();
-        }
-
-        private void Button3CancelDish_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

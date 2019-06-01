@@ -219,6 +219,7 @@
             this.Controls.Add(this.label1);
             this.Name = "create_ad";
             this.Text = "MAIN - Create ad";
+            this.Load += new System.EventHandler(this.Create_ad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
