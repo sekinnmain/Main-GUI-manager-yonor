@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.tabCrontrolUsers = new System.Windows.Forms.TabControl();
-            this.tabMenuMgmt = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.tabPage1Dishes = new System.Windows.Forms.TabPage();
             this.button8DishEdit = new System.Windows.Forms.Button();
             this.comboBox6EditListDish = new System.Windows.Forms.ComboBox();
@@ -99,8 +90,9 @@
             this.label21 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6LoggedInAs = new System.Windows.Forms.Label();
             this.tabCrontrolUsers.SuspendLayout();
-            this.tabMenuMgmt.SuspendLayout();
             this.tabPage1Dishes.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
             this.tabReportsMgmt.SuspendLayout();
@@ -119,7 +111,6 @@
             // tabCrontrolUsers
             // 
             this.tabCrontrolUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabCrontrolUsers.Controls.Add(this.tabMenuMgmt);
             this.tabCrontrolUsers.Controls.Add(this.tabPage1Dishes);
             this.tabCrontrolUsers.Controls.Add(this.tabControlUsers);
             this.tabCrontrolUsers.Controls.Add(this.tabReportsMgmt);
@@ -132,94 +123,6 @@
             this.tabCrontrolUsers.Size = new System.Drawing.Size(799, 404);
             this.tabCrontrolUsers.TabIndex = 0;
             this.tabCrontrolUsers.SelectedIndexChanged += new System.EventHandler(this.TabCrontrolUsers_SelectedIndexChanged);
-            // 
-            // tabMenuMgmt
-            // 
-            this.tabMenuMgmt.Controls.Add(this.button4);
-            this.tabMenuMgmt.Controls.Add(this.button5);
-            this.tabMenuMgmt.Controls.Add(this.comboBox4);
-            this.tabMenuMgmt.Controls.Add(this.comboBox5);
-            this.tabMenuMgmt.Controls.Add(this.label5);
-            this.tabMenuMgmt.Controls.Add(this.label6);
-            this.tabMenuMgmt.Controls.Add(this.label12);
-            this.tabMenuMgmt.Controls.Add(this.label7);
-            this.tabMenuMgmt.Location = new System.Drawing.Point(4, 22);
-            this.tabMenuMgmt.Name = "tabMenuMgmt";
-            this.tabMenuMgmt.Size = new System.Drawing.Size(791, 378);
-            this.tabMenuMgmt.TabIndex = 4;
-            this.tabMenuMgmt.Text = "Menu";
-            this.tabMenuMgmt.UseVisualStyleBackColor = true;
-            this.tabMenuMgmt.Click += new System.EventHandler(this.TabMenuMgmt_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(300, 179);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Edit";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(300, 97);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Create";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(163, 181);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 6;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(163, 99);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(128, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Kind";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(96, 184);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Edit menu:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(22, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Menu: ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(59, 65);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Create new Menu:";
             // 
             // tabPage1Dishes
             // 
@@ -827,11 +730,31 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.Button14_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(305, 418);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Logged in as: ";
+            // 
+            // label6LoggedInAs
+            // 
+            this.label6LoggedInAs.AutoSize = true;
+            this.label6LoggedInAs.Location = new System.Drawing.Point(385, 418);
+            this.label6LoggedInAs.Name = "label6LoggedInAs";
+            this.label6LoggedInAs.Size = new System.Drawing.Size(31, 13);
+            this.label6LoggedInAs.TabIndex = 2;
+            this.label6LoggedInAs.Text = "none";
+            // 
             // main_manager_wnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6LoggedInAs);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.tabCrontrolUsers);
@@ -839,8 +762,6 @@
             this.Text = "MAIN - Manager";
             this.Load += new System.EventHandler(this.Main_manager_wnd_Load);
             this.tabCrontrolUsers.ResumeLayout(false);
-            this.tabMenuMgmt.ResumeLayout(false);
-            this.tabMenuMgmt.PerformLayout();
             this.tabPage1Dishes.ResumeLayout(false);
             this.tabPage1Dishes.PerformLayout();
             this.tabControlUsers.ResumeLayout(false);
@@ -861,6 +782,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -878,14 +800,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabMenuMgmt;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -893,7 +807,6 @@
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button13SmtpUser;
         private System.Windows.Forms.Label label20;
@@ -937,6 +850,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBox8Edit;
         private System.Windows.Forms.Label debugg;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6LoggedInAs;
     }
 }
 

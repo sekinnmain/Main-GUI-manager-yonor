@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dishes>
   <Dish>
-    <Name>Dish2</Name>
-    <Type>Appetizer</Type>
-    <Price>8900</Price>
-    <Size>2</Size>
-    <Description>Some other stuff</Description>
-    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+    <Name>pizza</Name>
+    <Type>Main</Type>
+    <Price>8899</Price>
+    <Size>3</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Dish3</Name>
-    <Type>Main2</Type>
-    <Price>1</Price>
-    <Size>2</Size>
-    <Description>uhmiumhiumhiu</Description>
-    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+    <Name>Cocacola</Name>
+    <Type>Drink</Type>
+    <Price>15</Price>
+    <Size>1</Size>
+    <Description>CoCoCoCocala</Description>
   </Dish>
   <Dish>
     <Name>Dish4</Name>

@@ -198,6 +198,9 @@ namespace MAIN_GUI_Mangaer_window
             }
         }
 
+
+
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>ADS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         private void Button10CreateAds_Click(object sender, EventArgs e)
         {
             ma_views.create_ad myAdCreation = new ma_views.create_ad();
@@ -210,8 +213,6 @@ namespace MAIN_GUI_Mangaer_window
             ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
             formEditMyAd.ShowDialog();
         }
-
-        //>>>>>>>>>>>>>>>>>>>>>>>>>>ADS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         public void AdscomboBoxLoad()
         {
@@ -246,12 +247,14 @@ namespace MAIN_GUI_Mangaer_window
             DishLoad.ReadXml(ma_controller.XmlParser.xmlDishPath);
             comboBox6EditListDish.DisplayMember = "Name";
             comboBox6EditListDish.DataSource = DishLoad.Tables[0];
+            
         }
 
         private void Button8DishEdit_Click(object sender, EventArgs e)
         {
             ma_views.Edit_Dish myDishEdit = new ma_views.Edit_Dish(comboBox6EditListDish.Text);
             myDishEdit.ShowDialog();
+            loadDishesComboEdit();
 
         }
 

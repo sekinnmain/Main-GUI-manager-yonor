@@ -40,6 +40,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                 if (xe.Element("Name").Value.Equals(myEditDish))
                 {
                     //AddButtonToCategoryAppetizer(xe.Element("Name").Value);
+                    //comboBox1DishTypeEdit.SelectedIndex = 0;
+//                    comboBox1DishTypeEdit.SelectedItem = xe.Element("Type").Value;
                     textBox1EditDishName.Text = xe.Element("Name").Value;
                     numericUpDown2DishEditSize.Text = xe.Element("Size").Value;
                     numericUpDown1EditDishPrice.Text = xe.Element("Price").Value;
@@ -80,6 +82,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             myDisToEdit.DishPrice = priceDish;
             var sizeDish = Convert.ToInt32(numericUpDown2DishEditSize.Value);
             myDisToEdit.DishSize = sizeDish;
+            myDisToEdit.DishDescription = textBox4DishDescriptonEdit.Text;
 
 
             var doc = XElement.Load(ma_controller.XmlParser.xmlDishPath);
@@ -117,6 +120,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
 
             MessageBox.Show($"Your {myDisToEdit.DishName} dish has been edited.", "Edit created!");
+
             this.Close();
 
 
