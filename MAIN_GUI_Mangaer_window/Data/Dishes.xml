@@ -1,67 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dishes>
   <Dish>
-    <Name>qdasdasd</Name>
-    <Type>Main</Type>
+    <Name>Morning Steak</Name>
+    <Type>Appetizer</Type>
+    <Price>200</Price>
+    <Size>5</Size>
+    <Description>Delicus morning steak</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>asdasmdkl</Name>
-    <Type>Drink</Type>
-  </Dish>
-  <Dish>
-    <Name>some Staff</Name>
-    <Price>2</Price>
+    <Name>Dish2</Name>
+    <Type>Appetizer</Type>
+    <Price>8900</Price>
     <Size>2</Size>
-    <Description>aksdasd</Description>
-    <Image />
+    <Description>Some other stuff</Description>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>klasda</Name>
-    <Price>0</Price>
-    <Size>0</Size>
-    <Description>kjasndkjasnd</Description>
-    <Image />
-  </Dish>
-  <Dish>
-    <Name>NEW</Name>
+    <Name>Dish3</Name>
+    <Type>Main2</Type>
     <Price>1</Price>
-    <Size>1</Size>
-    <Description>s</Description>
-    <Image />
+    <Size>2</Size>
+    <Description>uhmiumhiumhiu</Description>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>OLD</Name>
-    <Price>1</Price>
-    <Size>1</Size>
-    <Description>asdasd</Description>
-    <Image />
-  </Dish>
-  <Dish>
-    <Name>Adas</Name>
-    <Price>1</Price>
-    <Size>3</Size>
-    <Description>ojasdoasd</Description>
-    <Image />
-  </Dish>
-  <Dish>
-    <Name>DishPara</Name>
-    <Price>3</Price>
-    <Size>3</Size>
-    <Description>TOTOCAL</Description>
-    <Image />
-  </Dish>
-  <Dish>
-    <Name>flores</Name>
+    <Name>Dish4</Name>
+    <Type>Main</Type>
     <Price>1</Price>
     <Size>2</Size>
     <Description>some</Description>
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>basta</Name>
+    <Name>flores</Name>
+    <Type>Dessert</Type>
     <Price>1</Price>
-    <Size>1</Size>
-    <Description>kko</Description>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish6</Name>
+    <Type>Dessert</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish8</Name>
+    <Type>Drink</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Some Others stuff</Name>
+    <Type>Appetizer</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish2</Name>
+    <Type>Drink</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish3</Name>
+    <Type>Main2</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish4</Name>
+    <Type>Dessert</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>flores</Name>
+    <Type>Dessert</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish6</Name>
+    <Type>Main</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Dish8</Name>
+    <Type>Main</Type>
+    <Price>1</Price>
+    <Size>2</Size>
+    <Description>some</Description>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
+  </Dish>
+  <Dish>
+    <Name>Ice cream</Name>
+    <Price>3</Price>
+    <Size>1</Size>
+    <Description>asdkjaslkjsalkdjaklsdask dalskdaslkjdalksdjaslkdj salkd</Description>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
   </Dish>
 </Dishes>

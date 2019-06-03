@@ -250,7 +250,7 @@ namespace MAIN_GUI_Mangaer_window
 
         private void Button8DishEdit_Click(object sender, EventArgs e)
         {
-            ma_views.Edit_Dish myDishEdit = new ma_views.Edit_Dish();
+            ma_views.Edit_Dish myDishEdit = new ma_views.Edit_Dish(comboBox6EditListDish.Text);
             myDishEdit.ShowDialog();
 
         }
@@ -261,6 +261,11 @@ namespace MAIN_GUI_Mangaer_window
         }
 
         private void ComboBox6EditListDish_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage1Dishes_Click(object sender, EventArgs e)
         {
 
         }

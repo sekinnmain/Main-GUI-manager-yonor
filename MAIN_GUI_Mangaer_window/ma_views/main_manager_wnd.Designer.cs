@@ -235,6 +235,7 @@
             this.tabPage1Dishes.TabIndex = 6;
             this.tabPage1Dishes.Text = "Dishes";
             this.tabPage1Dishes.UseVisualStyleBackColor = true;
+            this.tabPage1Dishes.Click += new System.EventHandler(this.TabPage1Dishes_Click);
             // 
             // button8DishEdit
             // 

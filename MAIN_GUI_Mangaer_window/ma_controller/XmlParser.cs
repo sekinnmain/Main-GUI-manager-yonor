@@ -31,7 +31,6 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
                        new XElement("Size", passDish.DishSize),
                        new XElement("Description", passDish.DishDescription),
                        new XElement("Image", passDish.DishImage)));
-                       
             doc.Save(xmlDishPath);
         }
 

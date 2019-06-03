@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.comboBox1DishTypeEdit = new System.Windows.Forms.ComboBox();
-            this.label7PathToImgDish = new System.Windows.Forms.Label();
+            this.label7PathToImgDishEdit = new System.Windows.Forms.Label();
             this.numericUpDown2DishEditSize = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1EditDishPrice = new System.Windows.Forms.NumericUpDown();
             this.button3CancelDishEdit = new System.Windows.Forms.Button();
@@ -56,14 +56,14 @@
             this.comboBox1DishTypeEdit.Size = new System.Drawing.Size(121, 21);
             this.comboBox1DishTypeEdit.TabIndex = 23;
             // 
-            // label7PathToImgDish
+            // label7PathToImgDishEdit
             // 
-            this.label7PathToImgDish.AutoSize = true;
-            this.label7PathToImgDish.Location = new System.Drawing.Point(327, 195);
-            this.label7PathToImgDish.Name = "label7PathToImgDish";
-            this.label7PathToImgDish.Size = new System.Drawing.Size(109, 13);
-            this.label7PathToImgDish.TabIndex = 22;
-            this.label7PathToImgDish.Text = " * Image not loaded * ";
+            this.label7PathToImgDishEdit.AutoSize = true;
+            this.label7PathToImgDishEdit.Location = new System.Drawing.Point(327, 195);
+            this.label7PathToImgDishEdit.Name = "label7PathToImgDishEdit";
+            this.label7PathToImgDishEdit.Size = new System.Drawing.Size(109, 13);
+            this.label7PathToImgDishEdit.TabIndex = 22;
+            this.label7PathToImgDishEdit.Text = " * Image not loaded * ";
             // 
             // numericUpDown2DishEditSize
             // 
@@ -75,6 +75,11 @@
             // numericUpDown1EditDishPrice
             // 
             this.numericUpDown1EditDishPrice.Location = new System.Drawing.Point(231, 110);
+            this.numericUpDown1EditDishPrice.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericUpDown1EditDishPrice.Name = "numericUpDown1EditDishPrice";
             this.numericUpDown1EditDishPrice.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1EditDishPrice.TabIndex = 20;
@@ -94,8 +99,9 @@
             this.button2EditDish.Name = "button2EditDish";
             this.button2EditDish.Size = new System.Drawing.Size(75, 23);
             this.button2EditDish.TabIndex = 17;
-            this.button2EditDish.Text = "Create";
+            this.button2EditDish.Text = "Edit";
             this.button2EditDish.UseVisualStyleBackColor = true;
+            this.button2EditDish.Click += new System.EventHandler(this.Button2EditDish_Click);
             // 
             // button1EditDishImage
             // 
@@ -105,6 +111,7 @@
             this.button1EditDishImage.TabIndex = 19;
             this.button1EditDishImage.Text = "Browse";
             this.button1EditDishImage.UseVisualStyleBackColor = true;
+            this.button1EditDishImage.Click += new System.EventHandler(this.Button1EditDishImage_Click);
             // 
             // textBox4DishDescriptonEdit
             // 
@@ -190,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBox1DishTypeEdit);
-            this.Controls.Add(this.label7PathToImgDish);
+            this.Controls.Add(this.label7PathToImgDishEdit);
             this.Controls.Add(this.numericUpDown2DishEditSize);
             this.Controls.Add(this.numericUpDown1EditDishPrice);
             this.Controls.Add(this.button3CancelDishEdit);
@@ -217,7 +224,7 @@
 
         #endregion
         private System.Windows.Forms.ComboBox comboBox1DishTypeEdit;
-        private System.Windows.Forms.Label label7PathToImgDish;
+        private System.Windows.Forms.Label label7PathToImgDishEdit;
         private System.Windows.Forms.NumericUpDown numericUpDown2DishEditSize;
         private System.Windows.Forms.NumericUpDown numericUpDown1EditDishPrice;
         private System.Windows.Forms.Button button3CancelDishEdit;
