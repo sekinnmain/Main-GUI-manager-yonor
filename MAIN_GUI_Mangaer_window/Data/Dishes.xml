@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dishes>
   <Dish>
-    <Name>Morning Steak</Name>
-    <Type>Appetizer</Type>
-    <Price>200</Price>
-    <Size>5</Size>
-    <Description>Delicus morning steak</Description>
-    <Image>C:\Users\userr\Pictures\test.jpg</Image>
-  </Dish>
-  <Dish>
     <Name>Dish2</Name>
     <Type>Appetizer</Type>
     <Price>8900</Price>
@@ -57,15 +49,15 @@
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Some Others stuff</Name>
+    <Name>Some Others stuf1f</Name>
     <Type>Appetizer</Type>
-    <Price>1</Price>
+    <Price>2</Price>
     <Size>2</Size>
     <Description>some</Description>
-    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Dish2</Name>
+    <Name>Dish21</Name>
     <Type>Drink</Type>
     <Price>1</Price>
     <Size>2</Size>
@@ -73,7 +65,7 @@
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Dish3</Name>
+    <Name>Dish32</Name>
     <Type>Main2</Type>
     <Price>1</Price>
     <Size>2</Size>
@@ -81,7 +73,7 @@
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Dish4</Name>
+    <Name>Dish43</Name>
     <Type>Dessert</Type>
     <Price>1</Price>
     <Size>2</Size>
@@ -89,7 +81,7 @@
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>flores</Name>
+    <Name>flore33s</Name>
     <Type>Dessert</Type>
     <Price>1</Price>
     <Size>2</Size>
@@ -97,7 +89,7 @@
     <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Dish>
   <Dish>
-    <Name>Dish6</Name>
+    <Name>Dish64</Name>
     <Type>Main</Type>
     <Price>1</Price>
     <Size>2</Size>

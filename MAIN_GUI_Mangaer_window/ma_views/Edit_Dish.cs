@@ -16,8 +16,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
     public partial class Edit_Dish : Form
     {
         Dish myDisToEdit = new Dish();
+        string myDishToEditName;
         public Edit_Dish(string dishToEdit)
         {
+            myDishToEditName = dishToEdit;
             InitializeComponent();
             BindDataEditDish(dishToEdit);
         }
@@ -42,7 +44,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                     numericUpDown2DishEditSize.Text = xe.Element("Size").Value;
                     numericUpDown1EditDishPrice.Text = xe.Element("Price").Value;
                     textBox4DishDescriptonEdit.Text = xe.Element("Description").Value;
-                    label7PathToImgDishEdit.Text = "Image loaded at: "+xe.Element("Image").Value;
+                    label7PathToImgDishEdit.Text = "Image loaded at: " + xe.Element("Image").Value;
                 }
             }
 
@@ -80,7 +82,22 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             myDisToEdit.DishSize = sizeDish;
 
 
-            //foreach (XElement xe in (XDocument.Load(ma_controller.XmlParser.xmlDishPath).XPathSelectElements("//Dish")))
+            var doc = XElement.Load(ma_controller.XmlParser.xmlDishPath);
+
+            //var dishEdition = doc.Element("Dishes").Elements("Dish").Where(c => c.Element("Name").Value == myDisToEdit.DishName).Single();
+            var dishEdition = doc.XPathSelectElements("//Dish").Where(c => c.Element("Name").Value == myDishToEditName).Single();
+            dishEdition.SetElementValue("Name", myDisToEdit.DishName);
+
+            dishEdition.SetElementValue("Price", myDisToEdit.DishPrice);
+            dishEdition.SetElementValue("Size", myDisToEdit.DishSize);
+            dishEdition.SetElementValue("Image", myDisToEdit.DishImage);
+            dishEdition.SetElementValue("Type", myDisToEdit.DishType);
+            dishEdition.SetElementValue("Description", myDisToEdit.DishDescription);
+            //dishEdition.Element("balance").Value = "50";
+
+            doc.Save(ma_controller.XmlParser.xmlDishPath);
+
+            //foreach (XElement xe in (XDocument.Load(doc).XPathSelectElements("//Dish")))
             //{
             //    if (xe.Element("Name").Value.Equals(myDisToEdit.DishName))
             //    {
@@ -96,21 +113,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             //}
 
 
-            // Option1: Using SetAttributeValue()
-            XDocument xmlDoc = XDocument.Parse(ma_controller.XmlParser.xmlDishPath);
-            // Update Element value  
-            var items = from item in xmlDoc.Descendants("Dish")
-                        where item.Attribute("Name").Value == myDisToEdit.DishName
-                        select item;
 
-            foreach (XElement itemElement in items)
-            {
-                itemElement.SetAttributeValue("Name", myDisToEdit.DishName);
 
-            }
-
-            xmlDoc.Save(Console.Out);
-            Console.WriteLine();
 
             MessageBox.Show($"Your {myDisToEdit.DishName} dish has been edited.", "Edit created!");
             this.Close();
