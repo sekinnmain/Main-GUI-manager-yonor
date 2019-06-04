@@ -272,5 +272,17 @@ namespace MAIN_GUI_Mangaer_window
         {
 
         }
+
+        private void Button1CreateUserMainForm_Click(object sender, EventArgs e)
+        {
+            ma_views.CreateUser myNewUser = new ma_views.CreateUser();
+            myNewUser.ShowDialog();
+        }
+
+        private void Button2EditUserMainForm_Click(object sender, EventArgs e)
+        {
+            ma_views.EditUser myUserToEdit = new ma_views.EditUser();
+            myUserToEdit.ShowDialog();
+        }
     }
 }

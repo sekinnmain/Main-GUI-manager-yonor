@@ -37,22 +37,15 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControlUsers = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2EditUserMainForm = new System.Windows.Forms.Button();
+            this.button1CreateUserMainForm = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabReportsMgmt = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabRestaurantTasks = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabAdvertisementMgmt = new System.Windows.Forms.TabPage();
             this.debugg = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -96,7 +89,6 @@
             this.tabPage1Dishes.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
             this.tabReportsMgmt.SuspendLayout();
-            this.tabRestaurantTasks.SuspendLayout();
             this.tabAdvertisementMgmt.SuspendLayout();
             this.tabPage1StockMngt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).BeginInit();
@@ -114,7 +106,6 @@
             this.tabCrontrolUsers.Controls.Add(this.tabPage1Dishes);
             this.tabCrontrolUsers.Controls.Add(this.tabControlUsers);
             this.tabCrontrolUsers.Controls.Add(this.tabReportsMgmt);
-            this.tabCrontrolUsers.Controls.Add(this.tabRestaurantTasks);
             this.tabCrontrolUsers.Controls.Add(this.tabAdvertisementMgmt);
             this.tabCrontrolUsers.Controls.Add(this.tabPage1StockMngt);
             this.tabCrontrolUsers.Location = new System.Drawing.Point(0, 0);
@@ -198,11 +189,9 @@
             // 
             // tabControlUsers
             // 
-            this.tabControlUsers.Controls.Add(this.button2);
-            this.tabControlUsers.Controls.Add(this.button1);
+            this.tabControlUsers.Controls.Add(this.button2EditUserMainForm);
+            this.tabControlUsers.Controls.Add(this.button1CreateUserMainForm);
             this.tabControlUsers.Controls.Add(this.comboBox2);
-            this.tabControlUsers.Controls.Add(this.comboBox1);
-            this.tabControlUsers.Controls.Add(this.label3);
             this.tabControlUsers.Controls.Add(this.label4);
             this.tabControlUsers.Controls.Add(this.label1);
             this.tabControlUsers.Location = new System.Drawing.Point(4, 22);
@@ -214,23 +203,25 @@
             this.tabControlUsers.UseVisualStyleBackColor = true;
             this.tabControlUsers.Click += new System.EventHandler(this.TabControlUsers_Click);
             // 
-            // button2
+            // button2EditUserMainForm
             // 
-            this.button2.Location = new System.Drawing.Point(264, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2EditUserMainForm.Location = new System.Drawing.Point(127, 190);
+            this.button2EditUserMainForm.Name = "button2EditUserMainForm";
+            this.button2EditUserMainForm.Size = new System.Drawing.Size(75, 23);
+            this.button2EditUserMainForm.TabIndex = 2;
+            this.button2EditUserMainForm.Text = "Edit";
+            this.button2EditUserMainForm.UseVisualStyleBackColor = true;
+            this.button2EditUserMainForm.Click += new System.EventHandler(this.Button2EditUserMainForm_Click);
             // 
-            // button1
+            // button1CreateUserMainForm
             // 
-            this.button1.Location = new System.Drawing.Point(264, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1CreateUserMainForm.Location = new System.Drawing.Point(127, 57);
+            this.button1CreateUserMainForm.Name = "button1CreateUserMainForm";
+            this.button1CreateUserMainForm.Size = new System.Drawing.Size(75, 23);
+            this.button1CreateUserMainForm.TabIndex = 2;
+            this.button1CreateUserMainForm.Text = "Create";
+            this.button1CreateUserMainForm.UseVisualStyleBackColor = true;
+            this.button1CreateUserMainForm.Click += new System.EventHandler(this.Button1CreateUserMainForm_Click);
             // 
             // comboBox2
             // 
@@ -240,27 +231,10 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(127, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Role";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 152);
+            this.label4.Location = new System.Drawing.Point(70, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 0;
@@ -269,7 +243,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 28);
+            this.label1.Location = new System.Drawing.Point(34, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 0;
@@ -322,56 +296,6 @@
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Select report:";
-            // 
-            // tabRestaurantTasks
-            // 
-            this.tabRestaurantTasks.Controls.Add(this.button7);
-            this.tabRestaurantTasks.Controls.Add(this.comboBox7);
-            this.tabRestaurantTasks.Controls.Add(this.label8);
-            this.tabRestaurantTasks.Controls.Add(this.label10);
-            this.tabRestaurantTasks.Location = new System.Drawing.Point(4, 22);
-            this.tabRestaurantTasks.Name = "tabRestaurantTasks";
-            this.tabRestaurantTasks.Size = new System.Drawing.Size(791, 378);
-            this.tabRestaurantTasks.TabIndex = 2;
-            this.tabRestaurantTasks.Text = "Restaurant Tasks";
-            this.tabRestaurantTasks.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(283, 55);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Create";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.Button7_Click);
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(146, 57);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 21);
-            this.comboBox7.TabIndex = 7;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.ComboBox7_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(83, 60);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Select task:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 28);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Tasks: ";
             // 
             // tabAdvertisementMgmt
             // 
@@ -768,8 +692,6 @@
             this.tabControlUsers.PerformLayout();
             this.tabReportsMgmt.ResumeLayout(false);
             this.tabReportsMgmt.PerformLayout();
-            this.tabRestaurantTasks.ResumeLayout(false);
-            this.tabRestaurantTasks.PerformLayout();
             this.tabAdvertisementMgmt.ResumeLayout(false);
             this.tabAdvertisementMgmt.PerformLayout();
             this.tabPage1StockMngt.ResumeLayout(false);
@@ -792,21 +714,14 @@
         private System.Windows.Forms.TabPage tabControlUsers;
         private System.Windows.Forms.TabPage tabReportsMgmt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabRestaurantTasks;
         private System.Windows.Forms.TabPage tabAdvertisementMgmt;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2EditUserMainForm;
+        private System.Windows.Forms.Button button1CreateUserMainForm;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button13SmtpUser;
         private System.Windows.Forms.Label label20;

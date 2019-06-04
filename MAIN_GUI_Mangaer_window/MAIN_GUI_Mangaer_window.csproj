@@ -57,9 +57,11 @@
       <DependentUpon>AppData.xsd</DependentUpon>
     </Compile>
     <Compile Include="ma_controller\Advertisement.cs" />
+    <Compile Include="ma_controller\RegisteredCustomers.cs" />
     <Compile Include="ma_controller\User.cs" />
     <Compile Include="ma_controller\Serialization.cs" />
     <Compile Include="ma_controller\Dish.cs" />
+    <Compile Include="ma_controller\VipCustomer.cs" />
     <Compile Include="ma_controller\XmlParser.cs" />
     <Compile Include="ma_views\CreateDish.cs">
       <SubType>Form</SubType>

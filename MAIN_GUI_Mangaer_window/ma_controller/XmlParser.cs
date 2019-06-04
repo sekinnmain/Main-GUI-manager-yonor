@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Main;
+using NewUsers;
+
 
 namespace MAIN_GUI_Mangaer_window.ma_controller
 {
@@ -34,6 +36,38 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
             doc.Save(xmlDishPath);
         }
 
+        public static void XmlParserVipCustomer(VipCustomer vip)
+        {
+            XDocument doc = XDocument.Load(xmlUsers);
+            XElement school = doc.Element("VIPCustomers");
+            school.Add(new XElement("VIPCustomer",
+                       new XElement("FirstName", vip.FirstName),
+                       new XElement("LastName", vip.LastName),
+                       new XElement("UserName", vip.UserName),
+                       new XElement("PassWord", vip.PassWord),
+                       new XElement("Email", vip.Email),
+                       new XElement("Adress", vip.adress),
+                       new XElement("PhoneNumber", vip.PhoneNumber),
+                       new XElement("CreditCard", vip.CreditCard)));
+
+            doc.Save(xmlUsers);
+        }
+        public static void XmlParserEmployee(VipCustomer vip)
+        {
+            XDocument doc = XDocument.Load(xmlUsers);
+            XElement school = doc.Element("Employees");
+            school.Add(new XElement("Emplooyee",
+                       new XElement("FirstName", vip.FirstName),
+                       new XElement("LastName", vip.LastName),
+                       new XElement("UserName", vip.UserName),
+                       new XElement("PassWord", vip.PassWord),
+                       new XElement("Email", vip.Email),
+                       new XElement("Adress", vip.adress),
+                       new XElement("PhoneNumber", vip.PhoneNumber)
+                    ));
+
+            doc.Save(xmlUsers);
+        }
 
     }
 }

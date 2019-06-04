@@ -110,4 +110,11 @@
     <Description>asdkjaslkjsalkdjaklsdask dalskdaslkjdalksdjaslkdj salkd</Description>
     <Image>C:\Users\userr\Pictures\2test.jpg</Image>
   </Dish>
+  <Dish>
+    <Name>sxcsdcsdc</Name>
+    <Price>6</Price>
+    <Size>2</Size>
+    <Description>sdcsd</Description>
+    <Type>Main</Type>
+  </Dish>
 </Dishes>
