@@ -49,18 +49,9 @@
             this.textBox8CreateUserPassword = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox9CrePassVerify = new System.Windows.Forms.TextBox();
-            this.textBox10Credicard1 = new System.Windows.Forms.TextBox();
-            this.textBox11credicard2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox12credicart3 = new System.Windows.Forms.TextBox();
-            this.textBox13credicard4 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox14credicard5 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.comboBox1CreateUser = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.label11PasswordDontMatch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -176,6 +167,7 @@
             this.button1CreateUser.TabIndex = 5;
             this.button1CreateUser.Text = "Create";
             this.button1CreateUser.UseVisualStyleBackColor = true;
+            this.button1CreateUser.Click += new System.EventHandler(this.Button1CreateUser_Click);
             // 
             // button2CancelCreateUser
             // 
@@ -185,6 +177,7 @@
             this.button2CancelCreateUser.TabIndex = 5;
             this.button2CancelCreateUser.Text = "Cancel";
             this.button2CancelCreateUser.UseVisualStyleBackColor = true;
+            this.button2CancelCreateUser.Click += new System.EventHandler(this.Button2CancelCreateUser_Click);
             // 
             // label8
             // 
@@ -234,86 +227,6 @@
             this.textBox9CrePassVerify.Size = new System.Drawing.Size(100, 20);
             this.textBox9CrePassVerify.TabIndex = 4;
             // 
-            // textBox10Credicard1
-            // 
-            this.textBox10Credicard1.Location = new System.Drawing.Point(310, 341);
-            this.textBox10Credicard1.Name = "textBox10Credicard1";
-            this.textBox10Credicard1.Size = new System.Drawing.Size(36, 20);
-            this.textBox10Credicard1.TabIndex = 6;
-            // 
-            // textBox11credicard2
-            // 
-            this.textBox11credicard2.Location = new System.Drawing.Point(368, 341);
-            this.textBox11credicard2.Name = "textBox11credicard2";
-            this.textBox11credicard2.Size = new System.Drawing.Size(36, 20);
-            this.textBox11credicard2.TabIndex = 6;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(352, 344);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 13);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "-";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(410, 344);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(10, 13);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "-";
-            // 
-            // textBox12credicart3
-            // 
-            this.textBox12credicart3.Location = new System.Drawing.Point(426, 341);
-            this.textBox12credicart3.Name = "textBox12credicart3";
-            this.textBox12credicart3.Size = new System.Drawing.Size(36, 20);
-            this.textBox12credicart3.TabIndex = 6;
-            // 
-            // textBox13credicard4
-            // 
-            this.textBox13credicard4.Location = new System.Drawing.Point(490, 341);
-            this.textBox13credicard4.Name = "textBox13credicard4";
-            this.textBox13credicard4.Size = new System.Drawing.Size(36, 20);
-            this.textBox13credicard4.TabIndex = 6;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(474, 344);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(10, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "-";
-            // 
-            // textBox14credicard5
-            // 
-            this.textBox14credicard5.Location = new System.Drawing.Point(556, 341);
-            this.textBox14credicard5.Name = "textBox14credicard5";
-            this.textBox14credicard5.Size = new System.Drawing.Size(36, 20);
-            this.textBox14credicard5.TabIndex = 6;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(540, 344);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(10, 13);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "-";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(307, 308);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(61, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Credit card:";
-            // 
             // comboBox1CreateUser
             // 
             this.comboBox1CreateUser.FormattingEnabled = true;
@@ -321,6 +234,7 @@
             this.comboBox1CreateUser.Name = "comboBox1CreateUser";
             this.comboBox1CreateUser.Size = new System.Drawing.Size(121, 21);
             this.comboBox1CreateUser.TabIndex = 8;
+            this.comboBox1CreateUser.SelectedIndexChanged += new System.EventHandler(this.ComboBox1CreateUser_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -331,21 +245,22 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Type:";
             // 
+            // label11PasswordDontMatch
+            // 
+            this.label11PasswordDontMatch.AutoSize = true;
+            this.label11PasswordDontMatch.Location = new System.Drawing.Point(405, 289);
+            this.label11PasswordDontMatch.Name = "label11PasswordDontMatch";
+            this.label11PasswordDontMatch.Size = new System.Drawing.Size(118, 13);
+            this.label11PasswordDontMatch.TabIndex = 9;
+            this.label11PasswordDontMatch.Text = "Passwords Don\'t match";
+            // 
             // CreateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 506);
+            this.Controls.Add(this.label11PasswordDontMatch);
             this.Controls.Add(this.comboBox1CreateUser);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox14credicard5);
-            this.Controls.Add(this.textBox13credicard4);
-            this.Controls.Add(this.textBox12credicart3);
-            this.Controls.Add(this.textBox11credicard2);
-            this.Controls.Add(this.textBox10Credicard1);
             this.Controls.Add(this.button2CancelCreateUser);
             this.Controls.Add(this.button1CreateUser);
             this.Controls.Add(this.textBox6CreateUserID);
@@ -359,7 +274,6 @@
             this.Controls.Add(this.textBox1CreateUserName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
@@ -400,17 +314,8 @@
         private System.Windows.Forms.TextBox textBox8CreateUserPassword;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox9CrePassVerify;
-        private System.Windows.Forms.TextBox textBox10Credicard1;
-        private System.Windows.Forms.TextBox textBox11credicard2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12credicart3;
-        private System.Windows.Forms.TextBox textBox13credicard4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox14credicard5;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox1CreateUser;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label11PasswordDontMatch;
     }
 }

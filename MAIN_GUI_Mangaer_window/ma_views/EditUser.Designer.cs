@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.comboBox1EditUser = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox14credicard5edit = new System.Windows.Forms.TextBox();
-            this.textBox13credicard4edit = new System.Windows.Forms.TextBox();
-            this.textBox12credicart3edit = new System.Windows.Forms.TextBox();
-            this.textBox11credicard2edit = new System.Windows.Forms.TextBox();
-            this.textBox10Credicard1edit = new System.Windows.Forms.TextBox();
             this.button2CanceleditUser = new System.Windows.Forms.Button();
             this.button1editUser = new System.Windows.Forms.Button();
             this.textBox6editUserID = new System.Windows.Forms.TextBox();
@@ -51,7 +42,6 @@
             this.textBox1editUserName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -70,77 +60,6 @@
             this.comboBox1EditUser.Name = "comboBox1EditUser";
             this.comboBox1EditUser.Size = new System.Drawing.Size(121, 21);
             this.comboBox1EditUser.TabIndex = 41;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(548, 342);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(10, 13);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "-";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(482, 342);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(10, 13);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "-";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(418, 342);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(10, 13);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "-";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(360, 342);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 13);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "-";
-            // 
-            // textBox14credicard5edit
-            // 
-            this.textBox14credicard5edit.Location = new System.Drawing.Point(564, 339);
-            this.textBox14credicard5edit.Name = "textBox14credicard5edit";
-            this.textBox14credicard5edit.Size = new System.Drawing.Size(36, 20);
-            this.textBox14credicard5edit.TabIndex = 36;
-            // 
-            // textBox13credicard4edit
-            // 
-            this.textBox13credicard4edit.Location = new System.Drawing.Point(498, 339);
-            this.textBox13credicard4edit.Name = "textBox13credicard4edit";
-            this.textBox13credicard4edit.Size = new System.Drawing.Size(36, 20);
-            this.textBox13credicard4edit.TabIndex = 35;
-            // 
-            // textBox12credicart3edit
-            // 
-            this.textBox12credicart3edit.Location = new System.Drawing.Point(434, 339);
-            this.textBox12credicart3edit.Name = "textBox12credicart3edit";
-            this.textBox12credicart3edit.Size = new System.Drawing.Size(36, 20);
-            this.textBox12credicart3edit.TabIndex = 34;
-            // 
-            // textBox11credicard2edit
-            // 
-            this.textBox11credicard2edit.Location = new System.Drawing.Point(376, 339);
-            this.textBox11credicard2edit.Name = "textBox11credicard2edit";
-            this.textBox11credicard2edit.Size = new System.Drawing.Size(36, 20);
-            this.textBox11credicard2edit.TabIndex = 33;
-            // 
-            // textBox10Credicard1edit
-            // 
-            this.textBox10Credicard1edit.Location = new System.Drawing.Point(318, 339);
-            this.textBox10Credicard1edit.Name = "textBox10Credicard1edit";
-            this.textBox10Credicard1edit.Size = new System.Drawing.Size(36, 20);
-            this.textBox10Credicard1edit.TabIndex = 32;
             // 
             // button2CanceleditUser
             // 
@@ -241,15 +160,6 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Email:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(315, 306);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(61, 13);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Credit card:";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -337,15 +247,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 506);
             this.Controls.Add(this.comboBox1EditUser);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox14credicard5edit);
-            this.Controls.Add(this.textBox13credicard4edit);
-            this.Controls.Add(this.textBox12credicart3edit);
-            this.Controls.Add(this.textBox11credicard2edit);
-            this.Controls.Add(this.textBox10Credicard1edit);
             this.Controls.Add(this.button2CanceleditUser);
             this.Controls.Add(this.button1editUser);
             this.Controls.Add(this.textBox6editUserID);
@@ -359,7 +260,6 @@
             this.Controls.Add(this.textBox1editUserName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
@@ -379,15 +279,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1EditUser;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox14credicard5edit;
-        private System.Windows.Forms.TextBox textBox13credicard4edit;
-        private System.Windows.Forms.TextBox textBox12credicart3edit;
-        private System.Windows.Forms.TextBox textBox11credicard2edit;
-        private System.Windows.Forms.TextBox textBox10Credicard1edit;
         private System.Windows.Forms.Button button2CanceleditUser;
         private System.Windows.Forms.Button button1editUser;
         private System.Windows.Forms.TextBox textBox6editUserID;
@@ -401,7 +292,6 @@
         private System.Windows.Forms.TextBox textBox1editUserName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;

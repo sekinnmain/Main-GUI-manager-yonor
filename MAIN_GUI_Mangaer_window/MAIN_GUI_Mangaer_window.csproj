@@ -57,6 +57,8 @@
       <DependentUpon>AppData.xsd</DependentUpon>
     </Compile>
     <Compile Include="ma_controller\Advertisement.cs" />
+    <Compile Include="ma_controller\Employee.cs" />
+    <Compile Include="ma_controller\Manager.cs" />
     <Compile Include="ma_controller\RegisteredCustomers.cs" />
     <Compile Include="ma_controller\User.cs" />
     <Compile Include="ma_controller\Serialization.cs" />
@@ -180,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Dishes.xml" />
+    <Content Include="Data\Users.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
