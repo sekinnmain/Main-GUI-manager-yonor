@@ -40,29 +40,29 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         public static void XmlParserVipCustomer(VipCustomer vip)
         {
             XDocument doc = XDocument.Load(xmlUsers);
-            XElement school = doc.Element("VIPCustomers");
-            school.Add(new XElement("VIPCustomer",
+            XElement school = doc.Element("Users");
+            school.Add(new XElement("Vipuser",
                        new XElement("FirstName", vip.FirstName),
                        new XElement("LastName", vip.LastName),
                        new XElement("UserName", vip.UserName),
                        new XElement("PassWord", vip.PassWord),
                        new XElement("Email", vip.Email),
-                       new XElement("Adress", vip.Address),
-                       new XElement("PhoneNumber", vip.PhoneNumber),
-                       new XElement("CreditCard", vip.CreditCard)));
+                       new XElement("Address", vip.Address),
+                       new XElement("PhoneNumber", vip.PhoneNumber)));
+                       //new XElement("CreditCard", vip.CreditCard)));
 
             doc.Save(xmlUsers);
         }
         public static void XmlParserEmployee(Employee crtEmp)
         {
             XDocument doc = XDocument.Load(xmlUsers);
-            XElement school = doc.Element("Employees");
-            school.Add(new XElement("Emplooyee",
+            XElement school = doc.Element("Users");
+            school.Add(new XElement("Employee",
                        new XElement("FirstName", crtEmp.FirstName),
                        new XElement("LastName", crtEmp.LastName),
                        new XElement("ID", crtEmp.ID),
                        new XElement("Email", crtEmp.Email),
-                       new XElement("Adress", crtEmp.Address),
+                       new XElement("Address", crtEmp.Address),
                        new XElement("PhoneNumber", crtEmp.PhoneNumber)
                     ));
 
@@ -71,13 +71,13 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         public static void XmlParserManager(Manager crtManager)
         {
             XDocument doc = XDocument.Load(xmlUsers);
-            XElement school = doc.Element("Managers");
+            XElement school = doc.Element("Users");
             school.Add(new XElement("Manager",
                        new XElement("FirstName", crtManager.FirstName),
                        new XElement("LastName", crtManager.LastName),
                        //new XElement("ID", crtManager.ID),
                        new XElement("Email", crtManager.Email),
-                       new XElement("Adress", crtManager.Address),
+                       new XElement("Address", crtManager.Address),
                        new XElement("PhoneNumber", crtManager.PhoneNumber)
                     ));
 

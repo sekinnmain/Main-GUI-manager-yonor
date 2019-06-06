@@ -40,17 +40,18 @@
             this.textBox7editserUsername = new System.Windows.Forms.TextBox();
             this.textBoeditUserLastName = new System.Windows.Forms.TextBox();
             this.textBox1editUserName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label7EditUserID = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label10EditUserVrfyPass = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label9EditUserPassword = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label8EdituserUsername = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1EditPasswordEditForm = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // comboBox1EditUser
@@ -109,14 +110,14 @@
             // 
             // textBox9editPassVerify
             // 
-            this.textBox9editPassVerify.Location = new System.Drawing.Point(416, 255);
+            this.textBox9editPassVerify.Location = new System.Drawing.Point(416, 299);
             this.textBox9editPassVerify.Name = "textBox9editPassVerify";
             this.textBox9editPassVerify.Size = new System.Drawing.Size(100, 20);
             this.textBox9editPassVerify.TabIndex = 25;
             // 
             // textBox8editUserPassword
             // 
-            this.textBox8editUserPassword.Location = new System.Drawing.Point(416, 219);
+            this.textBox8editUserPassword.Location = new System.Drawing.Point(416, 263);
             this.textBox8editUserPassword.Name = "textBox8editUserPassword";
             this.textBox8editUserPassword.Size = new System.Drawing.Size(100, 20);
             this.textBox8editUserPassword.TabIndex = 24;
@@ -142,14 +143,14 @@
             this.textBox1editUserName.Size = new System.Drawing.Size(100, 20);
             this.textBox1editUserName.TabIndex = 21;
             // 
-            // label7
+            // label7EditUserID
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(652, 178);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "ID:";
+            this.label7EditUserID.AutoSize = true;
+            this.label7EditUserID.Location = new System.Drawing.Point(652, 178);
+            this.label7EditUserID.Name = "label7EditUserID";
+            this.label7EditUserID.Size = new System.Drawing.Size(21, 13);
+            this.label7EditUserID.TabIndex = 20;
+            this.label7EditUserID.Text = "ID:";
             // 
             // label6
             // 
@@ -160,14 +161,14 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Email:";
             // 
-            // label10
+            // label10EditUserVrfyPass
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(306, 258);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 13);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Verify password:";
+            this.label10EditUserVrfyPass.AutoSize = true;
+            this.label10EditUserVrfyPass.Location = new System.Drawing.Point(306, 302);
+            this.label10EditUserVrfyPass.Name = "label10EditUserVrfyPass";
+            this.label10EditUserVrfyPass.Size = new System.Drawing.Size(84, 13);
+            this.label10EditUserVrfyPass.TabIndex = 15;
+            this.label10EditUserVrfyPass.Text = "Verify password:";
             // 
             // label5
             // 
@@ -178,14 +179,14 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Phone Number:";
             // 
-            // label9
+            // label9EditUserPassword
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(309, 222);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Password:";
+            this.label9EditUserPassword.AutoSize = true;
+            this.label9EditUserPassword.Location = new System.Drawing.Point(309, 266);
+            this.label9EditUserPassword.Name = "label9EditUserPassword";
+            this.label9EditUserPassword.Size = new System.Drawing.Size(56, 13);
+            this.label9EditUserPassword.TabIndex = 14;
+            this.label9EditUserPassword.Text = "Password:";
             // 
             // label4
             // 
@@ -196,14 +197,14 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Address:";
             // 
-            // label8
+            // label8EdituserUsername
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(309, 178);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Username:";
+            this.label8EdituserUsername.AutoSize = true;
+            this.label8EdituserUsername.Location = new System.Drawing.Point(309, 178);
+            this.label8EdituserUsername.Name = "label8EdituserUsername";
+            this.label8EdituserUsername.Size = new System.Drawing.Size(58, 13);
+            this.label8EdituserUsername.TabIndex = 12;
+            this.label8EdituserUsername.Text = "Username:";
             // 
             // label3
             // 
@@ -241,11 +242,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Edit user:";
             // 
+            // checkBox1EditPasswordEditForm
+            // 
+            this.checkBox1EditPasswordEditForm.AutoSize = true;
+            this.checkBox1EditPasswordEditForm.Location = new System.Drawing.Point(309, 232);
+            this.checkBox1EditPasswordEditForm.Name = "checkBox1EditPasswordEditForm";
+            this.checkBox1EditPasswordEditForm.Size = new System.Drawing.Size(111, 17);
+            this.checkBox1EditPasswordEditForm.TabIndex = 42;
+            this.checkBox1EditPasswordEditForm.Text = "Change password";
+            this.checkBox1EditPasswordEditForm.UseVisualStyleBackColor = true;
+            this.checkBox1EditPasswordEditForm.CheckedChanged += new System.EventHandler(this.CheckBox1EditPasswordEditForm_CheckedChanged);
+            // 
             // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 506);
+            this.Controls.Add(this.checkBox1EditPasswordEditForm);
             this.Controls.Add(this.comboBox1EditUser);
             this.Controls.Add(this.button2CanceleditUser);
             this.Controls.Add(this.button1editUser);
@@ -258,19 +271,20 @@
             this.Controls.Add(this.textBox7editserUsername);
             this.Controls.Add(this.textBoeditUserLastName);
             this.Controls.Add(this.textBox1editUserName);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label7EditUserID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label10EditUserVrfyPass);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label9EditUserPassword);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label8EdituserUsername);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
             this.Name = "EditUser";
             this.Text = "MAIN - Edit user";
+            this.Load += new System.EventHandler(this.EditUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,16 +304,17 @@
         private System.Windows.Forms.TextBox textBox7editserUsername;
         private System.Windows.Forms.TextBox textBoeditUserLastName;
         private System.Windows.Forms.TextBox textBox1editUserName;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label7EditUserID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label10EditUserVrfyPass;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label9EditUserPassword;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label8EdituserUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1EditPasswordEditForm;
     }
 }

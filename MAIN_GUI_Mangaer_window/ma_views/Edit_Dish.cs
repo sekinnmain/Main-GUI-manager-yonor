@@ -26,12 +26,17 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void Edit_Dish_Load(object sender, EventArgs e)
         {
+            LoadDefaultTypeForDish();
+        }
+
+        private void LoadDefaultTypeForDish()
+        {
             comboBox1DishTypeEdit.Items.Add("Appetizer");
             comboBox1DishTypeEdit.Items.Add("Main");
             comboBox1DishTypeEdit.Items.Add("Dessert");
             comboBox1DishTypeEdit.Items.Add("Drink");
+            comboBox1DishTypeEdit.SelectedIndex = 2;
         }
-
         private void BindDataEditDish(string myEditDish)
         {
 
@@ -76,6 +81,14 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void Button2EditDish_Click(object sender, EventArgs e)
         {
+            SetValuesToDishInstance();
+            WriteInstanceToXml();
+            this.Close();
+
+
+        }
+        private void SetValuesToDishInstance()
+        {
             myDisToEdit.DishType = comboBox1DishTypeEdit.SelectedItem.ToString();
             myDisToEdit.DishName = textBox1EditDishName.Text;
             var priceDish = Convert.ToInt32(numericUpDown1EditDishPrice.Value);
@@ -83,11 +96,12 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             var sizeDish = Convert.ToInt32(numericUpDown2DishEditSize.Value);
             myDisToEdit.DishSize = sizeDish;
             myDisToEdit.DishDescription = textBox4DishDescriptonEdit.Text;
-
+        }
+        private void WriteInstanceToXml()
+        {
 
             var doc = XElement.Load(ma_controller.XmlParser.xmlDishPath);
 
-            //var dishEdition = doc.Element("Dishes").Elements("Dish").Where(c => c.Element("Name").Value == myDisToEdit.DishName).Single();
             var dishEdition = doc.XPathSelectElements("//Dish").Where(c => c.Element("Name").Value == myDishToEditName).Single();
             dishEdition.SetElementValue("Name", myDisToEdit.DishName);
 
@@ -97,32 +111,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             dishEdition.SetElementValue("Type", myDisToEdit.DishType);
             dishEdition.SetElementValue("Description", myDisToEdit.DishDescription);
             //dishEdition.Element("balance").Value = "50";
-
             doc.Save(ma_controller.XmlParser.xmlDishPath);
-
-            //foreach (XElement xe in (XDocument.Load(doc).XPathSelectElements("//Dish")))
-            //{
-            //    if (xe.Element("Name").Value.Equals(myDisToEdit.DishName))
-            //    {
-            //        //AddButtonToCategoryAppetizer(xe.Element("Name").Value);
-            //        xe.SetElementValue("Name", myDisToEdit.DishName);
-            //        xe.SetElementValue("Price", myDisToEdit.DishPrice);
-            //        xe.SetElementValue("Size", myDisToEdit.DishSize);
-            //        xe.SetElementValue("Image", myDisToEdit.DishImage);
-            //        xe.SetElementValue("Type", myDisToEdit.DishType);
-            //        xe.SetElementValue("Description", myDisToEdit.DishDescription);
-
-            //    }
-            //}
-
-
-
-
-
             MessageBox.Show($"Your {myDisToEdit.DishName} dish has been edited.", "Edit created!");
-
-            this.Close();
-
 
         }
     }

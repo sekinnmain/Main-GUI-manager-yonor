@@ -14,10 +14,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 {
     public partial class CreateUser : Form
     {
-
-        VipCustomer myVipCustomer = new VipCustomer();
-        Employee myEmployee = new Employee();
-        ma_controller.Manager myManager = new ma_controller.Manager();
+   
+       private VipCustomer myVipCustomer = new VipCustomer();
+        private Employee myEmployee = new Employee();
+        private ma_controller.Manager myManager = new ma_controller.Manager();
 
         public CreateUser()
         {
@@ -26,7 +26,19 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void CreateUser_Load(object sender, EventArgs e)
         {
-            comboBox1CreateUser.Items.Add("VipUser");
+
+            LoadDefaultValuesForComponents();
+
+        }
+
+
+        #region method addition for handling new user creation
+
+
+        private void LoadDefaultValuesForComponents()
+
+        {
+            comboBox1CreateUser.Items.Add("Vipuser");
             comboBox1CreateUser.Items.Add("Employee");
             comboBox1CreateUser.Items.Add("Manager");
             comboBox1CreateUser.SelectedIndex = 2;
@@ -34,30 +46,40 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             textBox8CreateUserPassword.PasswordChar = '*';
             textBox9CrePassVerify.Text = "";
             textBox9CrePassVerify.PasswordChar = '*';
-
-
         }
 
         private void hideElementsByType()
         {
-            if (comboBox1CreateUser.SelectedItem.Equals("VipUser"))
+            if (comboBox1CreateUser.SelectedItem.Equals("Vipuser"))
             {
 
-                textBox6CreateUserID.Visible = false;
+                showElements(true);
 
             }
             else if (comboBox1CreateUser.SelectedItem.Equals("Employee"))
             {
-                textBox7createUserUsername.Visible = false;
-                textBox8CreateUserPassword.Visible = false;
+                showElements(false);
+
+
             }
             else if (comboBox1CreateUser.SelectedItem.Equals("Manager"))
             {
-               
+                showElements(false);
             }
         }
 
-        private void createUserFromType()
+        private void showElements(bool state)
+        {
+            textBox7createUserUsername.Visible = state;
+            textBox8CreateUserPassword.Visible = state;
+            textBox9CrePassVerify.Visible = state;
+            label10CrtUsrPassVrfy.Visible = state;
+            label11PasswordDontMatch.Visible = state;
+            label9CrtUserPass.Visible = state;
+            label8CrtUsername.Visible = state;
+        }
+
+        private void CreateUserByType()
         {
             if (comboBox1CreateUser.SelectedItem.Equals("Vipuser"))
             {
@@ -98,17 +120,22 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
             }
         }
-        private bool passMatch()
+        private bool PassMatch()
         {
-            if (!textBox8CreateUserPassword.Text.Equals(textBox9CrePassVerify.Text))
+            if((comboBox1CreateUser.SelectedItem.Equals("Vipuser")))
             {
-                MessageBox.Show("Passwords don't match, please try again", "Password missmatch",
-    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-            else
-                myVipCustomer.PassWord = textBox8CreateUserPassword.Text;
+                if (!textBox8CreateUserPassword.Text.Equals(textBox9CrePassVerify.Text))
+                {
+                    MessageBox.Show("Passwords don't match, please try again", "Password miss match",
+        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                else
+                    myVipCustomer.PassWord = textBox8CreateUserPassword.Text;
                 return true;
+            }
+
+            return true;
         }
 
         private void ComboBox1CreateUser_SelectedIndexChanged(object sender, EventArgs e)
@@ -123,9 +150,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void Button1CreateUser_Click(object sender, EventArgs e)
         {
-            if(passMatch())
+            if(PassMatch())
             {
-                createUserFromType();
+                CreateUserByType();
+                this.Close();
             }
 
             
@@ -136,4 +164,5 @@ namespace MAIN_GUI_Mangaer_window.ma_views
     MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
+    #endregion
 }

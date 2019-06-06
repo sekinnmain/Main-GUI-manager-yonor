@@ -183,6 +183,7 @@ namespace MAIN_GUI_Mangaer_window
         {
             updateData();
             loadDishesComboEdit();
+            loadUsersComboEdit();
 
         }
 
@@ -249,6 +250,15 @@ namespace MAIN_GUI_Mangaer_window
             comboBox6EditListDish.DataSource = DishLoad.Tables[0];
             
         }
+        public void loadUsersComboEdit()
+        {
+            DataSet userLoad = new DataSet();
+            userLoad.ReadXml(ma_controller.XmlParser.xmlUsers);
+            comboBox2EditUserMainWnd.DisplayMember = "Name";
+            comboBox2EditUserMainWnd.DataSource = userLoad.Tables[0];
+            userLoad.Tables[]
+
+        }
 
         private void Button8DishEdit_Click(object sender, EventArgs e)
         {
@@ -277,12 +287,14 @@ namespace MAIN_GUI_Mangaer_window
         {
             ma_views.CreateUser myNewUser = new ma_views.CreateUser();
             myNewUser.ShowDialog();
+            loadUsersComboEdit();
         }
 
         private void Button2EditUserMainForm_Click(object sender, EventArgs e)
         {
-            ma_views.EditUser myUserToEdit = new ma_views.EditUser();
+            ma_views.EditUser myUserToEdit = new ma_views.EditUser(comboBox2EditUserMainWnd.SelectedIndex, comboBox2EditUserMainWnd.Text);
             myUserToEdit.ShowDialog();
+            loadUsersComboEdit();
         }
     }
 }

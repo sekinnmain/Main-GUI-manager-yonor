@@ -39,7 +39,7 @@
             this.tabControlUsers = new System.Windows.Forms.TabPage();
             this.button2EditUserMainForm = new System.Windows.Forms.Button();
             this.button1CreateUserMainForm = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox2EditUserMainWnd = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabReportsMgmt = new System.Windows.Forms.TabPage();
@@ -191,7 +191,7 @@
             // 
             this.tabControlUsers.Controls.Add(this.button2EditUserMainForm);
             this.tabControlUsers.Controls.Add(this.button1CreateUserMainForm);
-            this.tabControlUsers.Controls.Add(this.comboBox2);
+            this.tabControlUsers.Controls.Add(this.comboBox2EditUserMainWnd);
             this.tabControlUsers.Controls.Add(this.label4);
             this.tabControlUsers.Controls.Add(this.label1);
             this.tabControlUsers.Location = new System.Drawing.Point(4, 22);
@@ -223,13 +223,13 @@
             this.button1CreateUserMainForm.UseVisualStyleBackColor = true;
             this.button1CreateUserMainForm.Click += new System.EventHandler(this.Button1CreateUserMainForm_Click);
             // 
-            // comboBox2
+            // comboBox2EditUserMainWnd
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(127, 152);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 1;
+            this.comboBox2EditUserMainWnd.FormattingEnabled = true;
+            this.comboBox2EditUserMainWnd.Location = new System.Drawing.Point(127, 152);
+            this.comboBox2EditUserMainWnd.Name = "comboBox2EditUserMainWnd";
+            this.comboBox2EditUserMainWnd.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2EditUserMainWnd.TabIndex = 1;
             // 
             // label4
             // 
@@ -717,7 +717,7 @@
         private System.Windows.Forms.TabPage tabAdvertisementMgmt;
         private System.Windows.Forms.Button button2EditUserMainForm;
         private System.Windows.Forms.Button button1CreateUserMainForm;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox2EditUserMainWnd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
