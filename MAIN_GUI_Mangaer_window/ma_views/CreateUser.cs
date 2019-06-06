@@ -41,7 +41,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             comboBox1CreateUser.Items.Add("Vipuser");
             comboBox1CreateUser.Items.Add("Employee");
             comboBox1CreateUser.Items.Add("Manager");
-            comboBox1CreateUser.SelectedIndex = 2;
+            comboBox1CreateUser.SelectedIndex = 1;
             textBox8CreateUserPassword.Text = "";
             textBox8CreateUserPassword.PasswordChar = '*';
             textBox9CrePassVerify.Text = "";
@@ -90,6 +90,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                 myVipCustomer.PassWord = textBox4PhoneNumber.Text;
                 myVipCustomer.Address = textBox5EmailCreateUser.Text;
                 myVipCustomer.Email = textBox5EmailCreateUser.Text;
+                myVipCustomer.userType = comboBox1CreateUser.SelectedItem.ToString();
                 ma_controller.XmlParser.XmlParserVipCustomer(myVipCustomer);
                 userCreatedMsg(myVipCustomer.FirstName);
 
@@ -102,6 +103,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                 myEmployee.Address = textBox5EmailCreateUser.Text;
                 myEmployee.Email = textBox5EmailCreateUser.Text;
                 myEmployee.ID = textBox6CreateUserID.Text;
+                myEmployee.userType = comboBox1CreateUser.SelectedItem.ToString();
                 ma_controller.XmlParser.XmlParserEmployee(myEmployee);
                 userCreatedMsg(myEmployee.FirstName);
 
@@ -115,6 +117,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                 //myManager.PassWord = textBox4PhoneNumber.Text;
                 myManager.Address = textBox5EmailCreateUser.Text;
                 myManager.Email = textBox5EmailCreateUser.Text;
+                myManager.userType = comboBox1CreateUser.SelectedItem.ToString();
                 ma_controller.XmlParser.XmlParserManager(myManager);
                 userCreatedMsg(myManager.FirstName);
 

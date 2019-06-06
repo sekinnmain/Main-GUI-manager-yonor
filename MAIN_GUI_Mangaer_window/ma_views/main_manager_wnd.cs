@@ -11,6 +11,7 @@ using System.Windows.Controls;
 using Main.yonor;
 using Main;
 using System.IO;
+using System.Xml.Linq;
 
 namespace MAIN_GUI_Mangaer_window
 {
@@ -252,12 +253,11 @@ namespace MAIN_GUI_Mangaer_window
         }
         public void loadUsersComboEdit()
         {
-            DataSet userLoad = new DataSet();
-            userLoad.ReadXml(ma_controller.XmlParser.xmlUsers);
-            comboBox2EditUserMainWnd.DisplayMember = "Name";
-            comboBox2EditUserMainWnd.DataSource = userLoad.Tables[0];
-            userLoad.Tables[]
-
+        
+            DataSet UserLoad = new DataSet();
+            UserLoad.ReadXml(ma_controller.XmlParser.xmlUsers);
+            comboBox2EditUserMainWnd.DisplayMember = "FirstName";
+            comboBox2EditUserMainWnd.DataSource = UserLoad.Tables[0];
         }
 
         private void Button8DishEdit_Click(object sender, EventArgs e)

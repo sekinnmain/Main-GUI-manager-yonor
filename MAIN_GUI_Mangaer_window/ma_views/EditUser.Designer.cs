@@ -61,6 +61,7 @@
             this.comboBox1EditUser.Name = "comboBox1EditUser";
             this.comboBox1EditUser.Size = new System.Drawing.Size(121, 21);
             this.comboBox1EditUser.TabIndex = 41;
+            this.comboBox1EditUser.SelectedIndexChanged += new System.EventHandler(this.ComboBox1EditUser_SelectedIndexChanged);
             // 
             // button2CanceleditUser
             // 
@@ -70,6 +71,7 @@
             this.button2CanceleditUser.TabIndex = 31;
             this.button2CanceleditUser.Text = "Cancel";
             this.button2CanceleditUser.UseVisualStyleBackColor = true;
+            this.button2CanceleditUser.Click += new System.EventHandler(this.Button2CanceleditUser_Click);
             // 
             // button1editUser
             // 
@@ -77,7 +79,7 @@
             this.button1editUser.Name = "button1editUser";
             this.button1editUser.Size = new System.Drawing.Size(75, 23);
             this.button1editUser.TabIndex = 30;
-            this.button1editUser.Text = "Create";
+            this.button1editUser.Text = "Edit";
             this.button1editUser.UseVisualStyleBackColor = true;
             // 
             // textBox6editUserID

@@ -117,4 +117,11 @@
     <Description>sdcsd</Description>
     <Type>Main</Type>
   </Dish>
+  <Dish>
+    <Name>jadash</Name>
+    <Price>2</Price>
+    <Size>3</Size>
+    <Description>kaja</Description>
+    <Type>Main</Type>
+  </Dish>
 </Dishes>

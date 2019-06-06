@@ -1,6 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Users>
-  <Vipuser></Vipuser>
-  <Employee></Employee>
-  <Manager></Manager>
+  <RegisteredUser>
+    <FirstName>emmp</FirstName>
+    <LastName>llasemp</LastName>
+    <Type>Employee</Type>
+    <ID>aksmdlad</ID>
+    <Email>asdalsd</Email>
+    <Address>asdalsd</Address>
+    <PhoneNumber>12312</PhoneNumber>
+  </RegisteredUser>
+  <RegisteredUser>
+    <FirstName>askmdmal</FirstName>
+    <LastName>akjsdnkasjdn</LastName>
+    <Type>Vipuser</Type>
+    <UserName>aksndkjasdn</UserName>
+    <PassWord>aksndkjasdn</PassWord>
+    <Email>lkamsdkasmld</Email>
+    <Address>lkamsdkasmld</Address>
+    <PhoneNumber>aksndkjasdn</PhoneNumber>
+  </RegisteredUser>
+  <RegisteredUser>
+    <FirstName>kasdjasdjaslkdj</FirstName>
+    <LastName>asdasd</LastName>
+    <Type>Manager</Type>
+    <Email>asdasd</Email>
+    <Address>asdasd</Address>
+    <PhoneNumber>asda</PhoneNumber>
+  </RegisteredUser>
 </Users>

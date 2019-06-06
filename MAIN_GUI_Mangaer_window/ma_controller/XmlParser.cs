@@ -33,6 +33,7 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
                        new XElement("Price", passDish.DishPrice),
                        new XElement("Size", passDish.DishSize),
                        new XElement("Description", passDish.DishDescription),
+                       new XElement("Type", passDish.DishType),
                        new XElement("Image", passDish.DishImage)));
             doc.Save(xmlDishPath);
         }
@@ -41,9 +42,10 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         {
             XDocument doc = XDocument.Load(xmlUsers);
             XElement school = doc.Element("Users");
-            school.Add(new XElement("Vipuser",
+            school.Add(new XElement("RegisteredUser",
                        new XElement("FirstName", vip.FirstName),
                        new XElement("LastName", vip.LastName),
+                       new XElement("Type", vip.userType),
                        new XElement("UserName", vip.UserName),
                        new XElement("PassWord", vip.PassWord),
                        new XElement("Email", vip.Email),
@@ -57,9 +59,10 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         {
             XDocument doc = XDocument.Load(xmlUsers);
             XElement school = doc.Element("Users");
-            school.Add(new XElement("Employee",
+            school.Add(new XElement("RegisteredUser",
                        new XElement("FirstName", crtEmp.FirstName),
                        new XElement("LastName", crtEmp.LastName),
+                        new XElement("Type", crtEmp.userType),
                        new XElement("ID", crtEmp.ID),
                        new XElement("Email", crtEmp.Email),
                        new XElement("Address", crtEmp.Address),
@@ -72,9 +75,10 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         {
             XDocument doc = XDocument.Load(xmlUsers);
             XElement school = doc.Element("Users");
-            school.Add(new XElement("Manager",
+            school.Add(new XElement("RegisteredUser",
                        new XElement("FirstName", crtManager.FirstName),
                        new XElement("LastName", crtManager.LastName),
+                        new XElement("Type", crtManager.userType),
                        //new XElement("ID", crtManager.ID),
                        new XElement("Email", crtManager.Email),
                        new XElement("Address", crtManager.Address),
