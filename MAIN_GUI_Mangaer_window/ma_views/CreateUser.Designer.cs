@@ -111,7 +111,7 @@
             // label7CrtUsrId
             // 
             this.label7CrtUsrId.AutoSize = true;
-            this.label7CrtUsrId.Location = new System.Drawing.Point(301, 344);
+            this.label7CrtUsrId.Location = new System.Drawing.Point(119, 384);
             this.label7CrtUsrId.Name = "label7CrtUsrId";
             this.label7CrtUsrId.Size = new System.Drawing.Size(21, 13);
             this.label7CrtUsrId.TabIndex = 3;
@@ -154,7 +154,7 @@
             // 
             // textBox6CreateUserID
             // 
-            this.textBox6CreateUserID.Location = new System.Drawing.Point(408, 341);
+            this.textBox6CreateUserID.Location = new System.Drawing.Point(149, 377);
             this.textBox6CreateUserID.Name = "textBox6CreateUserID";
             this.textBox6CreateUserID.Size = new System.Drawing.Size(100, 20);
             this.textBox6CreateUserID.TabIndex = 4;

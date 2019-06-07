@@ -54,11 +54,13 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             {
 
                 showElements(true);
+                ShowIdToEmployee(false);
 
             }
             else if (comboBox1CreateUser.SelectedItem.Equals("Employee"))
             {
                 showElements(false);
+                ShowIdToEmployee(true);
 
 
             }
@@ -77,6 +79,12 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             label11PasswordDontMatch.Visible = state;
             label9CrtUserPass.Visible = state;
             label8CrtUsername.Visible = state;
+        }
+        private void ShowIdToEmployee(bool state)
+        {
+            label7CrtUsrId.Visible = state;
+            textBox6CreateUserID.Visible = state;
+
         }
 
         private void CreateUserByType()

@@ -2,29 +2,39 @@
 <Users>
   <RegisteredUser>
     <FirstName>emmp</FirstName>
-    <LastName>llasemp</LastName>
+    <LastName>Savanna</LastName>
     <Type>Employee</Type>
-    <ID>aksmdlad</ID>
-    <Email>asdalsd</Email>
-    <Address>asdalsd</Address>
-    <PhoneNumber>12312</PhoneNumber>
+    <ID>12973619873</ID>
+    <Email>Peepe@pe.e</Email>
+    <Address>trinidado</Address>
+    <PhoneNumber>1872319023</PhoneNumber>
+    <Name>Pedro </Name>
   </RegisteredUser>
   <RegisteredUser>
-    <FirstName>askmdmal</FirstName>
-    <LastName>akjsdnkasjdn</LastName>
+    <FirstName>DudoVip</FirstName>
+    <LastName>Dudon</LastName>
     <Type>Vipuser</Type>
-    <UserName>aksndkjasdn</UserName>
-    <PassWord>aksndkjasdn</PassWord>
-    <Email>lkamsdkasmld</Email>
-    <Address>lkamsdkasmld</Address>
-    <PhoneNumber>aksndkjasdn</PhoneNumber>
+    <UserName>123123123</UserName>
+    <PassWord>123123123</PassWord>
+    <Email>Dudom@Dudu.Du</Email>
+    <Address>Dudom@Dudu.Du</Address>
+    <PhoneNumber>123123123</PhoneNumber>
   </RegisteredUser>
   <RegisteredUser>
-    <FirstName>kasdjasdjaslkdj</FirstName>
-    <LastName>asdasd</LastName>
+    <FirstName>ShimEmplo</FirstName>
+    <LastName>EmploLastName</LastName>
+    <Type>Employee</Type>
+    <ID>1232123</ID>
+    <Email>Shim@Shim.amo</Email>
+    <Address>Shim@Shim.amo</Address>
+    <PhoneNumber>234234234</PhoneNumber>
+  </RegisteredUser>
+  <RegisteredUser>
+    <FirstName>Mano mana</FirstName>
+    <LastName>manager</LastName>
     <Type>Manager</Type>
-    <Email>asdasd</Email>
-    <Address>asdasd</Address>
-    <PhoneNumber>asda</PhoneNumber>
+    <Email>mano@mano.am</Email>
+    <Address>mano@mano.am</Address>
+    <PhoneNumber>544354345</PhoneNumber>
   </RegisteredUser>
 </Users>

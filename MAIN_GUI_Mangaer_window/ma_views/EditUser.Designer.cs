@@ -52,6 +52,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1EditPasswordEditForm = new System.Windows.Forms.CheckBox();
+            this.button1DeleteUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1EditUser
@@ -65,7 +66,7 @@
             // 
             // button2CanceleditUser
             // 
-            this.button2CanceleditUser.Location = new System.Drawing.Point(443, 438);
+            this.button2CanceleditUser.Location = new System.Drawing.Point(516, 437);
             this.button2CanceleditUser.Name = "button2CanceleditUser";
             this.button2CanceleditUser.Size = new System.Drawing.Size(75, 23);
             this.button2CanceleditUser.TabIndex = 31;
@@ -75,16 +76,17 @@
             // 
             // button1editUser
             // 
-            this.button1editUser.Location = new System.Drawing.Point(285, 438);
+            this.button1editUser.Location = new System.Drawing.Point(157, 437);
             this.button1editUser.Name = "button1editUser";
             this.button1editUser.Size = new System.Drawing.Size(75, 23);
             this.button1editUser.TabIndex = 30;
             this.button1editUser.Text = "Edit";
             this.button1editUser.UseVisualStyleBackColor = true;
+            this.button1editUser.Click += new System.EventHandler(this.Button1editUser_Click);
             // 
             // textBox6editUserID
             // 
-            this.textBox6editUserID.Location = new System.Drawing.Point(679, 175);
+            this.textBox6editUserID.Location = new System.Drawing.Point(157, 377);
             this.textBox6editUserID.Name = "textBox6editUserID";
             this.textBox6editUserID.Size = new System.Drawing.Size(100, 20);
             this.textBox6editUserID.TabIndex = 28;
@@ -112,21 +114,21 @@
             // 
             // textBox9editPassVerify
             // 
-            this.textBox9editPassVerify.Location = new System.Drawing.Point(416, 299);
+            this.textBox9editPassVerify.Location = new System.Drawing.Point(516, 295);
             this.textBox9editPassVerify.Name = "textBox9editPassVerify";
             this.textBox9editPassVerify.Size = new System.Drawing.Size(100, 20);
             this.textBox9editPassVerify.TabIndex = 25;
             // 
             // textBox8editUserPassword
             // 
-            this.textBox8editUserPassword.Location = new System.Drawing.Point(416, 263);
+            this.textBox8editUserPassword.Location = new System.Drawing.Point(516, 259);
             this.textBox8editUserPassword.Name = "textBox8editUserPassword";
             this.textBox8editUserPassword.Size = new System.Drawing.Size(100, 20);
             this.textBox8editUserPassword.TabIndex = 24;
             // 
             // textBox7editserUsername
             // 
-            this.textBox7editserUsername.Location = new System.Drawing.Point(416, 175);
+            this.textBox7editserUsername.Location = new System.Drawing.Point(516, 171);
             this.textBox7editserUsername.Name = "textBox7editserUsername";
             this.textBox7editserUsername.Size = new System.Drawing.Size(100, 20);
             this.textBox7editserUsername.TabIndex = 23;
@@ -148,7 +150,7 @@
             // label7EditUserID
             // 
             this.label7EditUserID.AutoSize = true;
-            this.label7EditUserID.Location = new System.Drawing.Point(652, 178);
+            this.label7EditUserID.Location = new System.Drawing.Point(130, 380);
             this.label7EditUserID.Name = "label7EditUserID";
             this.label7EditUserID.Size = new System.Drawing.Size(21, 13);
             this.label7EditUserID.TabIndex = 20;
@@ -166,7 +168,7 @@
             // label10EditUserVrfyPass
             // 
             this.label10EditUserVrfyPass.AutoSize = true;
-            this.label10EditUserVrfyPass.Location = new System.Drawing.Point(306, 302);
+            this.label10EditUserVrfyPass.Location = new System.Drawing.Point(406, 298);
             this.label10EditUserVrfyPass.Name = "label10EditUserVrfyPass";
             this.label10EditUserVrfyPass.Size = new System.Drawing.Size(84, 13);
             this.label10EditUserVrfyPass.TabIndex = 15;
@@ -184,7 +186,7 @@
             // label9EditUserPassword
             // 
             this.label9EditUserPassword.AutoSize = true;
-            this.label9EditUserPassword.Location = new System.Drawing.Point(309, 266);
+            this.label9EditUserPassword.Location = new System.Drawing.Point(409, 262);
             this.label9EditUserPassword.Name = "label9EditUserPassword";
             this.label9EditUserPassword.Size = new System.Drawing.Size(56, 13);
             this.label9EditUserPassword.TabIndex = 14;
@@ -202,7 +204,7 @@
             // label8EdituserUsername
             // 
             this.label8EdituserUsername.AutoSize = true;
-            this.label8EdituserUsername.Location = new System.Drawing.Point(309, 178);
+            this.label8EdituserUsername.Location = new System.Drawing.Point(409, 174);
             this.label8EdituserUsername.Name = "label8EdituserUsername";
             this.label8EdituserUsername.Size = new System.Drawing.Size(58, 13);
             this.label8EdituserUsername.TabIndex = 12;
@@ -247,7 +249,7 @@
             // checkBox1EditPasswordEditForm
             // 
             this.checkBox1EditPasswordEditForm.AutoSize = true;
-            this.checkBox1EditPasswordEditForm.Location = new System.Drawing.Point(309, 232);
+            this.checkBox1EditPasswordEditForm.Location = new System.Drawing.Point(409, 228);
             this.checkBox1EditPasswordEditForm.Name = "checkBox1EditPasswordEditForm";
             this.checkBox1EditPasswordEditForm.Size = new System.Drawing.Size(111, 17);
             this.checkBox1EditPasswordEditForm.TabIndex = 42;
@@ -255,11 +257,22 @@
             this.checkBox1EditPasswordEditForm.UseVisualStyleBackColor = true;
             this.checkBox1EditPasswordEditForm.CheckedChanged += new System.EventHandler(this.CheckBox1EditPasswordEditForm_CheckedChanged);
             // 
+            // button1DeleteUser
+            // 
+            this.button1DeleteUser.Location = new System.Drawing.Point(349, 437);
+            this.button1DeleteUser.Name = "button1DeleteUser";
+            this.button1DeleteUser.Size = new System.Drawing.Size(75, 23);
+            this.button1DeleteUser.TabIndex = 43;
+            this.button1DeleteUser.Text = "Delete";
+            this.button1DeleteUser.UseVisualStyleBackColor = true;
+            this.button1DeleteUser.Click += new System.EventHandler(this.Button1DeleteUser_Click);
+            // 
             // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 506);
+            this.Controls.Add(this.button1DeleteUser);
             this.Controls.Add(this.checkBox1EditPasswordEditForm);
             this.Controls.Add(this.comboBox1EditUser);
             this.Controls.Add(this.button2CanceleditUser);
@@ -318,5 +331,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1EditPasswordEditForm;
+        private System.Windows.Forms.Button button1DeleteUser;
     }
 }
