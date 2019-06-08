@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.button3EditAdCancel = new System.Windows.Forms.Button();
-            this.button2EditAdCreate = new System.Windows.Forms.Button();
+            this.button2EditAd = new System.Windows.Forms.Button();
             this.dateTimePicker1ExpDateEdit = new System.Windows.Forms.DateTimePicker();
-            this.button1EditBrowse = new System.Windows.Forms.Button();
+            this.button1EditBrowseAdImage = new System.Windows.Forms.Button();
             this.checkBox1EditAdState = new System.Windows.Forms.CheckBox();
             this.textBox2EditAdDescription = new System.Windows.Forms.TextBox();
             this.textBox5EditAdURL = new System.Windows.Forms.TextBox();
             this.textBox4EditAdPrice = new System.Windows.Forms.TextBox();
-            this.textBox1EditAdName = new System.Windows.Forms.TextBox();
+            this.textBox1EditAdCompanyName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1DeleteAd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3EditAdCancel
@@ -57,15 +58,15 @@
             this.button3EditAdCancel.UseVisualStyleBackColor = true;
             this.button3EditAdCancel.Click += new System.EventHandler(this.Button3EditAdCancel_Click);
             // 
-            // button2EditAdCreate
+            // button2EditAd
             // 
-            this.button2EditAdCreate.Location = new System.Drawing.Point(116, 415);
-            this.button2EditAdCreate.Name = "button2EditAdCreate";
-            this.button2EditAdCreate.Size = new System.Drawing.Size(75, 23);
-            this.button2EditAdCreate.TabIndex = 21;
-            this.button2EditAdCreate.Text = "Edit";
-            this.button2EditAdCreate.UseVisualStyleBackColor = true;
-            this.button2EditAdCreate.Click += new System.EventHandler(this.Button2EditAdCreate_Click);
+            this.button2EditAd.Location = new System.Drawing.Point(116, 415);
+            this.button2EditAd.Name = "button2EditAd";
+            this.button2EditAd.Size = new System.Drawing.Size(75, 23);
+            this.button2EditAd.TabIndex = 21;
+            this.button2EditAd.Text = "Edit";
+            this.button2EditAd.UseVisualStyleBackColor = true;
+            this.button2EditAd.Click += new System.EventHandler(this.Button2EditAdCreate_Click);
             // 
             // dateTimePicker1ExpDateEdit
             // 
@@ -74,14 +75,15 @@
             this.dateTimePicker1ExpDateEdit.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1ExpDateEdit.TabIndex = 19;
             // 
-            // button1EditBrowse
+            // button1EditBrowseAdImage
             // 
-            this.button1EditBrowse.Location = new System.Drawing.Point(223, 126);
-            this.button1EditBrowse.Name = "button1EditBrowse";
-            this.button1EditBrowse.Size = new System.Drawing.Size(75, 23);
-            this.button1EditBrowse.TabIndex = 18;
-            this.button1EditBrowse.Text = "Browse";
-            this.button1EditBrowse.UseVisualStyleBackColor = true;
+            this.button1EditBrowseAdImage.Location = new System.Drawing.Point(223, 126);
+            this.button1EditBrowseAdImage.Name = "button1EditBrowseAdImage";
+            this.button1EditBrowseAdImage.Size = new System.Drawing.Size(75, 23);
+            this.button1EditBrowseAdImage.TabIndex = 18;
+            this.button1EditBrowseAdImage.Text = "Browse";
+            this.button1EditBrowseAdImage.UseVisualStyleBackColor = true;
+            this.button1EditBrowseAdImage.Click += new System.EventHandler(this.Button1EditBrowseAdImage_Click);
             // 
             // checkBox1EditAdState
             // 
@@ -115,13 +117,13 @@
             this.textBox4EditAdPrice.Size = new System.Drawing.Size(100, 20);
             this.textBox4EditAdPrice.TabIndex = 15;
             // 
-            // textBox1EditAdName
+            // textBox1EditAdCompanyName
             // 
-            this.textBox1EditAdName.Location = new System.Drawing.Point(223, 89);
-            this.textBox1EditAdName.Name = "textBox1EditAdName";
-            this.textBox1EditAdName.Size = new System.Drawing.Size(100, 20);
-            this.textBox1EditAdName.TabIndex = 16;
-            this.textBox1EditAdName.TextChanged += new System.EventHandler(this.TextBox1EditAdName_TextChanged);
+            this.textBox1EditAdCompanyName.Location = new System.Drawing.Point(223, 89);
+            this.textBox1EditAdCompanyName.Name = "textBox1EditAdCompanyName";
+            this.textBox1EditAdCompanyName.Size = new System.Drawing.Size(100, 20);
+            this.textBox1EditAdCompanyName.TabIndex = 16;
+            this.textBox1EditAdCompanyName.TextChanged += new System.EventHandler(this.TextBox1EditAdName_TextChanged);
             // 
             // label7
             // 
@@ -180,11 +182,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 92);
+            this.label2.Location = new System.Drawing.Point(98, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Company name:";
             // 
             // label1
             // 
@@ -195,6 +197,16 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Edit ad:";
             // 
+            // button1DeleteAd
+            // 
+            this.button1DeleteAd.Location = new System.Drawing.Point(237, 415);
+            this.button1DeleteAd.Name = "button1DeleteAd";
+            this.button1DeleteAd.Size = new System.Drawing.Size(75, 23);
+            this.button1DeleteAd.TabIndex = 21;
+            this.button1DeleteAd.Text = "Delete";
+            this.button1DeleteAd.UseVisualStyleBackColor = true;
+            this.button1DeleteAd.Click += new System.EventHandler(this.Button2EditAdCreate_Click);
+            // 
             // Edit_ad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,14 +214,15 @@
             this.ClientSize = new System.Drawing.Size(558, 470);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3EditAdCancel);
-            this.Controls.Add(this.button2EditAdCreate);
+            this.Controls.Add(this.button1DeleteAd);
+            this.Controls.Add(this.button2EditAd);
             this.Controls.Add(this.dateTimePicker1ExpDateEdit);
-            this.Controls.Add(this.button1EditBrowse);
+            this.Controls.Add(this.button1EditBrowseAdImage);
             this.Controls.Add(this.checkBox1EditAdState);
             this.Controls.Add(this.textBox2EditAdDescription);
             this.Controls.Add(this.textBox5EditAdURL);
             this.Controls.Add(this.textBox4EditAdPrice);
-            this.Controls.Add(this.textBox1EditAdName);
+            this.Controls.Add(this.textBox1EditAdCompanyName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
@@ -228,14 +241,14 @@
         #endregion
 
         private System.Windows.Forms.Button button3EditAdCancel;
-        private System.Windows.Forms.Button button2EditAdCreate;
+        private System.Windows.Forms.Button button2EditAd;
         private System.Windows.Forms.DateTimePicker dateTimePicker1ExpDateEdit;
-        private System.Windows.Forms.Button button1EditBrowse;
+        private System.Windows.Forms.Button button1EditBrowseAdImage;
         private System.Windows.Forms.CheckBox checkBox1EditAdState;
         private System.Windows.Forms.TextBox textBox2EditAdDescription;
         private System.Windows.Forms.TextBox textBox5EditAdURL;
         private System.Windows.Forms.TextBox textBox4EditAdPrice;
-        private System.Windows.Forms.TextBox textBox1EditAdName;
+        private System.Windows.Forms.TextBox textBox1EditAdCompanyName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -244,5 +257,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1DeleteAd;
     }
 }

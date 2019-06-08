@@ -12,6 +12,7 @@ using Main.yonor;
 using Main;
 using System.IO;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace MAIN_GUI_Mangaer_window
 {
@@ -30,7 +31,6 @@ namespace MAIN_GUI_Mangaer_window
         StockManagement mst = new StockManagement();
         //static List<Advertisement> myAds = new List<Advertisement>();
         public static string AdSelectedToEdit;
-
 
         //public static void addToAdsArray(Advertisement myAdToAdd)
         //{
@@ -51,7 +51,7 @@ namespace MAIN_GUI_Mangaer_window
         //    return emptyAd;
         //}
 
-     
+
 
         public void loadDefaultsData()
         {
@@ -186,6 +186,7 @@ namespace MAIN_GUI_Mangaer_window
             loadDishesComboEdit();
             loadUsersComboEdit();
             loadAdsComboEdit();
+            LoadSmtpValues();
 
         }
 
@@ -201,7 +202,34 @@ namespace MAIN_GUI_Mangaer_window
             }
         }
 
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>Smtp>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+        private void SetSmtpSettings()
+        {
+
+            var doc = XElement.Load(ma_controller.XmlParser.xmlSmtpSettings);
+
+            var hostEdition = doc.XPathSelectElements("//Host").Where(c => c.Element("HostIP").Value == textBox1SmtpIp.Text).Single();
+            hostEdition.SetElementValue("HostIP", textBox1SmtpIp.Text);
+            hostEdition.SetElementValue("Port", textBox4SmtpPort.Text);
+            hostEdition.SetElementValue("Username", textBox3SmtpUsername.Text);
+            hostEdition.SetElementValue("Password", textBox2SmtpPassword.Text);
+            doc.Save(ma_controller.XmlParser.xmlSmtpSettings);
+            MessageBox.Show("Smtp settings have been set, please test your connection.", "Smtp settings");
+
+        }
+
+        public void LoadSmtpValues()
+        {
+            textBox2SmtpPassword.PasswordChar = '*';
+            DataSet smtpLoadSe = new DataSet();
+            smtpLoadSe.ReadXml(ma_controller.XmlParser.xmlSmtpSettings);
+            textBox1SmtpIp.Text = smtpLoadSe.Tables[0].Rows[0][0].ToString();
+            textBox4SmtpPort.Text = smtpLoadSe.Tables[0].Rows[0][1].ToString();
+            textBox3SmtpUsername.Text = smtpLoadSe.Tables[0].Rows[0][2].ToString();
+            textBox2SmtpPassword.Text = smtpLoadSe.Tables[0].Rows[0][3].ToString();
+
+        }
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>>ADS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         public void loadAdsComboEdit()
@@ -216,16 +244,12 @@ namespace MAIN_GUI_Mangaer_window
 
         private void Button10CreateAds_Click(object sender, EventArgs e)
         {
-            ma_views.create_ad myAdCreation = new ma_views.create_ad();
-            myAdCreation.ShowDialog();
-            loadAdsComboEdit();
-            //AdscomboBoxLoad();
+      
 
         }
         private void Button9EditAds_Click(object sender, EventArgs e)
         {
-            ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad(comboBox8EditAds.SelectedItem.ToString());
-            formEditMyAd.ShowDialog();
+           
         }
 
         //public void AdscomboBoxLoad()
@@ -307,6 +331,26 @@ namespace MAIN_GUI_Mangaer_window
             ma_views.EditUser myUserToEdit = new ma_views.EditUser(comboBox2EditUserMainWnd.SelectedIndex, comboBox2EditUserMainWnd.Text);
             myUserToEdit.ShowDialog();
             loadUsersComboEdit();
+        }
+
+        private void Button12smtpSetCreds_Click(object sender, EventArgs e)
+        {
+            SetSmtpSettings();
+            LoadSmtpValues();
+        }
+
+        private void Button9EditAds_Click_1(object sender, EventArgs e)
+        {
+            ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad(comboBox8EditAds.Text);
+            formEditMyAd.ShowDialog();
+        }
+
+        private void Button10CreateAds_Click_1(object sender, EventArgs e)
+        {
+            ma_views.create_ad myAdCreation = new ma_views.create_ad();
+            myAdCreation.ShowDialog();
+            loadAdsComboEdit();
+            //AdscomboBoxLoad();
         }
     }
 }

@@ -22,6 +22,8 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         public static string xmlUsers = $"{dataDir}\\Data\\Users.xml";
         public static string xmlOrder = $"{dataDir}\\Data\\Order.xml";
         public static string xmlAds = $"{dataDir}\\Data\\Ads.xml";
+        public static string xmlSmtpSettings = $"{dataDir}\\Data\\Smtp.xml";
+
 
 
         //Dish myDish = new Dish();
@@ -95,15 +97,34 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
             XElement school = doc.Element("Ads");
             school.Add(new XElement("Ad",
                        new XElement("CompanyName", crtAd.CompanyName),
+                       new XElement("Price", crtAd.Price),
                        new XElement("Active", crtAd.Active),
                         new XElement("AdBody", crtAd.AdBody),
                        new XElement("CreationDate", crtAd.CreationDate),
-                       new XElement("ExpirationDate", crtAd.ExpirationDate),
+                       new XElement("ExpirationDate", crtAd.ExpirationDate.ToString()),
+                       new XElement("URL", crtAd.Url),
                        new XElement("Image", crtAd.ImgPath)
                     ));
 
             doc.Save(xmlAds);
         }
+        //public static void XmlParserSmtp(Advertisement smtpSett)
+        //{
+        //    XDocument doc = XDocument.Load(xmlSmtpSettings);
+        //    XElement school = doc.Element("Ads");
+        //    school.Add(new XElement("Ad",
+        //               new XElement("CompanyName", smtpSett.CompanyName),
+        //               new XElement("Price", smtpSett.Price),
+        //               new XElement("Active", smtpSett.Active),
+        //                new XElement("AdBody", smtpSett.AdBody),
+        //               new XElement("CreationDate", smtpSett.CreationDate),
+        //               new XElement("ExpirationDate", smtpSett.ExpirationDate.ToString()),
+        //               new XElement("URL", smtpSett.Url),
+        //               new XElement("Image", smtpSett.ImgPath)
+        //            ));
+
+        //    doc.Save(xmlSmtpSettings);
+        //}
 
     }
 }

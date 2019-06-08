@@ -47,23 +47,6 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabAdvertisementMgmt = new System.Windows.Forms.TabPage();
-            this.debugg = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button13SmtpUser = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button12smtpPass = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button11SmtpSet = new System.Windows.Forms.Button();
-            this.button9EditAds = new System.Windows.Forms.Button();
-            this.button10CreateAds = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox8EditAds = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
             this.numericUpDown6Cola = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5Water = new System.Windows.Forms.NumericUpDown();
@@ -85,6 +68,32 @@
             this.button15 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6LoggedInAs = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox5SmtpTestEmail = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1SmtpTestConn = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button9EditAds = new System.Windows.Forms.Button();
+            this.button10CreateAds = new System.Windows.Forms.Button();
+            this.comboBox8EditAds = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox3SmtpUsername = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox2SmtpPassword = new System.Windows.Forms.TextBox();
+            this.button12smtpSetCreds = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox4SmtpPort = new System.Windows.Forms.TextBox();
+            this.textBox1SmtpIp = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label3StatusMailingList = new System.Windows.Forms.Label();
+            this.checkBox1OnOffCampaign = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3SmtpSettingStatus = new System.Windows.Forms.Label();
             this.tabCrontrolUsers.SuspendLayout();
             this.tabPage1Dishes.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
@@ -98,6 +107,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCrontrolUsers
@@ -299,178 +312,16 @@
             // 
             // tabAdvertisementMgmt
             // 
-            this.tabAdvertisementMgmt.Controls.Add(this.debugg);
-            this.tabAdvertisementMgmt.Controls.Add(this.textBox3);
-            this.tabAdvertisementMgmt.Controls.Add(this.button13SmtpUser);
-            this.tabAdvertisementMgmt.Controls.Add(this.label20);
-            this.tabAdvertisementMgmt.Controls.Add(this.textBox2);
-            this.tabAdvertisementMgmt.Controls.Add(this.button12smtpPass);
-            this.tabAdvertisementMgmt.Controls.Add(this.label19);
-            this.tabAdvertisementMgmt.Controls.Add(this.textBox1);
-            this.tabAdvertisementMgmt.Controls.Add(this.button11SmtpSet);
-            this.tabAdvertisementMgmt.Controls.Add(this.button9EditAds);
-            this.tabAdvertisementMgmt.Controls.Add(this.button10CreateAds);
-            this.tabAdvertisementMgmt.Controls.Add(this.label18);
-            this.tabAdvertisementMgmt.Controls.Add(this.label17);
-            this.tabAdvertisementMgmt.Controls.Add(this.label16);
-            this.tabAdvertisementMgmt.Controls.Add(this.comboBox8EditAds);
-            this.tabAdvertisementMgmt.Controls.Add(this.label15);
-            this.tabAdvertisementMgmt.Controls.Add(this.label14);
+            this.tabAdvertisementMgmt.Controls.Add(this.groupBox4);
+            this.tabAdvertisementMgmt.Controls.Add(this.groupBox3);
+            this.tabAdvertisementMgmt.Controls.Add(this.groupBox2);
+            this.tabAdvertisementMgmt.Controls.Add(this.groupBox1);
             this.tabAdvertisementMgmt.Location = new System.Drawing.Point(4, 22);
             this.tabAdvertisementMgmt.Name = "tabAdvertisementMgmt";
             this.tabAdvertisementMgmt.Size = new System.Drawing.Size(791, 378);
             this.tabAdvertisementMgmt.TabIndex = 3;
             this.tabAdvertisementMgmt.Text = "Advertisement";
             this.tabAdvertisementMgmt.UseVisualStyleBackColor = true;
-            // 
-            // debugg
-            // 
-            this.debugg.AutoSize = true;
-            this.debugg.Location = new System.Drawing.Point(288, 174);
-            this.debugg.Name = "debugg";
-            this.debugg.Size = new System.Drawing.Size(41, 13);
-            this.debugg.TabIndex = 17;
-            this.debugg.Text = "label29";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(193, 293);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 20);
-            this.textBox3.TabIndex = 16;
-            // 
-            // button13SmtpUser
-            // 
-            this.button13SmtpUser.Location = new System.Drawing.Point(490, 291);
-            this.button13SmtpUser.Name = "button13SmtpUser";
-            this.button13SmtpUser.Size = new System.Drawing.Size(75, 23);
-            this.button13SmtpUser.TabIndex = 15;
-            this.button13SmtpUser.Text = "Set";
-            this.button13SmtpUser.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(108, 296);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 13);
-            this.label20.TabIndex = 14;
-            this.label20.Text = "Username: ";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(193, 332);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 20);
-            this.textBox2.TabIndex = 13;
-            // 
-            // button12smtpPass
-            // 
-            this.button12smtpPass.Location = new System.Drawing.Point(490, 330);
-            this.button12smtpPass.Name = "button12smtpPass";
-            this.button12smtpPass.Size = new System.Drawing.Size(75, 23);
-            this.button12smtpPass.TabIndex = 12;
-            this.button12smtpPass.Text = "Set";
-            this.button12smtpPass.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(108, 335);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "Password: ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(193, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 20);
-            this.textBox1.TabIndex = 10;
-            // 
-            // button11SmtpSet
-            // 
-            this.button11SmtpSet.Location = new System.Drawing.Point(490, 253);
-            this.button11SmtpSet.Name = "button11SmtpSet";
-            this.button11SmtpSet.Size = new System.Drawing.Size(75, 23);
-            this.button11SmtpSet.TabIndex = 8;
-            this.button11SmtpSet.Text = "Set";
-            this.button11SmtpSet.UseVisualStyleBackColor = true;
-            // 
-            // button9EditAds
-            // 
-            this.button9EditAds.Location = new System.Drawing.Point(403, 104);
-            this.button9EditAds.Name = "button9EditAds";
-            this.button9EditAds.Size = new System.Drawing.Size(75, 23);
-            this.button9EditAds.TabIndex = 8;
-            this.button9EditAds.Text = "Edit";
-            this.button9EditAds.UseVisualStyleBackColor = true;
-            this.button9EditAds.Click += new System.EventHandler(this.Button9EditAds_Click);
-            // 
-            // button10CreateAds
-            // 
-            this.button10CreateAds.Location = new System.Drawing.Point(403, 56);
-            this.button10CreateAds.Name = "button10CreateAds";
-            this.button10CreateAds.Size = new System.Drawing.Size(75, 23);
-            this.button10CreateAds.TabIndex = 9;
-            this.button10CreateAds.Text = "Create";
-            this.button10CreateAds.UseVisualStyleBackColor = true;
-            this.button10CreateAds.Click += new System.EventHandler(this.Button10CreateAds_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(108, 258);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 13);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "Smtp server: ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(30, 215);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 13);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Smtp settings:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(30, 34);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 13);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Advertisements:";
-            // 
-            // comboBox8EditAds
-            // 
-            this.comboBox8EditAds.FormattingEnabled = true;
-            this.comboBox8EditAds.Location = new System.Drawing.Point(243, 106);
-            this.comboBox8EditAds.Name = "comboBox8EditAds";
-            this.comboBox8EditAds.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8EditAds.TabIndex = 6;
-            this.comboBox8EditAds.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(118, 109);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 13);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Edit advertisement:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(118, 61);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Create new advertisement: ";
             // 
             // tabPage1StockMngt
             // 
@@ -672,6 +523,255 @@
             this.label6LoggedInAs.TabIndex = 2;
             this.label6LoggedInAs.Text = "none";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1SmtpTestConn);
+            this.groupBox1.Controls.Add(this.textBox5SmtpTestEmail);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Location = new System.Drawing.Point(580, 215);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(191, 144);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Test conection";
+            // 
+            // textBox5SmtpTestEmail
+            // 
+            this.textBox5SmtpTestEmail.Location = new System.Drawing.Point(62, 35);
+            this.textBox5SmtpTestEmail.Name = "textBox5SmtpTestEmail";
+            this.textBox5SmtpTestEmail.Size = new System.Drawing.Size(100, 20);
+            this.textBox5SmtpTestEmail.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Email:";
+            // 
+            // button1SmtpTestConn
+            // 
+            this.button1SmtpTestConn.Location = new System.Drawing.Point(62, 94);
+            this.button1SmtpTestConn.Name = "button1SmtpTestConn";
+            this.button1SmtpTestConn.Size = new System.Drawing.Size(75, 23);
+            this.button1SmtpTestConn.TabIndex = 24;
+            this.button1SmtpTestConn.Text = "Test";
+            this.button1SmtpTestConn.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button9EditAds);
+            this.groupBox2.Controls.Add(this.button10CreateAds);
+            this.groupBox2.Controls.Add(this.comboBox8EditAds);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Location = new System.Drawing.Point(17, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(488, 140);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ads settings:";
+            // 
+            // button9EditAds
+            // 
+            this.button9EditAds.Location = new System.Drawing.Point(336, 89);
+            this.button9EditAds.Name = "button9EditAds";
+            this.button9EditAds.Size = new System.Drawing.Size(75, 23);
+            this.button9EditAds.TabIndex = 14;
+            this.button9EditAds.Text = "Edit";
+            this.button9EditAds.UseVisualStyleBackColor = true;
+            this.button9EditAds.Click += new System.EventHandler(this.Button9EditAds_Click_1);
+            // 
+            // button10CreateAds
+            // 
+            this.button10CreateAds.Location = new System.Drawing.Point(336, 41);
+            this.button10CreateAds.Name = "button10CreateAds";
+            this.button10CreateAds.Size = new System.Drawing.Size(75, 23);
+            this.button10CreateAds.TabIndex = 15;
+            this.button10CreateAds.Text = "Create";
+            this.button10CreateAds.UseVisualStyleBackColor = true;
+            this.button10CreateAds.Click += new System.EventHandler(this.Button10CreateAds_Click_1);
+            // 
+            // comboBox8EditAds
+            // 
+            this.comboBox8EditAds.FormattingEnabled = true;
+            this.comboBox8EditAds.Location = new System.Drawing.Point(176, 91);
+            this.comboBox8EditAds.Name = "comboBox8EditAds";
+            this.comboBox8EditAds.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8EditAds.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(51, 94);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Edit advertisement:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(51, 46);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(136, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Create new advertisement: ";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3SmtpSettingStatus);
+            this.groupBox3.Controls.Add(this.textBox3SmtpUsername);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.textBox2SmtpPassword);
+            this.groupBox3.Controls.Add(this.button12smtpSetCreds);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.textBox4SmtpPort);
+            this.groupBox3.Controls.Add(this.textBox1SmtpIp);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Location = new System.Drawing.Point(17, 215);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(543, 144);
+            this.groupBox3.TabIndex = 24;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Smtp settings:";
+            // 
+            // textBox3SmtpUsername
+            // 
+            this.textBox3SmtpUsername.Location = new System.Drawing.Point(116, 73);
+            this.textBox3SmtpUsername.Name = "textBox3SmtpUsername";
+            this.textBox3SmtpUsername.Size = new System.Drawing.Size(262, 20);
+            this.textBox3SmtpUsername.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(31, 76);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 13);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Username: ";
+            // 
+            // textBox2SmtpPassword
+            // 
+            this.textBox2SmtpPassword.Location = new System.Drawing.Point(116, 112);
+            this.textBox2SmtpPassword.Name = "textBox2SmtpPassword";
+            this.textBox2SmtpPassword.Size = new System.Drawing.Size(262, 20);
+            this.textBox2SmtpPassword.TabIndex = 25;
+            // 
+            // button12smtpSetCreds
+            // 
+            this.button12smtpSetCreds.Location = new System.Drawing.Point(413, 110);
+            this.button12smtpSetCreds.Name = "button12smtpSetCreds";
+            this.button12smtpSetCreds.Size = new System.Drawing.Size(75, 23);
+            this.button12smtpSetCreds.TabIndex = 24;
+            this.button12smtpSetCreds.Text = "Set";
+            this.button12smtpSetCreds.UseVisualStyleBackColor = true;
+            this.button12smtpSetCreds.Click += new System.EventHandler(this.Button12smtpSetCreds_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(31, 115);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.TabIndex = 23;
+            this.label19.Text = "Password: ";
+            // 
+            // textBox4SmtpPort
+            // 
+            this.textBox4SmtpPort.Location = new System.Drawing.Point(336, 36);
+            this.textBox4SmtpPort.Name = "textBox4SmtpPort";
+            this.textBox4SmtpPort.Size = new System.Drawing.Size(42, 20);
+            this.textBox4SmtpPort.TabIndex = 21;
+            // 
+            // textBox1SmtpIp
+            // 
+            this.textBox1SmtpIp.Location = new System.Drawing.Point(116, 35);
+            this.textBox1SmtpIp.Name = "textBox1SmtpIp";
+            this.textBox1SmtpIp.Size = new System.Drawing.Size(171, 20);
+            this.textBox1SmtpIp.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(301, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Port:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(31, 38);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(69, 13);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Smtp server: ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(-109, 14);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 13);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Smtp settings:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label3StatusMailingList);
+            this.groupBox4.Controls.Add(this.checkBox1OnOffCampaign);
+            this.groupBox4.Location = new System.Drawing.Point(531, 17);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(240, 139);
+            this.groupBox4.TabIndex = 25;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Mailing list Campaign settings:";
+            // 
+            // label3StatusMailingList
+            // 
+            this.label3StatusMailingList.AutoSize = true;
+            this.label3StatusMailingList.Location = new System.Drawing.Point(25, 98);
+            this.label3StatusMailingList.Name = "label3StatusMailingList";
+            this.label3StatusMailingList.Size = new System.Drawing.Size(186, 13);
+            this.label3StatusMailingList.TabIndex = 22;
+            this.label3StatusMailingList.Text = "Sending Ads to Subscribers every day";
+            // 
+            // checkBox1OnOffCampaign
+            // 
+            this.checkBox1OnOffCampaign.AutoSize = true;
+            this.checkBox1OnOffCampaign.Location = new System.Drawing.Point(28, 29);
+            this.checkBox1OnOffCampaign.Name = "checkBox1OnOffCampaign";
+            this.checkBox1OnOffCampaign.Size = new System.Drawing.Size(109, 17);
+            this.checkBox1OnOffCampaign.TabIndex = 21;
+            this.checkBox1OnOffCampaign.Text = "Enable Campaign";
+            this.checkBox1OnOffCampaign.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(25, 76);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Status:";
+            // 
+            // label3SmtpSettingStatus
+            // 
+            this.label3SmtpSettingStatus.AutoSize = true;
+            this.label3SmtpSettingStatus.Location = new System.Drawing.Point(413, 63);
+            this.label3SmtpSettingStatus.Name = "label3SmtpSettingStatus";
+            this.label3SmtpSettingStatus.Size = new System.Drawing.Size(79, 13);
+            this.label3SmtpSettingStatus.TabIndex = 29;
+            this.label3SmtpSettingStatus.Text = "Setting Not Set";
+            // 
             // main_manager_wnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -693,7 +793,6 @@
             this.tabReportsMgmt.ResumeLayout(false);
             this.tabReportsMgmt.PerformLayout();
             this.tabAdvertisementMgmt.ResumeLayout(false);
-            this.tabAdvertisementMgmt.PerformLayout();
             this.tabPage1StockMngt.ResumeLayout(false);
             this.tabPage1StockMngt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).EndInit();
@@ -703,6 +802,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -722,21 +829,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button13SmtpUser;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button12smtpPass;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button11SmtpSet;
-        private System.Windows.Forms.Button button9EditAds;
-        private System.Windows.Forms.Button button10CreateAds;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TabPage tabPage1StockMngt;
         private System.Windows.Forms.NumericUpDown numericUpDown6Cola;
@@ -763,10 +855,34 @@
         private System.Windows.Forms.Button button6DishCreate;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox8EditAds;
-        private System.Windows.Forms.Label debugg;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6LoggedInAs;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label3StatusMailingList;
+        private System.Windows.Forms.CheckBox checkBox1OnOffCampaign;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBox3SmtpUsername;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox2SmtpPassword;
+        private System.Windows.Forms.Button button12smtpSetCreds;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox4SmtpPort;
+        private System.Windows.Forms.TextBox textBox1SmtpIp;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button9EditAds;
+        private System.Windows.Forms.Button button10CreateAds;
+        private System.Windows.Forms.ComboBox comboBox8EditAds;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1SmtpTestConn;
+        private System.Windows.Forms.TextBox textBox5SmtpTestEmail;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3SmtpSettingStatus;
     }
 }
 

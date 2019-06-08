@@ -183,6 +183,7 @@
   <ItemGroup>
     <Content Include="Data\Ads.xml" />
     <Content Include="Data\Dishes.xml" />
+    <Content Include="Data\Smtp.xml" />
     <Content Include="Data\Users.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

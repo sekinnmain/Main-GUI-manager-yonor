@@ -213,7 +213,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Edit_Dish";
-            this.Text = "Edit_Dish";
+            this.Text = "MAIN - Edit dish";
             this.Load += new System.EventHandler(this.Edit_Dish_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2DishEditSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1EditDishPrice)).EndInit();

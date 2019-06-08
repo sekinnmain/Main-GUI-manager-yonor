@@ -2,18 +2,21 @@
 <Ads>
   <Ad>
     <CompanyName>Cellcom</CompanyName>
-    <Active>true</Active>
+    <Active>false</Active>
     <AdBody>cellcom</AdBody>
+    <Price>1212</Price>
     <CreationDate>2019-06-07T21:43:03.5528182+03:00</CreationDate>
-    <ExpirationDate>2019-06-07T21:42:34.3156179+03:00</ExpirationDate>
-    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+    <URL>www.cellcom.co.il</URL>
+    <ExpirationDate>2018-01-07T20:42:34.3156179+02:00</ExpirationDate>
   </Ad>
   <Ad>
     <CompanyName>Ramy Levi</CompanyName>
     <Active>true</Active>
     <AdBody>Best Ofot Ever!</AdBody>
+    <Price>123123</Price>
     <CreationDate>2019-06-08T10:38:33.470893+03:00</CreationDate>
-    <ExpirationDate>2019-06-08T10:37:50.3625619+03:00</ExpirationDate>
+    <URL>www.Ramy.co.il</URL>
+    <ExpirationDate>2018-06-08T10:37:50.3625619+03:00</ExpirationDate>
     <Image>C:\Users\userr\Pictures\1test.jpg</Image>
   </Ad>
 </Ads>

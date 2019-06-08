@@ -27,7 +27,7 @@ namespace Main.yonor
             // TODO: Add constructor logic here
             //
             
-            client.Port = SmtpSrvPort;
+            //client.Port = SmtpSrvPort;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
             client.Host = SmtpHost;
