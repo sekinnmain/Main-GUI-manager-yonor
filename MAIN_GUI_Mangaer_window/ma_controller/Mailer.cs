@@ -52,10 +52,10 @@ namespace Main.yonor
         public static void LoadClient()
         {
             smtp.Port = 25;
-            smtp.Host = "smtp.g-cloud.co.il"; //for gmail host  
+            smtp.Host = "smtp.g-.co.il"; //for gmail host  
                                               //smtp.EnableSsl = true;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("yizrael", "YI$123456");
+            smtp.Credentials = new NetworkCredential("", "");
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
         }
 
