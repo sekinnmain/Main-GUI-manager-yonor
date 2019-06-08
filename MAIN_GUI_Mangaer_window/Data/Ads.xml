@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ads>
+  <Ad>
+    <CompanyName>Cellcom</CompanyName>
+    <Active>true</Active>
+    <AdBody>cellcom</AdBody>
+    <CreationDate>2019-06-07T21:43:03.5528182+03:00</CreationDate>
+    <ExpirationDate>2019-06-07T21:42:34.3156179+03:00</ExpirationDate>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+  </Ad>
+  <Ad>
+    <CompanyName>Ramy Levi</CompanyName>
+    <Active>true</Active>
+    <AdBody>Best Ofot Ever!</AdBody>
+    <CreationDate>2019-06-08T10:38:33.470893+03:00</CreationDate>
+    <ExpirationDate>2019-06-08T10:37:50.3625619+03:00</ExpirationDate>
+    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
+  </Ad>
+</Ads>

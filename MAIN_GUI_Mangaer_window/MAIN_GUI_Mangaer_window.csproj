@@ -181,6 +181,7 @@
     <Folder Include="menu_views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Ads.xml" />
     <Content Include="Data\Dishes.xml" />
     <Content Include="Data\Users.xml" />
   </ItemGroup>

@@ -12,9 +12,11 @@ namespace Main.yonor
     public class Mailer
     {
 
-        private int SmtpSrvPort = 445;
-        private string SmtpUser;
-        private string SmtpPass;
+        public int smtpPortSrv { get; set; }
+        public string smtpUserSrv { get; set; }
+        public string smtpUser { get; set; }
+        public string smtpPassSrv { get; set; }
+
         private string SmtpHost;
         MailMessage mail = new MailMessage("DONT-REPLY@me.com", "user@hotmail.com");
         SmtpClient client = new SmtpClient();
@@ -38,6 +40,7 @@ namespace Main.yonor
         {
             client.Send(mail);
         }
+        
     }
 
 }

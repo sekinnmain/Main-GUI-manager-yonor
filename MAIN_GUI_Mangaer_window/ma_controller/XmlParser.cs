@@ -8,7 +8,7 @@ using System.Xml.Linq;
 using Main;
 using NewUsers;
 using main;
-
+using Main.yonor;
 
 namespace MAIN_GUI_Mangaer_window.ma_controller
 {
@@ -21,6 +21,8 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         public static string xmlFeedBack = $"{dataDir}\\Data\\FeedBack.xml";
         public static string xmlUsers = $"{dataDir}\\Data\\Users.xml";
         public static string xmlOrder = $"{dataDir}\\Data\\Order.xml";
+        public static string xmlAds = $"{dataDir}\\Data\\Ads.xml";
+
 
         //Dish myDish = new Dish();
 
@@ -86,6 +88,21 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
                     ));
 
             doc.Save(xmlUsers);
+        }
+        public static void XmlParserAds(Advertisement crtAd)
+        {
+            XDocument doc = XDocument.Load(xmlAds);
+            XElement school = doc.Element("Ads");
+            school.Add(new XElement("Ad",
+                       new XElement("CompanyName", crtAd.CompanyName),
+                       new XElement("Active", crtAd.Active),
+                        new XElement("AdBody", crtAd.AdBody),
+                       new XElement("CreationDate", crtAd.CreationDate),
+                       new XElement("ExpirationDate", crtAd.ExpirationDate),
+                       new XElement("Image", crtAd.ImgPath)
+                    ));
+
+            doc.Save(xmlAds);
         }
 
     }

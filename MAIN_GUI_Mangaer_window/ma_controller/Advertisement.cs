@@ -20,6 +20,7 @@ namespace Main.yonor
             //
             Active = false;
         }
+
         public string CompanyName { get; set; }
         public string ImgPath { get; set; }
         public string AdBody { get; set; }
@@ -28,7 +29,6 @@ namespace Main.yonor
         public DateTime ExpirationDate { get; set; }
         public float Price { get; set; }
         public string Url { get; set; }
-        public MailingList MailingList {get; set;}
 
         public void DisableAd()
         {

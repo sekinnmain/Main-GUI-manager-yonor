@@ -61,7 +61,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox8Edit = new System.Windows.Forms.ComboBox();
+            this.comboBox8EditAds = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
@@ -313,7 +313,7 @@
             this.tabAdvertisementMgmt.Controls.Add(this.label18);
             this.tabAdvertisementMgmt.Controls.Add(this.label17);
             this.tabAdvertisementMgmt.Controls.Add(this.label16);
-            this.tabAdvertisementMgmt.Controls.Add(this.comboBox8Edit);
+            this.tabAdvertisementMgmt.Controls.Add(this.comboBox8EditAds);
             this.tabAdvertisementMgmt.Controls.Add(this.label15);
             this.tabAdvertisementMgmt.Controls.Add(this.label14);
             this.tabAdvertisementMgmt.Location = new System.Drawing.Point(4, 22);
@@ -445,14 +445,14 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Advertisements:";
             // 
-            // comboBox8Edit
+            // comboBox8EditAds
             // 
-            this.comboBox8Edit.FormattingEnabled = true;
-            this.comboBox8Edit.Location = new System.Drawing.Point(243, 106);
-            this.comboBox8Edit.Name = "comboBox8Edit";
-            this.comboBox8Edit.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8Edit.TabIndex = 6;
-            this.comboBox8Edit.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
+            this.comboBox8EditAds.FormattingEnabled = true;
+            this.comboBox8EditAds.Location = new System.Drawing.Point(243, 106);
+            this.comboBox8EditAds.Name = "comboBox8EditAds";
+            this.comboBox8EditAds.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8EditAds.TabIndex = 6;
+            this.comboBox8EditAds.SelectedIndexChanged += new System.EventHandler(this.ComboBox8Edit_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -763,7 +763,7 @@
         private System.Windows.Forms.Button button6DishCreate;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox8Edit;
+        private System.Windows.Forms.ComboBox comboBox8EditAds;
         private System.Windows.Forms.Label debugg;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6LoggedInAs;

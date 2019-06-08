@@ -13,11 +13,13 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 {
     public partial class create_ad : Form
     {
+
+        Advertisement myAd = new Advertisement();
+
         public create_ad()
         {
             InitializeComponent();
         }
-        Advertisement myAd = new Advertisement();
         
         
         public void adCreation()
@@ -27,7 +29,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             myAd.CompanyName = textBox1AdName.Text;
             myAd.CreationDate = DateTime.Now;
             myAd.ExpirationDate = dateTimePicker1ExpDate.Value;
-            main_manager_wnd.addToAdsArray(myAd);
+            ma_controller.XmlParser.XmlParserAds(myAd);
         }
         private void Button2AdCreate_Click(object sender, EventArgs e)
         {
@@ -37,6 +39,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             {
 
                 adCreation();
+                AdCreatedMsg(myAd.CompanyName);
                 this.Close();
                
             }
@@ -60,7 +63,7 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void Button3AdCancel_Click(object sender, EventArgs e)
         {
-            if ((MessageBox.Show("Close ad cretion?", "MAIN - Close ad cretion",
+            if ((MessageBox.Show("Close ad creation?", "MAIN - Close ad creation",
   MessageBoxButtons.YesNo, MessageBoxIcon.Question,
   MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes))
             {
@@ -73,6 +76,11 @@ namespace MAIN_GUI_Mangaer_window.ma_views
         private void Create_ad_Load(object sender, EventArgs e)
         {
 
+        }
+        private void AdCreatedMsg(string myCrtAd)
+        {
+            MessageBox.Show($"Ad {myCrtAd} was successfully created", "Ad Creation",
+    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

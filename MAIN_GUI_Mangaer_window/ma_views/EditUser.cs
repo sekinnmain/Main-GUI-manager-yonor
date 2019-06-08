@@ -40,13 +40,13 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void BindDataEditUser(string myUser)
         {
-          
+
 
             foreach (XElement xe in (XDocument.Load(ma_controller.XmlParser.xmlUsers).XPathSelectElements($"//RegisteredUser")))
             {
                 if (xe.Element("FirstName").Value.Equals(myUser))
                 {
-             
+
                     textBox1editUserName.Text = xe.Element("FirstName").Value;
                     textBoeditUserLastName.Text = xe.Element("LastName").Value;
                     textBox3Addressedit.Text = xe.Element("Address").Value;
@@ -62,40 +62,59 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             }
 
 
-           
+
         }
         private void DeleteUserFromXml(string myUser)
         {
 
+            XDocument xdoc = XDocument.Load(ma_controller.XmlParser.xmlUsers);
+            xdoc.Descendants("RegisteredUser")
+                .Where(x => (string)x.Element("FirstName") == myUser)
+                .Remove();
 
-            foreach (XElement xe in (XDocument.Load(ma_controller.XmlParser.xmlUsers).XPathSelectElements($"//RegisteredUser")))
-            {
-                if (xe.Element("FirstName").Value.Equals(myUser))
-                {
+            MessageBox.Show($"User {myUser} has been deleted", "User deletion.",
+MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            this.Close();
 
-                    xe.Remove();
-                    MessageBox.Show($"User {myUser} has been deleted", "User deletion.",
-       MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    this.Close();
 
-                }
-            }
+
+
+            //          foreach (XElement xe in (XDocument.Load(ma_controller.XmlParser.xmlUsers).XPathSelectElements("//RegisteredUser")))
+            //          {
+            //              if (xe.Element("FirstName").Value.Equals(myUser))
+            //              {
+
+            //                  xe.Remove();
+            //                  xd.Element("Applications")
+            //.Element("myApp")
+            //.Elements("add")
+            //.Where(x => (string)x.Attribute("key") == key)
+            //.Remove();
+
+
+            //                  MessageBox.Show($"User {myUser} has been deleted", "User deletion.",
+            //     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //                  this.Close();
+
+            //              }
+            //          }
 
 
 
         }
         private void ChangeUserPass()
         {
-            if(checkBox1EditPasswordEditForm.Checked == true)
+            if (checkBox1EditPasswordEditForm.Checked == true)
             {
                 textBox8editUserPassword.ReadOnly = false;
                 textBox9editPassVerify.ReadOnly = false;
-            }else
-                {
+            }
+            else
+            {
                 textBox8editUserPassword.ReadOnly = true;
                 textBox9editPassVerify.ReadOnly = true;
             }
-           
+
 
 
         }
@@ -132,21 +151,21 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             textBox9editPassVerify.Text = "";
             textBox8editUserPassword.PasswordChar = '*';
             textBox9editPassVerify.PasswordChar = '*';
-         
+
             if (comboBox1EditUser.SelectedItem.Equals("Vipuser"))
-                {
+            {
                 textBox8editUserPassword.ReadOnly = true;
                 textBox9editPassVerify.ReadOnly = true;
                 checkBox1EditPasswordEditForm.Visible = true;
                 label10EditUserVrfyPass.Visible = true;
                 label9EditUserPassword.Visible = true;
-                
-
-                }
 
 
+            }
 
-            
+
+
+
         }
 
         private void hideElementsByType()
@@ -195,9 +214,9 @@ namespace MAIN_GUI_Mangaer_window.ma_views
 
         private void EditUser_Load(object sender, EventArgs e)
         {
-           
+
             LoadDefaultValuesForComponents();
-            
+
         }
 
         private void Button2CanceleditUser_Click(object sender, EventArgs e)
@@ -213,14 +232,14 @@ namespace MAIN_GUI_Mangaer_window.ma_views
         private void Button1editUser_Click(object sender, EventArgs e)
         {
 
-            if(PassMatch())
+            if (PassMatch())
             {
                 SetValuesToUserInstance();
                 WriteInstanceToXml();
                 this.Close();
             }
 
-           
+
         }
         private void SetValuesToUserInstance()
         {
@@ -230,11 +249,12 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             userToEdit.PhoneNumber = textBox4PhoneNumberedit.Text;
             userToEdit.Email = textBox5EmailUseredit.Text;
             userToEdit.Address = textBox3Addressedit.Text;
-            if(comboBox1EditUser.SelectedItem.ToString().Equals("Vipuser"))
+            if (comboBox1EditUser.SelectedItem.ToString().Equals("Vipuser"))
             {
                 vipUserToEdit.UserName = textBox7editserUsername.Text;
                 vipUserToEdit.PassWord = textBox8editUserPassword.Text;
-            }else if (comboBox1EditUser.SelectedItem.ToString().Equals("Employee"))
+            }
+            else if (comboBox1EditUser.SelectedItem.ToString().Equals("Employee"))
             {
                 emplUserToEdit.ID = textBox6editUserID.Text;
             }
@@ -252,12 +272,12 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             userEdition.SetElementValue("Type", userToEdit.userType);
             userEdition.SetElementValue("Email", userToEdit.Email);
             userEdition.SetElementValue("Address", userToEdit.Address);
-            if(comboBox1EditUser.SelectedItem.ToString().Equals("Vipuser"))
+            if (comboBox1EditUser.SelectedItem.ToString().Equals("Vipuser"))
             {
                 userEdition.SetElementValue("Username", vipUserToEdit.UserName);
                 userEdition.SetElementValue("Password", vipUserToEdit.PassWord);
             }
-            else if(comboBox1EditUser.SelectedItem.ToString().Equals("Employee"))
+            else if (comboBox1EditUser.SelectedItem.ToString().Equals("Employee"))
             {
                 userEdition.SetElementValue("ID", emplUserToEdit.ID);
             }

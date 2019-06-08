@@ -14,9 +14,10 @@ namespace MAIN_GUI_Mangaer_window.ma_views
     public partial class Edit_ad : Form
     {
         Advertisement myAdToEdit;
-        public Edit_ad()
+        string myAdEditName;
+        public Edit_ad(string myAdToEdit)
         {
-            
+            myAdEditName = myAdToEdit;
             InitializeComponent();
         }
         

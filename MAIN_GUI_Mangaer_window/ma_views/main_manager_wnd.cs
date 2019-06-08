@@ -28,28 +28,28 @@ namespace MAIN_GUI_Mangaer_window
 
         DataTable dt = new DataTable();
         StockManagement mst = new StockManagement();
-        static List<Advertisement> myAds = new List<Advertisement>();
+        //static List<Advertisement> myAds = new List<Advertisement>();
         public static string AdSelectedToEdit;
 
 
-        public static void addToAdsArray(Advertisement myAdToAdd)
-        {
-            myAds.Add(myAdToAdd);
-        }
+        //public static void addToAdsArray(Advertisement myAdToAdd)
+        //{
+        //    myAds.Add(myAdToAdd);
+        //}
 
-        public static Advertisement RetMyAdFromArr(string adName)
-        {
-            foreach (Advertisement item in myAds)
-            {
-                if(item.CompanyName.Equals(adName))
-                {
-                    return item;
-                }
-            }
-            Advertisement emptyAd = new Advertisement();
-          //  emptyAd.CompanyName = "null";
-            return emptyAd;
-        }
+        //public static Advertisement RetMyAdFromArr(string adName)
+        //{
+        //    foreach (Advertisement item in myAds)
+        //    {
+        //        if(item.CompanyName.Equals(adName))
+        //        {
+        //            return item;
+        //        }
+        //    }
+        //    Advertisement emptyAd = new Advertisement();
+        //  //  emptyAd.CompanyName = "null";
+        //    return emptyAd;
+        //}
 
      
 
@@ -185,6 +185,7 @@ namespace MAIN_GUI_Mangaer_window
             updateData();
             loadDishesComboEdit();
             loadUsersComboEdit();
+            loadAdsComboEdit();
 
         }
 
@@ -203,33 +204,44 @@ namespace MAIN_GUI_Mangaer_window
 
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>>ADS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        public void loadAdsComboEdit()
+        {
+            DataSet adLoad = new DataSet();
+            adLoad.ReadXml(ma_controller.XmlParser.xmlAds);
+            comboBox8EditAds.DisplayMember = "CompanyName";
+            comboBox8EditAds.DataSource = adLoad.Tables[0];
+
+        }
+
+
         private void Button10CreateAds_Click(object sender, EventArgs e)
         {
             ma_views.create_ad myAdCreation = new ma_views.create_ad();
             myAdCreation.ShowDialog();
-            AdscomboBoxLoad();
+            loadAdsComboEdit();
+            //AdscomboBoxLoad();
 
         }
         private void Button9EditAds_Click(object sender, EventArgs e)
         {
-            ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad();
+            ma_views.Edit_ad formEditMyAd = new ma_views.Edit_ad(comboBox8EditAds.SelectedItem.ToString());
             formEditMyAd.ShowDialog();
         }
 
-        public void AdscomboBoxLoad()
-        {
-            foreach (Advertisement ad in myAds)
-            {
-                if(!(comboBox8Edit.Items.Cast<ComboBoxItem>().Any(cbi => cbi.Content.Equals(ad.ToString()))));
-                {
-                    comboBox8Edit.Items.Add(ad);
+        //public void AdscomboBoxLoad()
+        //{
+        //    foreach (Advertisement ad in myAds)
+        //    {
+        //        if(!(comboBox8Edit.Items.Cast<ComboBoxItem>().Any(cbi => cbi.Content.Equals(ad.ToString()))));
+        //        {
+        //            comboBox8Edit.Items.Add(ad);
 
-                }
-            }
-        }
+        //        }
+        //    }
+        //}
         private void ComboBox8Edit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AdSelectedToEdit = comboBox8Edit.SelectedItem.ToString();
+            AdSelectedToEdit = comboBox8EditAds.SelectedItem.ToString();
         }
 
 
