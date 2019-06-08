@@ -185,6 +185,7 @@
     <Content Include="Data\Dishes.xml" />
     <Content Include="Data\Smtp.xml" />
     <Content Include="Data\Users.xml" />
+    <Content Include="Resources\email-temp.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

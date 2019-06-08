@@ -28,7 +28,7 @@ namespace Main.yonor
 
         public void SendAds()
         {
-            Mailer myMailer = new Mailer();
+            //Mailer myMailer = new Mailer();
           //  myMailer.SendEmail(Ads.Dequeue());
             //delegate?
         }

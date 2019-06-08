@@ -559,6 +559,7 @@
             this.button1SmtpTestConn.TabIndex = 24;
             this.button1SmtpTestConn.Text = "Test";
             this.button1SmtpTestConn.UseVisualStyleBackColor = true;
+            this.button1SmtpTestConn.Click += new System.EventHandler(this.Button1SmtpTestConn_Click);
             // 
             // groupBox2
             // 

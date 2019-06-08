@@ -1,6 +1,8 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 using System.Net.Mail;
-using System.Net.Mime;
+using MAIN_GUI_Mangaer_window.ma_controller;
 
 namespace Main.yonor
 {
@@ -9,38 +11,54 @@ namespace Main.yonor
     /// </summary>
 
 
-    public class Mailer
+    public static class Mailer
     {
 
-        public int smtpPortSrv { get; set; }
-        public string smtpUserSrv { get; set; }
-        public string smtpUser { get; set; }
-        public string smtpPassSrv { get; set; }
-
-        private string SmtpHost;
-        MailMessage mail = new MailMessage("DONT-REPLY@me.com", "user@hotmail.com");
-        SmtpClient client = new SmtpClient();
-
-        public Mailer()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-            
-            //client.Port = SmtpSrvPort;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Host = SmtpHost;
-            mail.Subject = "this is a test email.";
-            mail.Body = "this is my test email body";
-            
-        }
-
-        public void SendEmail()
-        {
-            client.Send(mail);
-        }
+        public static int smtpPortSrv { get; set; }
+        public static string smtpHost { get; set; }
+        public static string smtpUser { get; set; }
+        public static string smtpPassSrv { get; set; }
+        public static string recieptEmail { get; set; }
+        public static MailMessage message = new MailMessage();
+        public static SmtpClient smtp = new SmtpClient();
         
+        public static void EmailAd()
+        {
+
+            using (StreamReader reader = File.OpenText(XmlParser.adTemp)) // Path to your 
+            {
+                try
+                {
+
+                    message.From = new MailAddress("main-delivery@yonor.me");
+                    message.To.Add(new MailAddress("6yonor@gmail.com"));
+                    message.Subject = "Test";
+                    message.IsBodyHtml = true; //to make message body as html  
+                    message.Body = reader.ReadToEnd();
+
+
+                }
+                catch (Exception) { }
+            }
+        }
+
+        public static void SendEmail()
+        {
+            LoadClient();
+            EmailAd();
+            smtp.Send(message);
+
+        }
+        public static void LoadClient()
+        {
+            smtp.Port = 25;
+            smtp.Host = "smtp.g-cloud.co.il"; //for gmail host  
+                                              //smtp.EnableSsl = true;
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = new NetworkCredential("yizrael", "YI$123456");
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+        }
+
     }
 
 }

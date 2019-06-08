@@ -352,5 +352,11 @@ namespace MAIN_GUI_Mangaer_window
             loadAdsComboEdit();
             //AdscomboBoxLoad();
         }
+        
+        private void Button1SmtpTestConn_Click(object sender, EventArgs e)
+        {
+             Mailer.SendEmail();
+
+        }
     }
 }
