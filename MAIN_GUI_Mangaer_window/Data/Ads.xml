@@ -1,22 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Ads>
   <Ad>
-    <CompanyName>Cellcom</CompanyName>
-    <Active>false</Active>
-    <AdBody>cellcom</AdBody>
-    <Price>1212</Price>
-    <CreationDate>2019-06-07T21:43:03.5528182+03:00</CreationDate>
-    <URL>www.cellcom.co.il</URL>
-    <ExpirationDate>2018-01-07T20:42:34.3156179+02:00</ExpirationDate>
+    <CompanyName>Andrea Bocelli</CompanyName>
+    <Price>0</Price>
+    <Active>1</Active>
+    <AdBody>some nice things along the way</AdBody>
+    <CreationDate>2019-06-09T17:04:24.7810017+03:00</CreationDate>
+    <ExpirationDate>01/06/2019 17:03:49</ExpirationDate>
+    <URL />
+    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
   </Ad>
   <Ad>
-    <CompanyName>Ramy Levi</CompanyName>
-    <Active>true</Active>
-    <AdBody>Best Ofot Ever!</AdBody>
-    <Price>123123</Price>
-    <CreationDate>2019-06-08T10:38:33.470893+03:00</CreationDate>
-    <URL>www.Ramy.co.il</URL>
-    <ExpirationDate>2018-06-08T10:37:50.3625619+03:00</ExpirationDate>
-    <Image>C:\Users\userr\Pictures\1test.jpg</Image>
+    <CompanyName>Ferrari</CompanyName>
+    <Price>3444</Price>
+    <Active>1</Active>
+    <AdBody>Some nice things are there</AdBody>
+    <CreationDate>2019-06-09T23:51:31.3455271+03:00</CreationDate>
+    <ExpirationDate>12/06/2019 23:50:32</ExpirationDate>
+    <URL>google.com</URL>
+    <Image>C:\Users\userr\Pictures\2test.jpg</Image>
+  </Ad>
+  <Ad>
+    <CompanyName>NetFlix</CompanyName>
+    <Price>8999</Price>
+    <Active>1</Active>
+    <AdBody>Some Text will be ok</AdBody>
+    <CreationDate>2019-06-09T23:52:17.1026833+03:00</CreationDate>
+    <ExpirationDate>13/06/2019 23:51:39</ExpirationDate>
+    <URL>netflix.com</URL>
+    <Image>C:\Users\userr\Pictures\test.jpg</Image>
   </Ad>
 </Ads>

@@ -37,7 +37,6 @@ namespace Main.yonor
                 {
 
                     message.From = new MailAddress("main-delivery@yonor.me");
-                    message.To.Add(new MailAddress("6yonor@gmail.com"));
                     message.Subject = "Test";
                     message.IsBodyHtml = true; //to make message body as html  
                     string templateHtml = reader.ReadToEnd();
@@ -48,6 +47,18 @@ namespace Main.yonor
             }
             LoadClientAndSendEmail();
 
+        }
+        public static void TestConection(string emailToTest)
+        {
+
+            message.From = new MailAddress("main-delivery@main.com");
+            message.To.Add(new MailAddress($"{emailToTest}"));
+            message.Subject = "Test";
+            message.IsBodyHtml = false; //to make message body as html  
+            message.Body = "Connection Successful";
+            LoadClientAndSendEmail();
+
+           
         }
 
         public static bool EmailPassword(string userEmailRecover)
@@ -83,6 +94,11 @@ namespace Main.yonor
 
            
         }
+        public static void addRecipientsToAd(string Email)
+        {
+            message.To.Add(new MailAddress($"{Email}"));
+
+        }
 
         public static void SendEmail()
         {
@@ -92,7 +108,7 @@ namespace Main.yonor
         public static void LoadClientAndSendEmail()
         {
             smtp.Port = 25;
-            smtp.Host = "smtp..co.il"; //for gmail host  
+            smtp.Host = "smtp.].co.il"; //for gmail host  
                                               //smtp.EnableSsl = true;
             smtp.UseDefaultCredentials = false;
             smtp.Credentials = new NetworkCredential("yizrael","YI$123456");

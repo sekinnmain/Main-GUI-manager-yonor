@@ -101,8 +101,8 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
             XElement school = doc.Element("Ads");
             school.Add(new XElement("Ad",
                        new XElement("CompanyName", crtAd.CompanyName),
-                       new XElement("Price", crtAd.Price),
-                       new XElement("Active", crtAd.Active),
+                       new XElement("Price", crtAd.Price.ToString()),
+                       new XElement("Active", crtAd.GetStatus()),
                         new XElement("AdBody", crtAd.AdBody),
                        new XElement("CreationDate", crtAd.CreationDate),
                        new XElement("ExpirationDate", crtAd.ExpirationDate.ToString()),

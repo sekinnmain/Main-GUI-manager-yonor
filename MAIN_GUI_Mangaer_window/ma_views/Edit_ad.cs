@@ -38,6 +38,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
                     textBox4EditAdPrice.Text = xe.Element("Price").Value;
                     textBox5EditAdURL.Text = xe.Element("URL").Value;
                     DateTime adExpTime = DateTime.Parse(xe.Element("ExpirationDate").Value);
+                    DateTime adCrTime = DateTime.Parse(xe.Element("CreationDate").Value);
+
                     dateTimePicker1ExpDateEdit.Value = adExpTime;
                     textBox2EditAdDescription.Text = xe.Element("AdBody").Value;
                    

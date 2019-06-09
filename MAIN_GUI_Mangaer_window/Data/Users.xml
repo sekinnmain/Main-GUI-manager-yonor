@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Users>
   <RegisteredUser>
-    <FirstName>emmp</FirstName>
-    <LastName>Savanna</LastName>
-    <Type>Employee</Type>
-    <ID></ID>
-    <Email>Peepe@pe.e</Email>
-    <Address>trinidado</Address>
-    <PhoneNumber>1872319023</PhoneNumber>
-    <Name>frede</Name>
-  </RegisteredUser>
-  <RegisteredUser>
     <FirstName>DudoVip</FirstName>
     <LastName>Dudon</LastName>
     <Type>Vipuser</Type>
@@ -25,16 +15,16 @@
     <LastName>EmploLastName</LastName>
     <Type>Employee</Type>
     <ID>1232123</ID>
-    <Email>Shim@Shim.amo</Email>
-    <Address>Shim@Shim.amo</Address>
+    <Email>6yonor@gmail.com</Email>
+    <Address>Shmo</Address>
     <PhoneNumber>234234234</PhoneNumber>
   </RegisteredUser>
   <RegisteredUser>
     <FirstName>Mano mana</FirstName>
     <LastName>manager</LastName>
     <Type>Manager</Type>
-    <Email>mano@mano.am</Email>
-    <Address>mano@mano.am</Address>
+    <Email>yonor@me.com</Email>
+    <Address>mahaifa</Address>
     <PhoneNumber>544354345</PhoneNumber>
   </RegisteredUser>
 </Users>

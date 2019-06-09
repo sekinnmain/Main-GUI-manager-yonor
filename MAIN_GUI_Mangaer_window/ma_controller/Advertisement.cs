@@ -40,7 +40,15 @@ namespace Main.yonor
         }
         public string GetStatus()
         {
-            return Active.ToString();
+            if(Active)
+            {
+                return "1";
+            }
+            else
+            {
+                return "0";
+            }
+            
         }
         public override string ToString()
         {

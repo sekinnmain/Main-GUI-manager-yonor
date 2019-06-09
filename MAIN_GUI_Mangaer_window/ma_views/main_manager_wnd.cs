@@ -29,9 +29,10 @@ namespace MAIN_GUI_Mangaer_window
 
         DataTable dt = new DataTable();
         StockManagement mst = new StockManagement();
+        MailingList adsCampeingToAllCustomers = new MailingList(false);
         //static List<Advertisement> myAds = new List<Advertisement>();
         public static string AdSelectedToEdit;
-
+        //public static bool adsCampeignEnable { get; set; }
         //public static void addToAdsArray(Advertisement myAdToAdd)
         //{
         //    myAds.Add(myAdToAdd);
@@ -355,14 +356,31 @@ namespace MAIN_GUI_Mangaer_window
         
         private void Button1SmtpTestConn_Click(object sender, EventArgs e)
         {
+            Mailer.TestConection($"{textBox5SmtpTestEmail.Text}");
+
             //Advertisement newAd = new Advertisement();
             //newAd.AdBody = "Body Body";
             //newAd.CompanyName = "TEsstC ompany";
             //Mailer.EmailAd(newAd);
-            Mailer.EmailPassword("info@pentest.co.il");
-            Mailer.LoadClientAndSendEmail();
-            MessageBox.Show("Messege sent.", "Password recovery");
+            //Mailer.EmailPassword("info@pentest.co.il");
+            //Mailer.LoadClientAndSendEmail();
+            MessageBox.Show("Message sent.", "Password recovery");
 
+        }
+
+        private void CheckBox1OnOffCampaign_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1OnOffCampaign.Checked == true)
+            {
+                adsCampeingToAllCustomers.scheduleState = true;
+                label3StatusMailingList.Text = "Sending Ads every 10 min to customers";
+            }
+            else
+            {
+                adsCampeingToAllCustomers.scheduleState = false;
+                label3StatusMailingList.Text = "Currently not sending ads.";
+
+            }
         }
     }
 }

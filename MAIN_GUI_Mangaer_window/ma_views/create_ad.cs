@@ -29,6 +29,8 @@ namespace MAIN_GUI_Mangaer_window.ma_views
             myAd.CompanyName = textBox1AdName.Text;
             myAd.CreationDate = DateTime.Now;
             myAd.ExpirationDate = dateTimePicker1ExpDate.Value;
+            myAd.Url = textBox5AdURL.Text;
+            myAd.Price = Convert.ToInt32(textBox4AdPrice.Text);
             ma_controller.XmlParser.XmlParserAds(myAd);
         }
         private void Button2AdCreate_Click(object sender, EventArgs e)

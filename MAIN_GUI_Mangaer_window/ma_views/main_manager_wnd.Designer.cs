@@ -47,6 +47,32 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabAdvertisementMgmt = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3StatusMailingList = new System.Windows.Forms.Label();
+            this.checkBox1OnOffCampaign = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label3SmtpSettingStatus = new System.Windows.Forms.Label();
+            this.textBox3SmtpUsername = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox2SmtpPassword = new System.Windows.Forms.TextBox();
+            this.button12smtpSetCreds = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox4SmtpPort = new System.Windows.Forms.TextBox();
+            this.textBox1SmtpIp = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button9EditAds = new System.Windows.Forms.Button();
+            this.button10CreateAds = new System.Windows.Forms.Button();
+            this.comboBox8EditAds = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1SmtpTestConn = new System.Windows.Forms.Button();
+            this.textBox5SmtpTestEmail = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage1StockMngt = new System.Windows.Forms.TabPage();
             this.numericUpDown6Cola = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5Water = new System.Windows.Forms.NumericUpDown();
@@ -68,37 +94,15 @@
             this.button15 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6LoggedInAs = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5SmtpTestEmail = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1SmtpTestConn = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button9EditAds = new System.Windows.Forms.Button();
-            this.button10CreateAds = new System.Windows.Forms.Button();
-            this.comboBox8EditAds = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3SmtpUsername = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox2SmtpPassword = new System.Windows.Forms.TextBox();
-            this.button12smtpSetCreds = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox4SmtpPort = new System.Windows.Forms.TextBox();
-            this.textBox1SmtpIp = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label3StatusMailingList = new System.Windows.Forms.Label();
-            this.checkBox1OnOffCampaign = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3SmtpSettingStatus = new System.Windows.Forms.Label();
             this.tabCrontrolUsers.SuspendLayout();
             this.tabPage1Dishes.SuspendLayout();
             this.tabControlUsers.SuspendLayout();
             this.tabReportsMgmt.SuspendLayout();
             this.tabAdvertisementMgmt.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabPage1StockMngt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5Water)).BeginInit();
@@ -107,10 +111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCrontrolUsers
@@ -323,6 +323,257 @@
             this.tabAdvertisementMgmt.Text = "Advertisement";
             this.tabAdvertisementMgmt.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label3StatusMailingList);
+            this.groupBox4.Controls.Add(this.checkBox1OnOffCampaign);
+            this.groupBox4.Location = new System.Drawing.Point(531, 17);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(240, 139);
+            this.groupBox4.TabIndex = 25;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Mailing list Campaign settings:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(25, 76);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Status:";
+            // 
+            // label3StatusMailingList
+            // 
+            this.label3StatusMailingList.AutoSize = true;
+            this.label3StatusMailingList.Location = new System.Drawing.Point(25, 98);
+            this.label3StatusMailingList.Name = "label3StatusMailingList";
+            this.label3StatusMailingList.Size = new System.Drawing.Size(129, 13);
+            this.label3StatusMailingList.TabIndex = 22;
+            this.label3StatusMailingList.Text = "Currently not sending ads.";
+            // 
+            // checkBox1OnOffCampaign
+            // 
+            this.checkBox1OnOffCampaign.AutoSize = true;
+            this.checkBox1OnOffCampaign.Location = new System.Drawing.Point(28, 29);
+            this.checkBox1OnOffCampaign.Name = "checkBox1OnOffCampaign";
+            this.checkBox1OnOffCampaign.Size = new System.Drawing.Size(109, 17);
+            this.checkBox1OnOffCampaign.TabIndex = 21;
+            this.checkBox1OnOffCampaign.Text = "Enable Campaign";
+            this.checkBox1OnOffCampaign.UseVisualStyleBackColor = true;
+            this.checkBox1OnOffCampaign.CheckedChanged += new System.EventHandler(this.CheckBox1OnOffCampaign_CheckedChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3SmtpSettingStatus);
+            this.groupBox3.Controls.Add(this.textBox3SmtpUsername);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.textBox2SmtpPassword);
+            this.groupBox3.Controls.Add(this.button12smtpSetCreds);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.textBox4SmtpPort);
+            this.groupBox3.Controls.Add(this.textBox1SmtpIp);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Location = new System.Drawing.Point(17, 215);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(543, 144);
+            this.groupBox3.TabIndex = 24;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Smtp settings:";
+            // 
+            // label3SmtpSettingStatus
+            // 
+            this.label3SmtpSettingStatus.AutoSize = true;
+            this.label3SmtpSettingStatus.Location = new System.Drawing.Point(413, 63);
+            this.label3SmtpSettingStatus.Name = "label3SmtpSettingStatus";
+            this.label3SmtpSettingStatus.Size = new System.Drawing.Size(79, 13);
+            this.label3SmtpSettingStatus.TabIndex = 29;
+            this.label3SmtpSettingStatus.Text = "Setting Not Set";
+            // 
+            // textBox3SmtpUsername
+            // 
+            this.textBox3SmtpUsername.Location = new System.Drawing.Point(116, 73);
+            this.textBox3SmtpUsername.Name = "textBox3SmtpUsername";
+            this.textBox3SmtpUsername.Size = new System.Drawing.Size(262, 20);
+            this.textBox3SmtpUsername.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(31, 76);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 13);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Username: ";
+            // 
+            // textBox2SmtpPassword
+            // 
+            this.textBox2SmtpPassword.Location = new System.Drawing.Point(116, 112);
+            this.textBox2SmtpPassword.Name = "textBox2SmtpPassword";
+            this.textBox2SmtpPassword.Size = new System.Drawing.Size(262, 20);
+            this.textBox2SmtpPassword.TabIndex = 25;
+            // 
+            // button12smtpSetCreds
+            // 
+            this.button12smtpSetCreds.Location = new System.Drawing.Point(413, 110);
+            this.button12smtpSetCreds.Name = "button12smtpSetCreds";
+            this.button12smtpSetCreds.Size = new System.Drawing.Size(75, 23);
+            this.button12smtpSetCreds.TabIndex = 24;
+            this.button12smtpSetCreds.Text = "Set";
+            this.button12smtpSetCreds.UseVisualStyleBackColor = true;
+            this.button12smtpSetCreds.Click += new System.EventHandler(this.Button12smtpSetCreds_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(31, 115);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.TabIndex = 23;
+            this.label19.Text = "Password: ";
+            // 
+            // textBox4SmtpPort
+            // 
+            this.textBox4SmtpPort.Location = new System.Drawing.Point(336, 36);
+            this.textBox4SmtpPort.Name = "textBox4SmtpPort";
+            this.textBox4SmtpPort.Size = new System.Drawing.Size(42, 20);
+            this.textBox4SmtpPort.TabIndex = 21;
+            // 
+            // textBox1SmtpIp
+            // 
+            this.textBox1SmtpIp.Location = new System.Drawing.Point(116, 35);
+            this.textBox1SmtpIp.Name = "textBox1SmtpIp";
+            this.textBox1SmtpIp.Size = new System.Drawing.Size(171, 20);
+            this.textBox1SmtpIp.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(301, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Port:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(31, 38);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(69, 13);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Smtp server: ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(-109, 14);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 13);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Smtp settings:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button9EditAds);
+            this.groupBox2.Controls.Add(this.button10CreateAds);
+            this.groupBox2.Controls.Add(this.comboBox8EditAds);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Location = new System.Drawing.Point(17, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(488, 140);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ads settings:";
+            // 
+            // button9EditAds
+            // 
+            this.button9EditAds.Location = new System.Drawing.Point(336, 89);
+            this.button9EditAds.Name = "button9EditAds";
+            this.button9EditAds.Size = new System.Drawing.Size(75, 23);
+            this.button9EditAds.TabIndex = 14;
+            this.button9EditAds.Text = "Edit";
+            this.button9EditAds.UseVisualStyleBackColor = true;
+            this.button9EditAds.Click += new System.EventHandler(this.Button9EditAds_Click_1);
+            // 
+            // button10CreateAds
+            // 
+            this.button10CreateAds.Location = new System.Drawing.Point(336, 41);
+            this.button10CreateAds.Name = "button10CreateAds";
+            this.button10CreateAds.Size = new System.Drawing.Size(75, 23);
+            this.button10CreateAds.TabIndex = 15;
+            this.button10CreateAds.Text = "Create";
+            this.button10CreateAds.UseVisualStyleBackColor = true;
+            this.button10CreateAds.Click += new System.EventHandler(this.Button10CreateAds_Click_1);
+            // 
+            // comboBox8EditAds
+            // 
+            this.comboBox8EditAds.FormattingEnabled = true;
+            this.comboBox8EditAds.Location = new System.Drawing.Point(176, 91);
+            this.comboBox8EditAds.Name = "comboBox8EditAds";
+            this.comboBox8EditAds.Size = new System.Drawing.Size(121, 21);
+            this.comboBox8EditAds.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(51, 94);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Edit advertisement:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(51, 46);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(136, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Create new advertisement: ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1SmtpTestConn);
+            this.groupBox1.Controls.Add(this.textBox5SmtpTestEmail);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Location = new System.Drawing.Point(580, 215);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(191, 144);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Test conection";
+            // 
+            // button1SmtpTestConn
+            // 
+            this.button1SmtpTestConn.Location = new System.Drawing.Point(62, 94);
+            this.button1SmtpTestConn.Name = "button1SmtpTestConn";
+            this.button1SmtpTestConn.Size = new System.Drawing.Size(75, 23);
+            this.button1SmtpTestConn.TabIndex = 24;
+            this.button1SmtpTestConn.Text = "Test";
+            this.button1SmtpTestConn.UseVisualStyleBackColor = true;
+            this.button1SmtpTestConn.Click += new System.EventHandler(this.Button1SmtpTestConn_Click);
+            // 
+            // textBox5SmtpTestEmail
+            // 
+            this.textBox5SmtpTestEmail.Location = new System.Drawing.Point(62, 35);
+            this.textBox5SmtpTestEmail.Name = "textBox5SmtpTestEmail";
+            this.textBox5SmtpTestEmail.Size = new System.Drawing.Size(100, 20);
+            this.textBox5SmtpTestEmail.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Email:";
+            // 
             // tabPage1StockMngt
             // 
             this.tabPage1StockMngt.Controls.Add(this.numericUpDown6Cola);
@@ -523,256 +774,6 @@
             this.label6LoggedInAs.TabIndex = 2;
             this.label6LoggedInAs.Text = "none";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button1SmtpTestConn);
-            this.groupBox1.Controls.Add(this.textBox5SmtpTestEmail);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(580, 215);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(191, 144);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Test conection";
-            // 
-            // textBox5SmtpTestEmail
-            // 
-            this.textBox5SmtpTestEmail.Location = new System.Drawing.Point(62, 35);
-            this.textBox5SmtpTestEmail.Name = "textBox5SmtpTestEmail";
-            this.textBox5SmtpTestEmail.Size = new System.Drawing.Size(100, 20);
-            this.textBox5SmtpTestEmail.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 38);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Email:";
-            // 
-            // button1SmtpTestConn
-            // 
-            this.button1SmtpTestConn.Location = new System.Drawing.Point(62, 94);
-            this.button1SmtpTestConn.Name = "button1SmtpTestConn";
-            this.button1SmtpTestConn.Size = new System.Drawing.Size(75, 23);
-            this.button1SmtpTestConn.TabIndex = 24;
-            this.button1SmtpTestConn.Text = "Test";
-            this.button1SmtpTestConn.UseVisualStyleBackColor = true;
-            this.button1SmtpTestConn.Click += new System.EventHandler(this.Button1SmtpTestConn_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button9EditAds);
-            this.groupBox2.Controls.Add(this.button10CreateAds);
-            this.groupBox2.Controls.Add(this.comboBox8EditAds);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Location = new System.Drawing.Point(17, 16);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(488, 140);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ads settings:";
-            // 
-            // button9EditAds
-            // 
-            this.button9EditAds.Location = new System.Drawing.Point(336, 89);
-            this.button9EditAds.Name = "button9EditAds";
-            this.button9EditAds.Size = new System.Drawing.Size(75, 23);
-            this.button9EditAds.TabIndex = 14;
-            this.button9EditAds.Text = "Edit";
-            this.button9EditAds.UseVisualStyleBackColor = true;
-            this.button9EditAds.Click += new System.EventHandler(this.Button9EditAds_Click_1);
-            // 
-            // button10CreateAds
-            // 
-            this.button10CreateAds.Location = new System.Drawing.Point(336, 41);
-            this.button10CreateAds.Name = "button10CreateAds";
-            this.button10CreateAds.Size = new System.Drawing.Size(75, 23);
-            this.button10CreateAds.TabIndex = 15;
-            this.button10CreateAds.Text = "Create";
-            this.button10CreateAds.UseVisualStyleBackColor = true;
-            this.button10CreateAds.Click += new System.EventHandler(this.Button10CreateAds_Click_1);
-            // 
-            // comboBox8EditAds
-            // 
-            this.comboBox8EditAds.FormattingEnabled = true;
-            this.comboBox8EditAds.Location = new System.Drawing.Point(176, 91);
-            this.comboBox8EditAds.Name = "comboBox8EditAds";
-            this.comboBox8EditAds.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8EditAds.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(51, 94);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 13);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Edit advertisement:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(51, 46);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Create new advertisement: ";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label3SmtpSettingStatus);
-            this.groupBox3.Controls.Add(this.textBox3SmtpUsername);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.textBox2SmtpPassword);
-            this.groupBox3.Controls.Add(this.button12smtpSetCreds);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.textBox4SmtpPort);
-            this.groupBox3.Controls.Add(this.textBox1SmtpIp);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Location = new System.Drawing.Point(17, 215);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(543, 144);
-            this.groupBox3.TabIndex = 24;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Smtp settings:";
-            // 
-            // textBox3SmtpUsername
-            // 
-            this.textBox3SmtpUsername.Location = new System.Drawing.Point(116, 73);
-            this.textBox3SmtpUsername.Name = "textBox3SmtpUsername";
-            this.textBox3SmtpUsername.Size = new System.Drawing.Size(262, 20);
-            this.textBox3SmtpUsername.TabIndex = 28;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(31, 76);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 13);
-            this.label20.TabIndex = 26;
-            this.label20.Text = "Username: ";
-            // 
-            // textBox2SmtpPassword
-            // 
-            this.textBox2SmtpPassword.Location = new System.Drawing.Point(116, 112);
-            this.textBox2SmtpPassword.Name = "textBox2SmtpPassword";
-            this.textBox2SmtpPassword.Size = new System.Drawing.Size(262, 20);
-            this.textBox2SmtpPassword.TabIndex = 25;
-            // 
-            // button12smtpSetCreds
-            // 
-            this.button12smtpSetCreds.Location = new System.Drawing.Point(413, 110);
-            this.button12smtpSetCreds.Name = "button12smtpSetCreds";
-            this.button12smtpSetCreds.Size = new System.Drawing.Size(75, 23);
-            this.button12smtpSetCreds.TabIndex = 24;
-            this.button12smtpSetCreds.Text = "Set";
-            this.button12smtpSetCreds.UseVisualStyleBackColor = true;
-            this.button12smtpSetCreds.Click += new System.EventHandler(this.Button12smtpSetCreds_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(31, 115);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
-            this.label19.TabIndex = 23;
-            this.label19.Text = "Password: ";
-            // 
-            // textBox4SmtpPort
-            // 
-            this.textBox4SmtpPort.Location = new System.Drawing.Point(336, 36);
-            this.textBox4SmtpPort.Name = "textBox4SmtpPort";
-            this.textBox4SmtpPort.Size = new System.Drawing.Size(42, 20);
-            this.textBox4SmtpPort.TabIndex = 21;
-            // 
-            // textBox1SmtpIp
-            // 
-            this.textBox1SmtpIp.Location = new System.Drawing.Point(116, 35);
-            this.textBox1SmtpIp.Name = "textBox1SmtpIp";
-            this.textBox1SmtpIp.Size = new System.Drawing.Size(171, 20);
-            this.textBox1SmtpIp.TabIndex = 22;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(301, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Port:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(31, 38);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 13);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "Smtp server: ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(-109, 14);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 13);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Smtp settings:";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label3StatusMailingList);
-            this.groupBox4.Controls.Add(this.checkBox1OnOffCampaign);
-            this.groupBox4.Location = new System.Drawing.Point(531, 17);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(240, 139);
-            this.groupBox4.TabIndex = 25;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Mailing list Campaign settings:";
-            // 
-            // label3StatusMailingList
-            // 
-            this.label3StatusMailingList.AutoSize = true;
-            this.label3StatusMailingList.Location = new System.Drawing.Point(25, 98);
-            this.label3StatusMailingList.Name = "label3StatusMailingList";
-            this.label3StatusMailingList.Size = new System.Drawing.Size(186, 13);
-            this.label3StatusMailingList.TabIndex = 22;
-            this.label3StatusMailingList.Text = "Sending Ads to Subscribers every day";
-            // 
-            // checkBox1OnOffCampaign
-            // 
-            this.checkBox1OnOffCampaign.AutoSize = true;
-            this.checkBox1OnOffCampaign.Location = new System.Drawing.Point(28, 29);
-            this.checkBox1OnOffCampaign.Name = "checkBox1OnOffCampaign";
-            this.checkBox1OnOffCampaign.Size = new System.Drawing.Size(109, 17);
-            this.checkBox1OnOffCampaign.TabIndex = 21;
-            this.checkBox1OnOffCampaign.Text = "Enable Campaign";
-            this.checkBox1OnOffCampaign.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 76);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Status:";
-            // 
-            // label3SmtpSettingStatus
-            // 
-            this.label3SmtpSettingStatus.AutoSize = true;
-            this.label3SmtpSettingStatus.Location = new System.Drawing.Point(413, 63);
-            this.label3SmtpSettingStatus.Name = "label3SmtpSettingStatus";
-            this.label3SmtpSettingStatus.Size = new System.Drawing.Size(79, 13);
-            this.label3SmtpSettingStatus.TabIndex = 29;
-            this.label3SmtpSettingStatus.Text = "Setting Not Set";
-            // 
             // main_manager_wnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -794,6 +795,14 @@
             this.tabReportsMgmt.ResumeLayout(false);
             this.tabReportsMgmt.PerformLayout();
             this.tabAdvertisementMgmt.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabPage1StockMngt.ResumeLayout(false);
             this.tabPage1StockMngt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6Cola)).EndInit();
@@ -803,14 +812,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2Steak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1Burger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
