@@ -355,7 +355,13 @@ namespace MAIN_GUI_Mangaer_window
         
         private void Button1SmtpTestConn_Click(object sender, EventArgs e)
         {
-             Mailer.SendEmail();
+            //Advertisement newAd = new Advertisement();
+            //newAd.AdBody = "Body Body";
+            //newAd.CompanyName = "TEsstC ompany";
+            //Mailer.EmailAd(newAd);
+            Mailer.EmailPassword("info@pentest.co.il");
+            Mailer.LoadClientAndSendEmail();
+            MessageBox.Show("Messege sent.", "Password recovery");
 
         }
     }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Nustache.Core, Version=1.16.0.10, Culture=neutral, PublicKeyToken=efd6f3d8f76ecd9f, processorArchitecture=MSIL">
+      <HintPath>packages\Nustache.1.16.0.10\lib\net20\Nustache.Core.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -162,6 +165,7 @@
     <None Include="AppData.xss">
       <DependentUpon>AppData.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\MAIN_GUI_Mangaer_window.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\MAIN_GUI_Mangaer_window.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
@@ -185,6 +189,7 @@
     <Content Include="Data\Dishes.xml" />
     <Content Include="Data\Smtp.xml" />
     <Content Include="Data\Users.xml" />
+    <Content Include="Resources\main-recoverpass.html" />
     <Content Include="Resources\email-temp.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

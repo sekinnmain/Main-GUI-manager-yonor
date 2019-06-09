@@ -15,23 +15,10 @@ namespace Main.yonor
         private DateTime EndDate;
         private bool scheduleState = true;
         public int DispacherFrecuency { get; set; }
-        public MailingList()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-        public void AddAd(Advertisement myAd)
-        {
-            Ads.Enqueue(myAd);
-        }
+      
+           
 
-        public void SendAds()
-        {
-            //Mailer myMailer = new Mailer();
-          //  myMailer.SendEmail(Ads.Dequeue());
-            //delegate?
-        }
+    
         public void StartAds()
         {
             //
@@ -41,15 +28,8 @@ namespace Main.yonor
                 var schedule = new DateTime(now.Year, now.Month, now.Day, 8, 55, 00);
                 if (schedule < now) schedule = schedule.AddDays(1);
             //    Thread.Sleep(schedule.Subtract(now));
-                SendAds();
 
             }
-        }
-        public void StopAds()
-        {
-            //
-            this.scheduleState = false;
-
         }
 
 

@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Xml.Linq;
+using System.Xml.XPath;
 using MAIN_GUI_Mangaer_window.ma_controller;
+using Nustache.Core;
+using NewUsers;
+
 
 namespace Main.yonor
 {
@@ -22,7 +28,7 @@ namespace Main.yonor
         public static MailMessage message = new MailMessage();
         public static SmtpClient smtp = new SmtpClient();
         
-        public static void EmailAd()
+        public static void EmailAd(Advertisement adToEmail)
         {
 
             using (StreamReader reader = File.OpenText(XmlParser.adTemp)) // Path to your 
@@ -34,29 +40,64 @@ namespace Main.yonor
                     message.To.Add(new MailAddress("6yonor@gmail.com"));
                     message.Subject = "Test";
                     message.IsBodyHtml = true; //to make message body as html  
-                    message.Body = reader.ReadToEnd();
-
+                    string templateHtml = reader.ReadToEnd();
+                    message.Body = Render.StringToString(templateHtml, adToEmail); 
 
                 }
                 catch (Exception) { }
             }
+            LoadClientAndSendEmail();
+
+        }
+
+        public static bool EmailPassword(string userEmailRecover)
+        {
+            bool passSent = false;
+            foreach (XElement xe in (XDocument.Load(XmlParser.xmlUsers).XPathSelectElements($"//RegisteredUser")))
+            {
+                if (xe.Element("Email").Value.Equals(userEmailRecover))
+                {
+                    using (StreamReader reader = File.OpenText(XmlParser.recoverTempl)) // Path to your 
+                    {
+                        try
+                        {
+                            VipCustomer recoUser = new VipCustomer();
+                            recoUser.FirstName = xe.Element("FirstName").Value;
+                            recoUser.Email = xe.Element("Email").Value;
+                            recoUser.PassWord = xe.Element("PassWord").Value;
+                            message.From = new MailAddress("main-delivery@main.com");
+                            message.To.Add(new MailAddress($"{recoUser.Email}"));
+                            message.Subject = $"Password recovery for {recoUser.FirstName}";
+                            message.IsBodyHtml = true; //to make message body as html  
+                            string templateHtml = reader.ReadToEnd();
+                            message.Body = Render.StringToString(templateHtml, recoUser);
+                            passSent = true;
+                            return passSent;
+
+                        }
+                        catch (Exception) { }
+                    }
+                }
+            }
+            return passSent;
+
+           
         }
 
         public static void SendEmail()
         {
-            LoadClient();
-            EmailAd();
             smtp.Send(message);
 
         }
-        public static void LoadClient()
+        public static void LoadClientAndSendEmail()
         {
             smtp.Port = 25;
-            smtp.Host = "smtp.g-.co.il"; //for gmail host  
+            smtp.Host = "smtp..co.il"; //for gmail host  
                                               //smtp.EnableSsl = true;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("", "");
+            smtp.Credentials = new NetworkCredential("yizrael","YI$123456");
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            SendEmail();
         }
 
     }

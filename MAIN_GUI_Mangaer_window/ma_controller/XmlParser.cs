@@ -24,6 +24,8 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
         public static string xmlAds = $"{dataDir}\\Data\\Ads.xml";
         public static string xmlSmtpSettings = $"{dataDir}\\Data\\Smtp.xml";
         public static string adTemp = $"{dataDir}\\Resources\\email-temp.html";
+        public static string recoverTempl = $"{dataDir}\\Resources\\main-recoverpass.html";
+
 
 
 
